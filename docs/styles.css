@@ -1,1 +1,9 @@
 /* css styles */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  height: 3in;
+}

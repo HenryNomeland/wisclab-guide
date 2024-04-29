@@ -315,14 +315,14 @@ ul.task-list li input[type="checkbox"] {
 <h1>1. Introduction</h1>
 <section id="a.-forced-alignment-and-text-grids" class="level2">
 <h2 class="anchored" data-anchor-id="a.-forced-alignment-and-text-grids">a. Forced alignment and text grids</h2>
-<img src="alignmentGuide/media/image3.png" style="width:4.51887in;height:3.25458in">
+<img src="alignmentGuide/media/image3.png" class="center">
 <p>In the WISC Lab we have audio recordings of children with typical speech development and with speech and motor impairments due to Cerebral Palsy. In these recordings the child is repeating words and phrases from the <em>Test of Children’s Speech</em> (the TOCS, as we know them by). Examples include phrases like “Cowboy boots” and “Put all the toys away”. We then use the recordings of these phrases to calculate articulation rate, speech sound accuracy, as well as to get measures of how intelligible the child is. Figure 3 below shows what it looks like if we open the file “The sign says keep out” all by itself in the program Praat.</p>
 <p>We can see the waveform (top) and the spectrogram (bottom), but what if we want to keep track of how long different words and sounds are?</p>
-<img src="alignmentGuide/media/image4.png" style="width:4.78852in;height:3.11458in">
+<img src="alignmentGuide/media/image4.png" class="center">
 <p>Marking the start and end points of sounds and words in a recording is useful for a variety of research purposes. However, we can’t make marks/annotations directly in the sound file, so to do this we need to create a separate file that stores all of the locations of events like the start and end of a word or sound.</p>
 <p>The tool that we use to create a separate document containing annotations and labels for different words and sounds is called a <strong>forced aligner</strong>. A forced aligner takes an audio file (typically a .wav file) and a transcription of what was said in the audio file (usually a .txt or .lab file) and uses speech recognition technology to create a new file called a <strong>text grid</strong> that is designed to be paired with the audio file. The text grid has boundaries and labels indicating the locations of the words and phonemes in the audio file.</p>
 <p>A <strong>text grid</strong> file is associated with a given audio file and has moveable boundaries and labels to note the occurrence of certain events (like the beginning and end of a vowel) that may be useful for research. Figure 4 below shows what that same audio file (“The sign says keep out”) looks like when opened together with the text grid that was created for that sound file by Montreal Forced Aligner. The text grids we create for the lab contain separate <strong>tiers</strong> for words, sounds, and the sentence containing them. Each tier has <strong>intervals</strong> with <strong>vertical boundaries</strong> separating words and sounds. These files (the text grid and wav file) can be used for automated retrieval of acoustic data such as duration of a word/sound, formant frequencies of vowels, and other variables of interest.</p>
-<img src="alignmentGuide/media/image5.png" style="width:6.5in;height:3.65139in">
+<img src="alignmentGuide/media/image5.png" class="center">
 <p>We can open these text grids along with the audio file in a program called <strong>Praat</strong> (Dutch for “speech”, sounds like “praht” - /pra:t/). When the text grids and audio files are paired together in Praat, it is now easier and quicker for us to make measurements because we have labels for each word and sound, as well as the time intervals during which these events occur.</p>
 </section>
 <section id="b.-hand-correction" class="level2">
@@ -330,9 +330,9 @@ ul.task-list li input[type="checkbox"] {
 <p>Forced aligners are not perfect, however. When a forced aligner creates a text grid, the initial placement of boundaries for words and sounds may not be accurate. During the <strong>hand-correction</strong> process, you will be adjusting boundaries in text grids that have been automatically created using the Montreal Forced Aligner (MFA for short). When Montreal Forced Aligner pairs a typed transcription with an audio file, it frequently does a pretty good job of putting boundaries in place, and the boundaries might just need some slight shifting, or even no adjustment at all. Other times, the boundaries are placed at the wrong times, and even placed at a time at which an entirely different word is being produced. These boundaries require hand-correction.</p>
 <p>Your job is to ensure that those boundaries have been placed where they ought to go. This document that you are reading now is intended to help you understand what you are looking at when you look at audio recordings in Praat (or any program that shows a spectrogram and waveform), and it is designed to be a guide for decision-making when boundary placement is difficult to determine.</p>
 <p>Figure 5 shows a text grid prior to hand-correction, and Figure 6 shows the same text grid but with black and gold squares overlaid on the image to show where the word boundaries actually are. Figure 7 then shows what the text grid looks like after hand-correction.</p>
-<img src="alignmentGuide/media/image6.png" style="width:5.77083in;height:3.2513in">
-<img src="alignmentGuide/media/image7.png" style="width:5.75003in;height:3.23958in">
-<img src="alignmentGuide/media/image8.png" style="width:6.48958in;height:3.65625in">
+<img src="alignmentGuide/media/image6.png" class="center">
+<img src="alignmentGuide/media/image7.png" class="center">
+<img src="alignmentGuide/media/image8.png" class="center">
 </section>
 </section>
 <section id="over-arching-questions-and-principles" class="level1">

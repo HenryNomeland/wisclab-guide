@@ -134,9 +134,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#liquids" id="toc-liquids" class="nav-link" data-scroll-target="#liquids">Liquids</a></li>
   <li><a href="#nasals" id="toc-nasals" class="nav-link" data-scroll-target="#nasals">Nasals</a></li>
   <li><a href="#fricatives" id="toc-fricatives" class="nav-link" data-scroll-target="#fricatives">Fricatives</a></li>
-  <li><a href="#stops" id="toc-stops" class="nav-link" data-scroll-target="#stops"><img src="alignmentGuide/media/image23.png" style="width:4.40566in;height:3.46051in">Stops</a></li>
+  <li><a href="#stops" id="toc-stops" class="nav-link" data-scroll-target="#stops"><img src="alignmentGuide/media/image23.png" class="center" style="width:4.40566in;height:3.46051in">Stops</a></li>
   </ul></li>
-  <li><a href="#documenting-questions-and-issues" id="toc-documenting-questions-and-issues" class="nav-link" data-scroll-target="#documenting-questions-and-issues">Documenting questions and issues</a></li>
   <li><a href="#when-the-transcription-does-not-match-audio-of-childs-speech" id="toc-when-the-transcription-does-not-match-audio-of-childs-speech" class="nav-link" data-scroll-target="#when-the-transcription-does-not-match-audio-of-childs-speech">When the transcription does not match audio of child’s speech</a></li>
   </ul></li>
   <li><a href="#beginning-of-utterance-issues" id="toc-beginning-of-utterance-issues" class="nav-link" data-scroll-target="#beginning-of-utterance-issues">5. Beginning-of-utterance issues</a>
@@ -315,14 +314,29 @@ ul.task-list li input[type="checkbox"] {
 <h1>1. Introduction</h1>
 <section id="a.-forced-alignment-and-text-grids" class="level2">
 <h2 class="anchored" data-anchor-id="a.-forced-alignment-and-text-grids">a. Forced alignment and text grids</h2>
-<img src="alignmentGuide/media/image3.png" class="center">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="alignmentGuide/media/image3.png" class="center img-fluid figure-img"></p>
+<figcaption>Figure 1 - Visual of how hand-correction of text grids relates to other lab tasks</figcaption>
+</figure>
+</div>
 <p>In the WISC Lab we have audio recordings of children with typical speech development and with speech and motor impairments due to Cerebral Palsy. In these recordings the child is repeating words and phrases from the <em>Test of Children’s Speech</em> (the TOCS, as we know them by). Examples include phrases like “Cowboy boots” and “Put all the toys away”. We then use the recordings of these phrases to calculate articulation rate, speech sound accuracy, as well as to get measures of how intelligible the child is. Figure 3 below shows what it looks like if we open the file “The sign says keep out” all by itself in the program Praat.</p>
 <p>We can see the waveform (top) and the spectrogram (bottom), but what if we want to keep track of how long different words and sounds are?</p>
-<img src="alignmentGuide/media/image4.png" class="center">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="alignmentGuide/media/image4.png" class="center img-fluid figure-img"></p>
+<figcaption>Figure 2 - Recording of “The sign says keep out” when opened in Praat.</figcaption>
+</figure>
+</div>
 <p>Marking the start and end points of sounds and words in a recording is useful for a variety of research purposes. However, we can’t make marks/annotations directly in the sound file, so to do this we need to create a separate file that stores all of the locations of events like the start and end of a word or sound.</p>
 <p>The tool that we use to create a separate document containing annotations and labels for different words and sounds is called a <strong>forced aligner</strong>. A forced aligner takes an audio file (typically a .wav file) and a transcription of what was said in the audio file (usually a .txt or .lab file) and uses speech recognition technology to create a new file called a <strong>text grid</strong> that is designed to be paired with the audio file. The text grid has boundaries and labels indicating the locations of the words and phonemes in the audio file.</p>
 <p>A <strong>text grid</strong> file is associated with a given audio file and has moveable boundaries and labels to note the occurrence of certain events (like the beginning and end of a vowel) that may be useful for research. Figure 4 below shows what that same audio file (“The sign says keep out”) looks like when opened together with the text grid that was created for that sound file by Montreal Forced Aligner. The text grids we create for the lab contain separate <strong>tiers</strong> for words, sounds, and the sentence containing them. Each tier has <strong>intervals</strong> with <strong>vertical boundaries</strong> separating words and sounds. These files (the text grid and wav file) can be used for automated retrieval of acoustic data such as duration of a word/sound, formant frequencies of vowels, and other variables of interest.</p>
-<img src="alignmentGuide/media/image5.png" class="center">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="alignmentGuide/media/image5.png" class="center img-fluid figure-img"></p>
+<figcaption>Figure 3 - “The sign says keep out” when the recording is opened together with a fully annotated “text grid”.</figcaption>
+</figure>
+</div>
 <p>We can open these text grids along with the audio file in a program called <strong>Praat</strong> (Dutch for “speech”, sounds like “praht” - /pra:t/). When the text grids and audio files are paired together in Praat, it is now easier and quicker for us to make measurements because we have labels for each word and sound, as well as the time intervals during which these events occur.</p>
 </section>
 <section id="b.-hand-correction" class="level2">
@@ -330,9 +344,24 @@ ul.task-list li input[type="checkbox"] {
 <p>Forced aligners are not perfect, however. When a forced aligner creates a text grid, the initial placement of boundaries for words and sounds may not be accurate. During the <strong>hand-correction</strong> process, you will be adjusting boundaries in text grids that have been automatically created using the Montreal Forced Aligner (MFA for short). When Montreal Forced Aligner pairs a typed transcription with an audio file, it frequently does a pretty good job of putting boundaries in place, and the boundaries might just need some slight shifting, or even no adjustment at all. Other times, the boundaries are placed at the wrong times, and even placed at a time at which an entirely different word is being produced. These boundaries require hand-correction.</p>
 <p>Your job is to ensure that those boundaries have been placed where they ought to go. This document that you are reading now is intended to help you understand what you are looking at when you look at audio recordings in Praat (or any program that shows a spectrogram and waveform), and it is designed to be a guide for decision-making when boundary placement is difficult to determine.</p>
 <p>Figure 5 shows a text grid prior to hand-correction, and Figure 6 shows the same text grid but with black and gold squares overlaid on the image to show where the word boundaries actually are. Figure 7 then shows what the text grid looks like after hand-correction.</p>
-<img src="alignmentGuide/media/image6.png" class="center">
-<img src="alignmentGuide/media/image7.png" class="center">
-<img src="alignmentGuide/media/image8.png" class="center">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="alignmentGuide/media/image6.png" class="center img-fluid figure-img"></p>
+<figcaption>Figure 4 - Force-aligned Text Grid of cowboy boots that has not yet been hand-corrected. The boundaries for cowboy were placed too soon, and boundaries for boots include the -boy part of cowboy.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="alignmentGuide/media/image7.png" class="center img-fluid figure-img"></p>
+<figcaption>Figure 5 - Force-aligned Text Grid of cowboy boots that has not yet been hand-corrected. Black and gold squares show where the words actually occur.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="alignmentGuide/media/image8.png" class="center img-fluid figure-img"></p>
+<figcaption>Figure 6 - Hand-corrected text grid of cowboy boots. We can now see how the boundaries in the text grid line up with where the box shapes indicated that the word were.</figcaption>
+</figure>
+</div>
 </section>
 </section>
 <section id="over-arching-questions-and-principles" class="level1">
@@ -402,22 +431,13 @@ TH, DH, F and V are often less pronounced, but if clearly articulated will have 
 DH sometimes appears similar to D</p>
 </section>
 <section id="stops" class="level3">
-<h3 class="anchored" data-anchor-id="stops"><img src="alignmentGuide/media/image23.png" style="width:4.40566in;height:3.46051in">Stops</h3>
+<h3 class="anchored" data-anchor-id="stops"><img src="alignmentGuide/media/image23.png" class="center" style="width:4.40566in;height:3.46051in">Stops</h3>
 <p>P, T, K, B, D, G<br>
 <strong>Burst</strong> – Stops will often be characterized by a thin dark line across the frequency range. This is from the release of the consonant (the “burst”).<br>
 Voiceless stops in English will have a longer period of noisy energy after the burst, and for voiced consonants, the vowel will usually start immediately after the burst.</p>
 <p><u><br>
 </u></p>
 </section>
-</section>
-<section id="documenting-questions-and-issues" class="level2">
-<h2 class="anchored" data-anchor-id="documenting-questions-and-issues">Documenting questions and issues</h2>
-<ul>
-<li>There is a blank field for notes for each file that you correct.<br>
-Whenever you encounter an issue that you aren’t sure how to navigate, do your best place the boundary where you think it should go, and then document the problem. For example maybe the kid omitted the S in BIRD HOUSE. You could enter into the “notes” field:<br>
-“S omitted from HOUSE, short S interval was left.”<br>
-<img src="alignmentGuide/media/image24.png" alt="A screenshot of a computer Description automatically generated with medium confidence" style="width:3.59434in;height:1.19259in"></li>
-</ul>
 </section>
 <section id="when-the-transcription-does-not-match-audio-of-childs-speech" class="level2">
 <h2 class="anchored" data-anchor-id="when-the-transcription-does-not-match-audio-of-childs-speech">When the transcription does not match audio of child’s speech</h2>

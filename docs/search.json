@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "wisclab-guide",
+    "title": "WISC Lab Guides",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "This is a documentation site for the Wisconsin Intelligibility, Speech, and Communication Lab.\nAdditional documentation for R code used by the lab can be found here."
   },
   {
     "objectID": "about.html",

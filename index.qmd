@@ -1,11 +1,7 @@
 ---
-title: "wisclab-guide"
+title: "WISC Lab Guides"
 ---
 
-This is a Quarto website.
+This is a documentation site for the [Wisconsin Intelligibility, Speech, and Communication Lab](https://kidspeech.wisc.edu/).
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+Additional documentation for R code used by the lab can be found [here](https://www.tjmahr.com/wisclabmisc/).

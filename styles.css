@@ -1,19 +1,19 @@
-/* css styles */
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  height: 4in;
-}
 
 img {
   max-width: 100%;
 }
 
-.figure-img {
-  border-style: solid;
-  border-color: #333;
-  border-width: 2px;
+figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  /* this might be too strict */
+  max-height: 4in;
+}
+
+figure {
+  background: #EEE;
+  padding: 1em;
 }

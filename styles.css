@@ -11,3 +11,9 @@
 img {
   max-width: 100%;
 }
+
+.figure-img {
+  border-style: solid;
+  border-color: #333;
+  border-width: 2px;
+}

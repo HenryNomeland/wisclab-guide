@@ -2,10 +2,10 @@
 title: "Alignment Guide"
 format:
   html:
+    fig-cap-location: top
     code-fold: true
     toc: true
     toc-depth: 3
-# jupyter: python3
 ---
 
 **WISC Lab guide to hand-correction of force-aligned text grids**
@@ -18,13 +18,13 @@ Published by [Henry Nomeland](https://kidspeech.wisc.edu/staff/nomeland-henry/)
 
 ### a. Forced alignment and text grids {#a.-forced-alignment-and-text-grids}
 
-![Figure 1 - Visual of how hand-correction of text grids relates to other lab tasks](alignmentGuide/media/image3.png)
+![Figure 1 - Visual of how hand-correction of text grids relates to other lab tasks](alignmentGuide/media/image3.png){width=60%}
 
 In the WISC Lab we have audio recordings of children with typical speech development and with speech and motor impairments due to Cerebral Palsy. In these recordings the child is repeating words and phrases from the *Test of Children’s Speech* (the TOCS, as we know them by). Examples include phrases like “Cowboy boots” and “Put all the toys away”. We then use the recordings of these phrases to calculate articulation rate, speech sound accuracy, as well as to get measures of how intelligible the child is. Figure 3 below shows what it looks like if we open the file “The sign says keep out” all by itself in the program Praat.
 
 We can see the waveform (top) and the spectrogram (bottom), but what if we want to keep track of how long different words and sounds are?
 
-![Figure 2 - Recording of “The sign says keep out” when opened in Praat.](alignmentGuide/media/image4.png)
+![Figure 2 - Recording of “The sign says keep out” when opened in Praat.](alignmentGuide/media/image4.png){width=60%}
 
 Marking the start and end points of sounds and words in a recording is useful for a variety of research purposes. However, we can’t make marks/annotations directly in the sound file, so to do this we need to create a separate file that stores all of the locations of events like the start and end of a word or sound.
 
@@ -32,27 +32,27 @@ The tool that we use to create a separate document containing annotations and la
 
 A **text grid** file is associated with a given audio file and has moveable boundaries and labels to note the occurrence of certain events (like the beginning and end of a vowel) that may be useful for research. Figure 4 below shows what that same audio file (“The sign says keep out”) looks like when opened together with the text grid that was created for that sound file by Montreal Forced Aligner. The text grids we create for the lab contain separate **tiers** for words, sounds, and the sentence containing them. Each tier has **intervals** with **vertical boundaries** separating words and sounds. These files (the text grid and wav file) can be used for automated retrieval of acoustic data such as duration of a word/sound, formant frequencies of vowels, and other variables of interest.
 
-![Figure 3 - “The sign says keep out” when the recording is opened together with a fully annotated “text grid”.](alignmentGuide/media/image5.png)
+![Figure 3 - “The sign says keep out” when the recording is opened together with a fully annotated “text grid”.](alignmentGuide/media/image5.png){width=75%}
 
 We can open these text grids along with the audio file in a program called **Praat** (Dutch for “speech”, sounds like “praht” - /pra:t/). When the text grids and audio files are paired together in Praat, it is now easier and quicker for us to make measurements because we have labels for each word and sound, as well as the time intervals during which these events occur.
 
 ### b. Hand-correction {#b.-hand-correction}
 
-Forced aligners are not perfect, however. When a forced aligner creates a text grid, the initial placement of boundaries for words and sounds may not be accurate. During the **hand-correction** process, you will be adjusting boundaries in text grids that have been automatically created using the Montreal Forced Aligner (MFA for short). When Montreal Forced Aligner pairs a typed transcription with an audio file, it frequently does a pretty good job of putting boundaries in place, and the boundaries might just need some slight shifting, or even no adjustment at all. Other times, the boundaries are placed at the wrong times, and even placed at a time at which an entirely different word is being produced. These boundaries require hand-correction.
+Forced aligners are not perfect, however. When a forced aligner creates a text grid, the initial placement of boundaries for words and sounds may not be accurate. During the **hand-correction** process, you will be adjusting boundaries in text grids that have been automatically created using the Montreal Forced Aligner (MFA). When Montreal Forced Aligner pairs a typed transcription with an audio file, it frequently does a pretty good job of putting boundaries in place, and the boundaries might just need some slight shifting, or even no adjustment at all. Other times, the boundaries are placed at the wrong times, and even placed at a time at which an entirely different word is being produced. These boundaries require hand-correction.
 
-Your job is to ensure that those boundaries have been placed where they ought to go. This document that you are reading now is intended to help you understand what you are looking at when you look at audio recordings in Praat (or any program that shows a spectrogram and waveform), and it is designed to be a guide for decision-making when boundary placement is difficult to determine.
+Your job is to ensure that those boundaries have been placed where they ought to go. This guide is intended to help you understand what you are looking at when you look at audio recordings in Praat (or any program that shows a spectrogram and waveform), and it is designed to be a guide for decision-making when boundary placement is difficult to determine.
 
-Figure 5 shows a text grid prior to hand-correction, and Figure 6 shows the same text grid but with black and gold squares overlaid on the image to show where the word boundaries actually are. Figure 7 then shows what the text grid looks like after hand-correction.
+Figure 4 shows a text grid prior to hand-correction, and Figure 5 shows the same text grid but with black and gold squares overlaid on the image to show where the word boundaries actually are. Figure 6 then shows what the text grid looks like after hand-correction.
 
-![Figure 4 - Force-aligned Text Grid of cowboy boots that has not yet been hand-corrected. The boundaries for cowboy were placed too soon, and boundaries for boots include the -boy part of cowboy.](alignmentGuide/media/image6.png)
+![Figure 4 - Force-aligned Text Grid of cowboy boots that has not yet been hand-corrected. The boundaries for cowboy were placed too soon, and boundaries for boots include the -boy part of cowboy.](alignmentGuide/media/image6.png){width=60%}
 
-![Figure 5 - Force-aligned Text Grid of cowboy boots that has not yet been hand-corrected. Black and gold squares show where the words actually occur.](alignmentGuide/media/image7.png)
+![Figure 5 - Force-aligned Text Grid of cowboy boots that has not yet been hand-corrected. Black and gold squares show where the words actually occur.](alignmentGuide/media/image7.png){width=60%}
 
-![Figure 6 - Hand-corrected text grid of cowboy boots. We can now see how the boundaries in the text grid line up with where the box shapes indicated that the word were.](alignmentGuide/media/image8.png)
+![Figure 6 - Hand-corrected text grid of cowboy boots. We can now see how the boundaries in the text grid line up with where the box shapes indicated that the word were.](alignmentGuide/media/image8.png){width=60%}
 
 ## 2. Over-arching questions and principles: {#over-arching-questions-and-principles}
 
-While the remainder of the document shows specific examples of where boundaries should be placed in certain circumstances, there are just a few main overarching principles to keep in mind. Use the principles immediately below, along with circumstances documented in the table of contents to help you make more efficient decisions regarding boundary placement.
+While the remainder of the document shows specific examples of where boundaries should be placed in certain circumstances, there are just a few main overarching principles to keep in mind. Use the principles immediately below, along with documented circumstances to help you make more efficient decisions regarding boundary placement.
 
 1.  **What counts as speech?**\
     We’re counting as speech any sound generated by the articulators that carries information about the sounds produced in the utterance.
@@ -89,7 +89,7 @@ The download gives you a .zip file, which you can then extract to your Desktop f
 ### Placement of boundaries {#placement-of-boundaries}
 
 -   We place boundaries at the beginnings and ends of events. For example, we place a boundary at the beginning and at the end of a sound. In practice, this boundary is often just ever so slightly *before* the event that we’re marking then and ever so slightly following that event. For two continuous events, the end of one sound is generally the beginning of the next unless there is a clear pause.\
-    The remainder of this document is a guide to boundary placement for different types of sounds, and for different positions in words and utterances. Use the Table of Contents above or the Navigation bar to the left to help you navigate to relevant sections within the document.
+    The remainder of this document is a guide to boundary placement for different types of sounds, and for different positions in words and utterances. Use the sidebar to help you navigate to relevant sections within the document.
 
 ### How different sounds appear on the spectrogram in Praat {#how-different-sounds-appear-on-the-spectrogram-in-praat}
 
@@ -123,20 +123,6 @@ DH sometimes appears similar to D
 P, T, K, B, D, G\
 **Burst** – Stops will often be characterized by a thin dark line across the frequency range. This is from the release of the consonant (the “burst”).\
 Voiceless stops in English will have a longer period of noisy energy after the burst, and for voiced consonants, the vowel will usually start immediately after the burst.
-
-
-### When the transcription does not match audio of child’s speech {#when-the-transcription-does-not-match-audio-of-childs-speech}
-
--   **When to update**\
-    *Very* occasionally the transcription of what the child said will be slightly different than what the child said in the audio. Figure 19 below shows the child saying “besides the shaggy dog”, but the transcription says “beside”. When the produced word is unequivocally different than the word in the transcription, update just the transcription in the 3<sup>rd</sup> (bottom) tier, as in figure
-
-    20. 
-
-    <img src="alignmentGuide/media/image27.png"/>\
-    **Figure 18** - Updated transcription on 3<sup>rd</sup> tier
-
--   **When not to update**\
-    In some utterances, it may be difficult to tell if the child said one thing or the other. For instance, it may sound like the child said <u>drink</u> pop instead of <u>drank</u> pop. *Drink* and *drank* sound very similar here. In these instances, **do not** update the transcription, trust the original transcription.
 
 ## 5. Beginning-of-utterance issues
 

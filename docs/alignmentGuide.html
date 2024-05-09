@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>wisclab-guide - Alignment Guide</title>
+<title>wisclab-guide - Alignment Correction Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./alignmentGuide.html" aria-current="page"> 
-<span class="menu-text">Alignment Guide</span></a>
+<span class="menu-text">Alignment Correction Guide</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -117,27 +117,27 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#a.-forced-alignment-and-text-grids" id="toc-a.-forced-alignment-and-text-grids" class="nav-link" data-scroll-target="#a.-forced-alignment-and-text-grids">a. Forced alignment and text grids</a></li>
   <li><a href="#b.-hand-correction" id="toc-b.-hand-correction" class="nav-link" data-scroll-target="#b.-hand-correction">b. Hand-correction</a></li>
   </ul></li>
-  <li><a href="#over-arching-questions-and-principles" id="toc-over-arching-questions-and-principles" class="nav-link" data-scroll-target="#over-arching-questions-and-principles">2. Over-arching questions and principles:</a></li>
+  <li><a href="#over-arching-principles" id="toc-over-arching-principles" class="nav-link" data-scroll-target="#over-arching-principles">2. Over-arching principles</a></li>
   <li><a href="#using-praat" id="toc-using-praat" class="nav-link" data-scroll-target="#using-praat">3. Using Praat</a>
   <ul class="collapse">
-  <li><a href="#download-praat" id="toc-download-praat" class="nav-link" data-scroll-target="#download-praat">Download Praat</a></li>
-  <li><a href="#set-praat-as-default-program-for-opening-.praat-files" id="toc-set-praat-as-default-program-for-opening-.praat-files" class="nav-link" data-scroll-target="#set-praat-as-default-program-for-opening-.praat-files">Set Praat as the default program for opening .praat files</a></li>
-  <li><a href="#praat-shortcuts" id="toc-praat-shortcuts" class="nav-link" data-scroll-target="#praat-shortcuts">Praat shortcuts</a></li>
+  <li><a href="#download-praat" id="toc-download-praat" class="nav-link" data-scroll-target="#download-praat">a. Download Praat</a></li>
+  <li><a href="#set-praat-as-the-default" id="toc-set-praat-as-the-default" class="nav-link" data-scroll-target="#set-praat-as-the-default">b. Set Praat as the default</a></li>
+  <li><a href="#praat-shortcuts" id="toc-praat-shortcuts" class="nav-link" data-scroll-target="#praat-shortcuts">c.&nbsp;Praat shortcuts</a></li>
   </ul></li>
   <li><a href="#hand-correction" id="toc-hand-correction" class="nav-link" data-scroll-target="#hand-correction">4. Hand-correction</a>
   <ul class="collapse">
-  <li><a href="#placement-of-boundaries" id="toc-placement-of-boundaries" class="nav-link" data-scroll-target="#placement-of-boundaries">Placement of boundaries</a></li>
-  <li><a href="#how-different-sounds-appear-on-the-spectrogram-in-praat" id="toc-how-different-sounds-appear-on-the-spectrogram-in-praat" class="nav-link" data-scroll-target="#how-different-sounds-appear-on-the-spectrogram-in-praat">How different sounds appear on the spectrogram in Praat</a></li>
+  <li><a href="#placement-of-boundaries" id="toc-placement-of-boundaries" class="nav-link" data-scroll-target="#placement-of-boundaries">a. Placement of boundaries</a></li>
+  <li><a href="#how-sounds-appear-on-the-spectrogram" id="toc-how-sounds-appear-on-the-spectrogram" class="nav-link" data-scroll-target="#how-sounds-appear-on-the-spectrogram">b. How sounds appear on the spectrogram</a></li>
   </ul></li>
   <li><a href="#beginning-of-utterance-issues" id="toc-beginning-of-utterance-issues" class="nav-link" data-scroll-target="#beginning-of-utterance-issues">5. Beginning-of-utterance issues</a>
   <ul class="collapse">
-  <li><a href="#a.-initial-consonants-when-to-start" id="toc-a.-initial-consonants-when-to-start" class="nav-link" data-scroll-target="#a.-initial-consonants-when-to-start">a. Initial consonants, when to start</a></li>
-  <li><a href="#b.-word-initial-vowels-and-glides-when-to-start" id="toc-b.-word-initial-vowels-and-glides-when-to-start" class="nav-link" data-scroll-target="#b.-word-initial-vowels-and-glides-when-to-start">b. Word-initial vowels and glides, when to start</a></li>
+  <li><a href="#a.-initial-consonants" id="toc-a.-initial-consonants" class="nav-link" data-scroll-target="#a.-initial-consonants">a. Initial consonants</a></li>
+  <li><a href="#b.-word-initial-vowels-and-glides" id="toc-b.-word-initial-vowels-and-glides" class="nav-link" data-scroll-target="#b.-word-initial-vowels-and-glides">b. Word-initial vowels and glides</a></li>
   </ul></li>
-  <li><a href="#within-utterance-issues-transitions-from-one-sound-to-another-within-a-word-and-within-utterances" id="toc-within-utterance-issues-transitions-from-one-sound-to-another-within-a-word-and-within-utterances" class="nav-link" data-scroll-target="#within-utterance-issues-transitions-from-one-sound-to-another-within-a-word-and-within-utterances">6. Within-utterance issues (transitions from one sound to another within a word and within utterances)</a>
+  <li><a href="#within-utterance-issues" id="toc-within-utterance-issues" class="nav-link" data-scroll-target="#within-utterance-issues">6. Within-utterance issues</a>
   <ul class="collapse">
   <li><a href="#a.-consonant-to-vowel-transitions-within-a-word" id="toc-a.-consonant-to-vowel-transitions-within-a-word" class="nav-link" data-scroll-target="#a.-consonant-to-vowel-transitions-within-a-word">a. Consonant-to-vowel transitions within a word</a></li>
-  <li><a href="#b.-consonant-to-vowel-transitions-across-word-boundaries" id="toc-b.-consonant-to-vowel-transitions-across-word-boundaries" class="nav-link" data-scroll-target="#b.-consonant-to-vowel-transitions-across-word-boundaries">b. Consonant-to-vowel transitions across word boundaries</a></li>
+  <li><a href="#b.-consonant-to-vowel-transitions-across-words" id="toc-b.-consonant-to-vowel-transitions-across-words" class="nav-link" data-scroll-target="#b.-consonant-to-vowel-transitions-across-words">b. Consonant-to-vowel transitions across words</a></li>
   <li><a href="#c.-consonant-to-consonant-transitions" id="toc-c.-consonant-to-consonant-transitions" class="nav-link" data-scroll-target="#c.-consonant-to-consonant-transitions">c.&nbsp;Consonant-to-consonant transitions</a></li>
   <li><a href="#d.-vowel-to-vowel-boundaries" id="toc-d.-vowel-to-vowel-boundaries" class="nav-link" data-scroll-target="#d.-vowel-to-vowel-boundaries">d.&nbsp;Vowel-to-vowel boundaries</a></li>
   <li><a href="#e.-vowel-to-voiceless-consonant-transitions" id="toc-e.-vowel-to-voiceless-consonant-transitions" class="nav-link" data-scroll-target="#e.-vowel-to-voiceless-consonant-transitions">e. Vowel-to-voiceless consonant transitions</a></li>
@@ -150,18 +150,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#b.-final-vowel-to-end-of-utterance-transition" id="toc-b.-final-vowel-to-end-of-utterance-transition" class="nav-link" data-scroll-target="#b.-final-vowel-to-end-of-utterance-transition">b. Final vowel to end-of-utterance transition</a></li>
   <li><a href="#c.-final-vowel-potential-issues" id="toc-c.-final-vowel-potential-issues" class="nav-link" data-scroll-target="#c.-final-vowel-potential-issues">c.&nbsp;Final vowel potential issues</a></li>
   </ul></li>
-  <li><a href="#segmental-issues-number-of-segments" id="toc-segmental-issues-number-of-segments" class="nav-link" data-scroll-target="#segmental-issues-number-of-segments">8. Segmental issues (number of segments)</a>
+  <li><a href="#segmental-issues" id="toc-segmental-issues" class="nav-link" data-scroll-target="#segmental-issues">8. Segmental issues</a>
   <ul class="collapse">
   <li><a href="#a.-blend-coalescence" id="toc-a.-blend-coalescence" class="nav-link" data-scroll-target="#a.-blend-coalescence">a. Blend coalescence</a></li>
   <li><a href="#b.-vocalization-of-l-and-syllabic-l" id="toc-b.-vocalization-of-l-and-syllabic-l" class="nav-link" data-scroll-target="#b.-vocalization-of-l-and-syllabic-l">b. Vocalization of L and Syllabic L</a></li>
   <li><a href="#c.-syllabic-r-issues" id="toc-c.-syllabic-r-issues" class="nav-link" data-scroll-target="#c.-syllabic-r-issues">c.&nbsp;Syllabic R issues</a></li>
-  </ul></li>
-  <li><a href="#miscellaneous-issues" id="toc-miscellaneous-issues" class="nav-link" data-scroll-target="#miscellaneous-issues">9. Miscellaneous issues</a>
-  <ul class="collapse">
-  <li><a href="#beanie-has-no-phones-listed" id="toc-beanie-has-no-phones-listed" class="nav-link" data-scroll-target="#beanie-has-no-phones-listed">Beanie has no phones listed</a></li>
-  <li><a href="#hh-in-whip" id="toc-hh-in-whip" class="nav-link" data-scroll-target="#hh-in-whip">HH in WHIP</a></li>
-  <li><a href="#y-in-new" id="toc-y-in-new" class="nav-link" data-scroll-target="#y-in-new">Y in NEW</a></li>
-  <li><a href="#inaccurate-transcription-in-text-grid" id="toc-inaccurate-transcription-in-text-grid" class="nav-link" data-scroll-target="#inaccurate-transcription-in-text-grid">Inaccurate transcription in text grid</a></li>
   </ul></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
@@ -172,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Alignment Guide</h1>
+<h1 class="title">Alignment Correction Guide</h1>
 </div>
 
 
@@ -189,14 +182,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>WISC Lab guide to hand-correction of force-aligned text grids</strong></p>
+<p><strong>WISC Lab guide to the hand-correction of force-aligned text grids</strong></p>
 <p>Written by <a href="https://kidspeech.wisc.edu/staff/annear-lucas/">Lucas Annear</a></p>
 <p>Published and Edited by <a href="https://kidspeech.wisc.edu/staff/nomeland-henry/">Henry Nomeland</a></p>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">1. Introduction</h2>
 <section id="a.-forced-alignment-and-text-grids" class="level3">
 <h3 class="anchored" data-anchor-id="a.-forced-alignment-and-text-grids">a. Forced alignment and text grids</h3>
-<p>In the WISC Lab we have audio recordings of children with typical speech development and with speech and motor impairments due to Cerebral Palsy. In these recordings the child is repeating words and phrases from the <em>Test of Children’s Speech</em> (TOCS). Examples include phrases like “Cowboy boots” and “put all the toys away.” Recordings are used to calculate articulation rate, speech sound accuracy, and measures of how intelligible a child is. Figure 1 shows what it looks like when we open the file “The sign says keep out” in Praat.</p>
+<p>In the WISC Lab we have audio recordings of children with both typical speech development and speech and motor impairments due to Cerebral Palsy. In these recordings the child is repeating words and phrases from the <em>Test of Children’s Speech</em> (TOCS). Examples include phrases like “Cowboy boots” and “put all the toys away.” Recordings are used to calculate articulation rate, speech sound accuracy, and measures of how intelligible a child is. Figure 1 shows what it looks like when we open the file “The sign says keep out” in Praat.</p>
 <p>We can see the waveform (top) and the spectrogram (bottom), but what if we want to keep track of how long different words and sounds are?</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -204,9 +197,9 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="alignmentGuide/media/image4.png" class="img-fluid figure-img" style="width:60.0%"></p>
 </figure>
 </div>
-<p>Marking the start and end points of sounds and words in a recording is useful for a variety of research purposes. However, we can’t make marks/annotations directly in the sound file, so we need to create a separate file that stores all of the locations of events like the start and end of a word or sound.</p>
+<p>Marking the start and end points of sounds and words in a recording is useful for a variety of research purposes. However, we can’t annotate sound files directly, so we need to create a separate file that stores all of the locations of events like the start and end of a word or sound.</p>
 <p>The tool that we use to create a separate document containing annotations and labels for different words and sounds is called a <strong>forced aligner</strong>. A forced aligner takes an audio file (typically a .wav file) and a transcription of what was said in the audio file (usually a .txt or .lab file) and uses speech recognition technology to create a new file called a <strong>text grid</strong> that is designed to be paired with the audio file. The text grid has boundaries and labels indicating the locations of the words and phonemes in the audio file.</p>
-<p>A <strong>text grid</strong> file is associated with a given audio file and has moveable boundaries and labels to note the occurrence of certain events (like the beginning and end of a vowel) that may be useful for research. Figure 2 shows the phrase from Figure 1 when opened with the text grid produced by the Montreal Forced Aligner. The text grids we create for the lab contain separate <strong>tiers</strong> for words, sounds, and the sentence containing them. Each tier has <strong>intervals</strong> with <strong>vertical boundaries</strong> separating words and sounds. These files (the .TextGrid and .wav file) can be used for automated retrieval of acoustic data such as the duration of a word or sound, formant frequencies of vowels, and other variables of interest.</p>
+<p>A text grid file is associated with a given audio file and has moveable boundaries and labels to note the occurrence of certain events (like the beginning and end of a vowel) that may be useful for research. Figure 2 shows the phrase from Figure 1 when opened with the text grid produced by the Montreal Forced Aligner. The text grids we create for the lab contain separate <strong>tiers</strong> for words, sounds, and the sentence containing them. Each tier has <strong>intervals</strong> with <strong>vertical boundaries</strong> separating words and sounds. These files (the .TextGrid and .wav file) can be used for automated retrieval of acoustic data such as the duration of a word or sound, formant frequencies of vowels, and other variables of interest.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption>Figure 2 - “The sign says keep out” when the recording is opened together with a fully annotated text grid.</figcaption>
@@ -240,9 +233,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 </section>
-<section id="over-arching-questions-and-principles" class="level2">
-<h2 class="anchored" data-anchor-id="over-arching-questions-and-principles">2. Over-arching questions and principles:</h2>
-<p>While the remainder of the document shows specific examples of where boundaries should be placed in certain circumstances, there are a few overarching principles to keep in mind. These should be used in conjunction with the remainder of the guide to make more efficient decisions regarding boundary placement.</p>
+<section id="over-arching-principles" class="level2">
+<h2 class="anchored" data-anchor-id="over-arching-principles">2. Over-arching principles</h2>
+<p>While the remainder of this guide shows specific examples of where boundaries should be placed in certain circumstances, there are a few overarching principles to keep in mind. These should be used in conjunction with the remainder of the guide to make more efficient decisions regarding boundary placement.</p>
 <ol type="1">
 <li><p><strong>What counts as speech?</strong><br>
 We’re counting as speech any sound generated by the articulators that carries information about the sounds produced in the utterance.</p></li>
@@ -253,16 +246,16 @@ Boundaries should remain where they were placed by the forced aligner unless you
 <section id="using-praat" class="level2">
 <h2 class="anchored" data-anchor-id="using-praat">3. Using Praat</h2>
 <section id="download-praat" class="level3">
-<h3 class="anchored" data-anchor-id="download-praat">Download Praat</h3>
+<h3 class="anchored" data-anchor-id="download-praat">a. Download Praat</h3>
 <p>If you don’t already have Praat downloaded on your computer, it can be found here: <a href="https://www.fon.hum.uva.nl/praat/" class="uri">https://www.fon.hum.uva.nl/praat/</a></p>
 <p>The download gives you a .zip file, which you can extract to your location of choice (Desktop, Program Files, etc.).</p>
 </section>
-<section id="set-praat-as-default-program-for-opening-.praat-files" class="level3">
-<h3 class="anchored" data-anchor-id="set-praat-as-default-program-for-opening-.praat-files">Set Praat as the default program for opening .praat files</h3>
+<section id="set-praat-as-the-default" class="level3">
+<h3 class="anchored" data-anchor-id="set-praat-as-the-default">b. Set Praat as the default</h3>
 <p>On Windows machines: right click on any .praat file, and select “Properties”. Under <em>Opens with</em>, select <em>Change</em> and select Praat as the program that automatically opens .praat files (navigate to wherever Praat is saved on your computer).</p>
 </section>
 <section id="praat-shortcuts" class="level3">
-<h3 class="anchored" data-anchor-id="praat-shortcuts">Praat shortcuts</h3>
+<h3 class="anchored" data-anchor-id="praat-shortcuts">c.&nbsp;Praat shortcuts</h3>
 <ul>
 <li><p>Zoom in – ctrl + I</p></li>
 <li><p>Zoom out – ctrl + O</p></li>
@@ -275,18 +268,18 @@ Boundaries should remain where they were placed by the forced aligner unless you
 <section id="hand-correction" class="level2">
 <h2 class="anchored" data-anchor-id="hand-correction">4. Hand-correction</h2>
 <section id="placement-of-boundaries" class="level3">
-<h3 class="anchored" data-anchor-id="placement-of-boundaries">Placement of boundaries</h3>
+<h3 class="anchored" data-anchor-id="placement-of-boundaries">a. Placement of boundaries</h3>
 <ul>
 <li>We place boundaries at the beginnings and ends of events. For example, we place a boundary at the beginning and at the end of a sound. In practice, this boundary is often just ever so slightly <em>before</em> the event that we’re marking and ever so slightly <em>after</em> that event. For two continuous events, the end of one sound is normally the beginning of the next sound unless there is a clear pause.<br>
 The remainder of this document is a guide to boundary placement for different types of sounds, and for different positions in words and utterances. Use the sidebar and search feature to navigate to relevant sections.</li>
 </ul>
 </section>
-<section id="how-different-sounds-appear-on-the-spectrogram-in-praat" class="level3">
-<h3 class="anchored" data-anchor-id="how-different-sounds-appear-on-the-spectrogram-in-praat">How different sounds appear on the spectrogram in Praat</h3>
+<section id="how-sounds-appear-on-the-spectrogram" class="level3">
+<h3 class="anchored" data-anchor-id="how-sounds-appear-on-the-spectrogram">b. How sounds appear on the spectrogram</h3>
 <section id="vowels" class="level4">
 <h4 class="anchored" data-anchor-id="vowels">Vowels</h4>
-<p><strong>Darker energy</strong> - Vowels appear as dark regions of energy with visible pulses as a result of vocal fold vibration.</p>
-<p><strong>Formants</strong> - You will generally see line-like regions called formants. Formants are frequency regions that are emphasized by a given vocal tract configuration, and differ from vowel to vowel. The screenshot below shows the word “toys,” with the vowel OY1 highlighted. Note the formant structure and how one of the formants rises as the diphthong changes from /o/ to /i/.</p>
+<p>Darker energy - Vowels appear as dark regions of energy with visible pulses as a result of vocal fold vibration.</p>
+<p>Formants - You will generally see line-like regions called formants. Formants are frequency regions that are emphasized by a given vocal tract configuration, and differ from vowel to vowel. The screenshot below shows the word “toys,” with the vowel OY1 highlighted. Note the formant structure and how one of the formants rises as the diphthong changes from /o/ to /i/.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption>Figure 6 - Vowels appear dark on the spectrogram with distinct darker bands called formants.</figcaption>
@@ -313,7 +306,7 @@ The remainder of this document is a guide to boundary placement for different ty
 </section>
 <section id="nasals" class="level4">
 <h4 class="anchored" data-anchor-id="nasals">Nasals</h4>
-<p>The nasals M and N will show patterns similar to vowels and liquids, but will often have a “hollow” look compared to a vowel, as in the highlighted portion below in the word “make.”</p>
+<p>The nasals M, N, and NG will show patterns similar to vowels and liquids, but will often have a “hollow” look compared to a vowel, as in the highlighted portion below in the word “make.”</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption>Figure 9 - Nasals have similar energy to vowels, but will appear sparse and grey on the spectrogram.</figcaption>
@@ -323,7 +316,7 @@ The remainder of this document is a guide to boundary placement for different ty
 </section>
 <section id="fricatives" class="level4">
 <h4 class="anchored" data-anchor-id="fricatives">Fricatives</h4>
-<p>Fricatives have noise that is generally distributed throughout the frequency spectrum. S, SH, and Z are typically longer and with very apparent noise in higher frequency ranges. TH (think), DH (this), F and V are often less pronounced, but if clearly articulated will have visible noise in the spectrogram. They are also generally shorter than S and SH. DH sometimes appears similar to D.</p>
+<p>Fricatives have noise that is generally distributed throughout the frequency spectrum. S, SH, and Z are typically longer and with very apparent noise in higher frequency ranges. TH, DH, F and V are often less pronounced, but if clearly articulated will have visible noise in the spectrogram. They are also generally shorter than S and SH. DH sometimes appears similar to D.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption>Figure 10 - Fricatives are generally long sounds that appear as noise in the spectrogram.</figcaption>
@@ -345,125 +338,219 @@ The remainder of this document is a guide to boundary placement for different ty
 </section>
 <section id="beginning-of-utterance-issues" class="level2">
 <h2 class="anchored" data-anchor-id="beginning-of-utterance-issues">5. Beginning-of-utterance issues</h2>
-<section id="a.-initial-consonants-when-to-start" class="level3">
-<h3 class="anchored" data-anchor-id="a.-initial-consonants-when-to-start">a. Initial consonants, when to start</h3>
-<section id="stop-consonants-and-affricates---p-t-k-b-d-g-ch-j" class="level4">
-<h4 class="anchored" data-anchor-id="stop-consonants-and-affricates---p-t-k-b-d-g-ch-j">Stop consonants and affricates - p, t, k, b, d, g, ch, j</h4>
-<ul>
-<li><p><strong>Voiceless stop</strong> <strong>consonants</strong> – In English, voiceless stops have a longer period of noise following release of the burst than voiced consonant do.<br>
-Canonical boundary placement – boundary is placed adjacently preceding release of the burst for the consonant.<br>
-What this looks like in context<br>
-<img src="alignmentGuide/media/image28.png"><br>
-<strong>Figure 19</strong> – Initial voiceless stop consonant boundary placement in context</p>
-<p>What this looks like zoomed in<br>
-<img src="alignmentGuide/media/image29.png"><br>
-<strong>Figure 20</strong> – Initial stop consonant boundary placement zoomed in</p></li>
-<li><p><strong>Voiced stop consonants</strong> – voiced stop consonants will have a short burst release and the vowel will start very shortly after the release of the consonant. Sometimes, voicing may start before the release of the consonant, which is called <em>prevoicing</em>. Figure X below shows a voiced consonant with no prevoicing, and figure 22 shows a voiced consonant with prevoicing before the release.</p>
-<p><img src="alignmentGuide/media/image30.png"><br>
-<strong>Figure 21</strong> – voiced stop that has prevoicing leading up to the burst release</p>
-<p>What English voiced stops look like with no prevoicing (this is typical)<br>
-<img src="alignmentGuide/media/image31.png"><br>
-<strong>Figure 22 -</strong> Voiced initial stop with no prevoicing</p>
+<section id="a.-initial-consonants" class="level3">
+<h3 class="anchored" data-anchor-id="a.-initial-consonants">a. Initial consonants</h3>
+<section id="stop-consonants-and-affricates" class="level4">
+<h4 class="anchored" data-anchor-id="stop-consonants-and-affricates">Stop consonants and affricates (P, T, K, B, D, G, CH, and J)</h4>
+<p><strong>Voiceless stop consonants</strong> – In English, voiceless stops have a longer period of noise following release of the burst than voiced consonant do.<br>
+</p>
+<p>Canonical boundary placement - boundary is placed adjacently preceding release of the burst for the consonant.<br>
+</p>
+<p>What this looks like in context:<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 12 - Initial voiceless stop consonant boundary placement in context.</figcaption>
+<p><img src="alignmentGuide/media/image28.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 <p>Zoomed in:<br>
-<img src="alignmentGuide/media/image32.png"><br>
-<strong>Figure 23 -</strong> Voiced stop with no prevoicing, zoomed in</p></li>
-</ul>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 13 - Initial stop consonant boundary placement zoomed in.</figcaption>
+<p><img src="alignmentGuide/media/image29.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<p><strong>Voiced stop consonants</strong> – Voiced stop consonants will have a short burst release and the vowel will start very shortly after the release of the consonant. Sometimes, voicing may start before the release of the consonant, which is called <em>prevoicing</em>. Figure 30 shows a voiced consonant with prevoicing before the release, and figure 31 shows a voiced consonant without prevoicing.</p>
+<p>Prevoicing:<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 14 - Voiced stop that has prevoicing leading up to the burst release.</figcaption>
+<p><img src="alignmentGuide/media/image30.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<p>No prevoicing:<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 15 - Voiced initial stop with no prevoicing (this is typical).</figcaption>
+<p><img src="alignmentGuide/media/image31.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<p>Zoomed in:<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 16 - Voiced initial stop with no prevoicing zoomed in.</figcaption>
+<p><img src="alignmentGuide/media/image32.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 </section>
-<section id="fricatives---s-z-h-sh-zh-f-v-th-dh" class="level4">
-<h4 class="anchored" data-anchor-id="fricatives---s-z-h-sh-zh-f-v-th-dh">Fricatives - s, z, h, sh, zh, f, v, th, dh</h4>
-<ul>
-<li><p>Canonical boundary placement – boundary is placed adjacently preceding the first sign of frication noise for the fricative (in this case S below)</p></li>
-<li><p>Note that DH most often looks similar to a stop consonant.</p>
-<p>What this looks like in context<br>
-<img src="alignmentGuide/media/image33.png"><br>
-<strong>Figure 24</strong> – Initial fricative boundary placement in context<br>
-What this looks like zoomed in<br>
-<img src="alignmentGuide/media/image34.png"><br>
-<strong>Figure 25</strong> – Initial fricative boundary placement zoomed in</p></li>
-</ul>
+<section id="fricatives" class="level4">
+<h4 class="anchored" data-anchor-id="fricatives">Fricatives (S, Z, H, SH, ZH, F, V, TH, and DH)</h4>
+<p>Canonical boundary placement – boundary is placed adjacently preceding the first sign of frication noise for the fricative.<br>
+</p>
+<p>Note that DH most often looks similar to a stop consonant.<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 17 - Initial fricative boundary placement in context.</figcaption>
+<p><img src="alignmentGuide/media/image33.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<p>Zoomed in:<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 18 - Initial fricative boundary placement zoomed in.</figcaption>
+<p><img src="alignmentGuide/media/image34.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 </section>
-<section id="nasals-n-m-ng" class="level4">
-<h4 class="anchored" data-anchor-id="nasals-n-m-ng">Nasals – n, m, ng</h4>
-<blockquote class="blockquote">
-<p>Canonical boundary placement – Boundary is place adjacently preceding onset of phonation/nasalization</p>
-<p>What this looks like in context<br>
-<img src="alignmentGuide/media/image35.png"><br>
-<strong>Figure 26</strong> – Initial nasal boundary placement in context</p>
-<p>What this looks like zoomed in: here there appears to be noise related to beginning of nasalization, but this could not be confirmed with headphones while listening, so the boundary was placed where the voicing bar of phonation begins in the lower frequency region of the spectrogram.<br>
-<img src="alignmentGuide/media/image36.png"><br>
-<strong>Figure 27</strong> – Initial nasal boundary placement zoomed in</p>
-</blockquote>
+<section id="nasals" class="level4">
+<h4 class="anchored" data-anchor-id="nasals">Nasals (M, N, and NG)</h4>
+<p>Canonical boundary placement – boundary is placed adjacently preceding the onset of phonation/nasalization.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 19 - Initial nasal boundary placement in context.</figcaption>
+<p><img src="alignmentGuide/media/image35.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<p>After zooming in there appears to be noise related to beginning of nasalization, but because this could not be confirmed with listening and headphones the boundary was placed where the voicing bar of phonation begins in the lower frequency region of the spectrogram.<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 20 - Initial nasal boundary placement zoomed in.</figcaption>
+<p><img src="alignmentGuide/media/image36.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 </section>
-<section id="liquids-l-r" class="level4">
-<h4 class="anchored" data-anchor-id="liquids-l-r">Liquids – l, r</h4>
-<ul>
-<li><p><em>L</em><br>
-Canonical boundary placement – Place boundary at the onset of the segment. This may be clear phonation and intensity seen as nearly black on the spectrogram, or in the case of the screenshot below, some formant starts to be present as part of articulation of L, so the boundary was placed at the onset of this noise and formant structure.</p>
-<p>What this looks like in context<br>
-<img src="alignmentGuide/media/image37.png"><br>
-<strong>Figure 28</strong> – Initial L boundary placement in context</p>
-<p>What this looks like zoomed in<br>
-<img src="alignmentGuide/media/image38.png"><br>
-<strong>Figure 29</strong> – Initial L boundary placement in context</p></li>
-<li><p><em>R</em><br>
-Canonical boundary placement – Place boundary at the onset of articulation-related noise in the signal. In this case, some articulation of R preceded phonation.</p>
-<p>What this looks like in context<br>
-<img src="alignmentGuide/media/image39.png"><br>
-<strong>Figure 30</strong> – Initial R boundary placement in context</p></li>
-</ul>
-<blockquote class="blockquote">
-<p>What this looks like zoomed in<br>
-<img src="alignmentGuide/media/image40.png"><br>
-<strong>Figure 31</strong> – Initial R boundary placement zoomed in</p>
-</blockquote>
+<section id="liquids" class="level4">
+<h4 class="anchored" data-anchor-id="liquids">Liquids (L and R)</h4>
+<p><em>L</em><br>
+</p>
+<p>Canonical boundary placement – boundary placed at the onset of the segment. This may be clear phonation and intensity seen as nearly black on the spectrogram, or in the case of Figure 21, some formants started to be present as part of the articulation of L, so the boundary was placed at the onset of this noise and formant structure.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 21 - Initial L boundary placement in context.</figcaption>
+<p><img src="alignmentGuide/media/image37.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<p>Zoomed in:<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 22 - Initial L boundary placement zoomed in.</figcaption>
+<p><img src="alignmentGuide/media/image38.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<p><em>R</em><br>
+</p>
+<p>Canonical boundary placement – Place boundary at the onset of articulation-related noise in the signal. In this case, some articulation of R preceded phonation.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 23 - Initial R boundary placement in context.</figcaption>
+<p><img src="alignmentGuide/media/image39.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<p>Zoomed in:<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 24 - Initial R boundary placement zoomed in.</figcaption>
+<p><img src="alignmentGuide/media/image40.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 </section>
 <section id="potential-issues" class="level4">
 <h4 class="anchored" data-anchor-id="potential-issues">Potential issues</h4>
 <section id="hh-initial-boundary-is-missing" class="level5">
 <h5 class="anchored" data-anchor-id="hh-initial-boundary-is-missing">HH initial boundary is missing</h5>
 <ul>
-<li><p>Q: What to do if HH is missing the initial boundary?</p></li>
-<li><p>A: You’ll need to place a boundary at the beginning of the sound (Boundary &gt; Add on Tier 1, Add on Tier 2. See the shortcuts if you prefer shortcuts).</p>
-<p>In context:<br>
-<img src="alignmentGuide/media/image41.png"><br>
-Figure 32 – HH is missing the initial boundary</p>
-<p>Placing the boundaries will put the phone and word-level text to the left of the new boundaries:<br>
-<img src="alignmentGuide/media/image42.png"><br>
-Figure – With boundaries placed but before text has been moved</p>
-<p>Cut the text from the text field near the top of the window and paste it into the appropriate interval (see tutorial video for s2T03 as well if needed).<br>
-<img src="alignmentGuide/media/image43.png"></p>
-<p>With text moved:<br>
-<img src="alignmentGuide/media/image44.png"><br>
-Figure 34 – After text has been moved to appropriate intervals.</p></li>
+<li><p>Q: What to do if HH is missing the initial boundary?<br>
+</p></li>
+<li><p>A: You’ll need to place a boundary at the beginning of the sound (Boundary &gt; Add on Tier 1, Add on Tier 2).<br>
+</p></li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 25 - HH is missing the initial boundary.</figcaption>
+<p><img src="alignmentGuide/media/image41.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<p>Placing the boundaries will put the phone and word-level text to the left of the new boundaries:<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 26 - With boundaries placed but before text has been moved.</figcaption>
+<p><img src="alignmentGuide/media/image42.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<p>Cut the text from the text field near the top of the window and paste it into the appropriate interval.<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 27 - Cutting text from the interval.</figcaption>
+<p><img src="alignmentGuide/media/image43.png" class="img-fluid figure-img" style="width:55.0%"></p>
+</figure>
+</div>
+<p>With text moved:<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 28 - After text has been moved to appropriate intervals.</figcaption>
+<p><img src="alignmentGuide/media/image44.png" class="img-fluid figure-img" style="width:50.0%"></p>
+</figure>
+</div>
 </section>
 <section id="voiceless-and-breathy-beginnings" class="level5">
 <h5 class="anchored" data-anchor-id="voiceless-and-breathy-beginnings">Voiceless and breathy beginnings</h5>
 <ul>
-<li>Q: When there is an initial H-like beginning to a sound do we include this as part of the first segment?<br>
-A: Yes, especially with liquids and nasals, the initial H-like element typically carries phonetic information from the initial segment (be it L, R, or N).<br>
-<img src="alignmentGuide/media/image45.png"><br>
-<strong>Figure 35</strong> – Boundary placement for breathy HH-like beginning of L<br>
-<img src="alignmentGuide/media/image46.png"><br>
-<strong>Figure 36</strong> – Boundary placement for breathy HH-like beginning of N</li>
+<li><p>Q: When there is an initial H-like beginning to a sound do we include this as part of the first segment?<br>
+</p></li>
+<li><p>A: Yes, especially with liquids and nasals, the initial H-like element typically carries phonetic information from the initial segment (be it L, R, or N).<br>
+</p></li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 29 - Boundary placement for breathy HH-like beginning of L.</figcaption>
+<p><img src="alignmentGuide/media/image45.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 30 - Boundary placement for breathy HH-like beginning of N.</figcaption>
+<p><img src="alignmentGuide/media/image46.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 </section>
-<section id="new-is-listed-as-n-y-uw1" class="level5">
-<h5 class="anchored" data-anchor-id="new-is-listed-as-n-y-uw1">“New” is listed as N Y UW1</h5>
-<ul>
-<li><p>American English dialects typically do not pronounce <em>new</em> as /nju:/ (there is no Y sound following the N). The Y segment can be deleted (click in the interval and press backspace), as well as the boundary between Y and UW1 (click on the boundary and click alt + backspace.<br>
-What this looks like pre-correction:<br>
-<img src="alignmentGuide/media/image47.png" alt="A screenshot of a computer Description automatically generated with medium confidence"><br>
-<strong>Figure 37 -</strong> Y in the word <em>new</em> should be deleted</p></li>
-<li><p>What this looks like after hand-correction:<br>
-<img src="alignmentGuide/media/image48.png" alt="A screenshot of a computer Description automatically generated with medium confidence"><br>
-<strong>Figure 38</strong> - <em>new</em> following deletion of Y</p></li>
-</ul>
+<section id="new-is-transcribed-as-n-y-uw1" class="level5">
+<h5 class="anchored" data-anchor-id="new-is-transcribed-as-n-y-uw1">“New” is transcribed as N Y UW1</h5>
+<p>American English dialects typically do not pronounce “new” as /nju:/. The Y segment can be deleted (click in the interval and press backspace), as well as the boundary between Y and UW1 (click on the boundary and press alt + backspace.<br>
+</p>
+<p>What this looks like pre-correction:<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 31 - Y in the word “new” should be deleted.</figcaption>
+<p><img src="alignmentGuide/media/image47.png" class="img-fluid figure-img" style="width:65.0%"></p>
+</figure>
+</div>
+<p>What this looks like after hand-correction:<br>
+</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 31 - “new” following deletion of Y.</figcaption>
+<p><img src="alignmentGuide/media/image48.png" class="img-fluid figure-img" style="width:65.0%"></p>
+</figure>
+</div>
 </section>
 </section>
 </section>
-<section id="b.-word-initial-vowels-and-glides-when-to-start" class="level3">
-<h3 class="anchored" data-anchor-id="b.-word-initial-vowels-and-glides-when-to-start">b. Word-initial vowels and glides, when to start</h3>
+<section id="b.-word-initial-vowels-and-glides" class="level3">
+<h3 class="anchored" data-anchor-id="b.-word-initial-vowels-and-glides">b. Word-initial vowels and glides</h3>
 <section id="word-initial-vowels" class="level4">
 <h4 class="anchored" data-anchor-id="word-initial-vowels">Word-initial vowels</h4>
 <ul>
@@ -506,8 +593,9 @@ A: Yes, for reasons listed above.<br>
 </section>
 </section>
 </section>
-<section id="within-utterance-issues-transitions-from-one-sound-to-another-within-a-word-and-within-utterances" class="level2">
-<h2 class="anchored" data-anchor-id="within-utterance-issues-transitions-from-one-sound-to-another-within-a-word-and-within-utterances">6. Within-utterance issues (transitions from one sound to another within a word and within utterances)</h2>
+<section id="within-utterance-issues" class="level2">
+<h2 class="anchored" data-anchor-id="within-utterance-issues">6. Within-utterance issues</h2>
+<p>This section focuses on transitions from one sound to another within a word and within utterances.</p>
 <section id="a.-consonant-to-vowel-transitions-within-a-word" class="level3">
 <h3 class="anchored" data-anchor-id="a.-consonant-to-vowel-transitions-within-a-word">a. Consonant-to-vowel transitions within a word</h3>
 <ul>
@@ -520,8 +608,8 @@ What this looks like zoomed in<br>
 <strong>Figure 46</strong> – Consonant to vowel transition boundary placement in context</p></li>
 </ul>
 </section>
-<section id="b.-consonant-to-vowel-transitions-across-word-boundaries" class="level3">
-<h3 class="anchored" data-anchor-id="b.-consonant-to-vowel-transitions-across-word-boundaries">b. Consonant-to-vowel transitions across word boundaries</h3>
+<section id="b.-consonant-to-vowel-transitions-across-words" class="level3">
+<h3 class="anchored" data-anchor-id="b.-consonant-to-vowel-transitions-across-words">b. Consonant-to-vowel transitions across words</h3>
 <section id="consonant-to-vowel-transition-with-a-gap-between-words" class="level4">
 <h4 class="anchored" data-anchor-id="consonant-to-vowel-transition-with-a-gap-between-words">Consonant to vowel transition with a gap between words</h4>
 <ul>
@@ -905,8 +993,9 @@ Figure 98** - Exhalation immediately following a sound should not count as part 
 </section>
 </section>
 </section>
-<section id="segmental-issues-number-of-segments" class="level2">
-<h2 class="anchored" data-anchor-id="segmental-issues-number-of-segments">8. Segmental issues (number of segments)</h2>
+<section id="segmental-issues" class="level2">
+<h2 class="anchored" data-anchor-id="segmental-issues">8. Segmental issues</h2>
+<p>This sections focuses on issues regarding segment spacing and the number of segments in an utterance.</p>
 <section id="a.-blend-coalescence" class="level3">
 <h3 class="anchored" data-anchor-id="a.-blend-coalescence">a. Blend coalescence</h3>
 <section id="sm-coalesces-to-f" class="level4">
@@ -951,30 +1040,6 @@ Figure 98** - Exhalation immediately following a sound should not count as part 
 <strong>Figure 102</strong> - Syllabic R</li>
 </ul>
 </section>
-</section>
-</section>
-<section id="miscellaneous-issues" class="level2">
-<h2 class="anchored" data-anchor-id="miscellaneous-issues">9. Miscellaneous issues</h2>
-<section id="beanie-has-no-phones-listed" class="level3">
-<h3 class="anchored" data-anchor-id="beanie-has-no-phones-listed">Beanie has no phones listed</h3>
-<p>Need to add intervals on the PHONES tier<br>
-<img src="alignmentGuide/media/image111.png"><br>
-<strong>Figure 103</strong> - <em>beanie</em> should have the pronunciation: B IY1 N IY0</p>
-</section>
-<section id="hh-in-whip" class="level3">
-<h3 class="anchored" data-anchor-id="hh-in-whip">HH in WHIP</h3>
-<p>We can delete HH in the pronunciation of WHIP as long as it just sounds like the child is saying W.<br>
-Should be: W IH1 P</p>
-<p>This may also need to be done for: WHITE</p>
-</section>
-<section id="y-in-new" class="level3">
-<h3 class="anchored" data-anchor-id="y-in-new">Y in NEW</h3>
-<p>Should be: N UW1</p>
-</section>
-<section id="inaccurate-transcription-in-text-grid" class="level3">
-<h3 class="anchored" data-anchor-id="inaccurate-transcription-in-text-grid">Inaccurate transcription in text grid</h3>
-<p>If the child says something different than what is listed in the text grid (e.g., they say a different word entirely than the target word, such as, “besides the shaggy dog” instead of “beside the shaggy dog”), update all tiers in the text grid to reflect what the child actually said.</p>
-<p>If the child just mis-pronounces/mis-produces the target words, <u>do not change anything</u></p>
 </section>
 </section>
 <section id="references" class="level2">

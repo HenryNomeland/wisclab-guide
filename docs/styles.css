@@ -1,9 +1,19 @@
-/* css styles */
-.center {
+
+img {
+  max-width: 100%;
+}
+
+figure img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 2em;
-  height: 4in;
+  /* this might be too strict */
+  max-height: 4in;
+}
+
+figure {
+  background: #EEE;
+  padding: 1em;
 }

@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#using-praat" id="toc-using-praat" class="nav-link" data-scroll-target="#using-praat">3. Using Praat</a>
   <ul class="collapse">
   <li><a href="#download-praat" id="toc-download-praat" class="nav-link" data-scroll-target="#download-praat">Download Praat</a></li>
-  <li><a href="#set-praat-as-default-program-for-opening-.praat-files" id="toc-set-praat-as-default-program-for-opening-.praat-files" class="nav-link" data-scroll-target="#set-praat-as-default-program-for-opening-.praat-files">Set Praat as default program for opening .praat files</a></li>
+  <li><a href="#set-praat-as-default-program-for-opening-.praat-files" id="toc-set-praat-as-default-program-for-opening-.praat-files" class="nav-link" data-scroll-target="#set-praat-as-default-program-for-opening-.praat-files">Set Praat as the default program for opening .praat files</a></li>
   <li><a href="#praat-shortcuts" id="toc-praat-shortcuts" class="nav-link" data-scroll-target="#praat-shortcuts">Praat shortcuts</a></li>
   </ul></li>
   <li><a href="#hand-correction" id="toc-hand-correction" class="nav-link" data-scroll-target="#hand-correction">4. Hand-correction</a>
@@ -191,31 +191,25 @@ ul.task-list li input[type="checkbox"] {
 
 <p><strong>WISC Lab guide to hand-correction of force-aligned text grids</strong></p>
 <p>Written by <a href="https://kidspeech.wisc.edu/staff/annear-lucas/">Lucas Annear</a></p>
-<p>Published by <a href="https://kidspeech.wisc.edu/staff/nomeland-henry/">Henry Nomeland</a></p>
+<p>Published and Edited by <a href="https://kidspeech.wisc.edu/staff/nomeland-henry/">Henry Nomeland</a></p>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">1. Introduction</h2>
 <section id="a.-forced-alignment-and-text-grids" class="level3">
 <h3 class="anchored" data-anchor-id="a.-forced-alignment-and-text-grids">a. Forced alignment and text grids</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<figcaption>Figure 1 - Visual of how hand-correction of text grids relates to other lab tasks</figcaption>
-<p><img src="alignmentGuide/media/image3.png" class="img-fluid figure-img" style="width:60.0%"></p>
-</figure>
-</div>
-<p>In the WISC Lab we have audio recordings of children with typical speech development and with speech and motor impairments due to Cerebral Palsy. In these recordings the child is repeating words and phrases from the <em>Test of Children’s Speech</em> (the TOCS, as we know them by). Examples include phrases like “Cowboy boots” and “Put all the toys away”. We then use the recordings of these phrases to calculate articulation rate, speech sound accuracy, as well as to get measures of how intelligible the child is. Figure 3 below shows what it looks like if we open the file “The sign says keep out” all by itself in the program Praat.</p>
+<p>In the WISC Lab we have audio recordings of children with typical speech development and with speech and motor impairments due to Cerebral Palsy. In these recordings the child is repeating words and phrases from the <em>Test of Children’s Speech</em> (TOCS). Examples include phrases like “Cowboy boots” and “put all the toys away.” Recordings are used to calculate articulation rate, speech sound accuracy, and measures of how intelligible a child is. Figure 1 shows what it looks like when we open the file “The sign says keep out” in Praat.</p>
 <p>We can see the waveform (top) and the spectrogram (bottom), but what if we want to keep track of how long different words and sounds are?</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<figcaption>Figure 2 - Recording of “The sign says keep out” when opened in Praat.</figcaption>
+<figcaption>Figure 1 - Recording of “the sign says keep out” in Praat.</figcaption>
 <p><img src="alignmentGuide/media/image4.png" class="img-fluid figure-img" style="width:60.0%"></p>
 </figure>
 </div>
-<p>Marking the start and end points of sounds and words in a recording is useful for a variety of research purposes. However, we can’t make marks/annotations directly in the sound file, so to do this we need to create a separate file that stores all of the locations of events like the start and end of a word or sound.</p>
+<p>Marking the start and end points of sounds and words in a recording is useful for a variety of research purposes. However, we can’t make marks/annotations directly in the sound file, so we need to create a separate file that stores all of the locations of events like the start and end of a word or sound.</p>
 <p>The tool that we use to create a separate document containing annotations and labels for different words and sounds is called a <strong>forced aligner</strong>. A forced aligner takes an audio file (typically a .wav file) and a transcription of what was said in the audio file (usually a .txt or .lab file) and uses speech recognition technology to create a new file called a <strong>text grid</strong> that is designed to be paired with the audio file. The text grid has boundaries and labels indicating the locations of the words and phonemes in the audio file.</p>
-<p>A <strong>text grid</strong> file is associated with a given audio file and has moveable boundaries and labels to note the occurrence of certain events (like the beginning and end of a vowel) that may be useful for research. Figure 4 below shows what that same audio file (“The sign says keep out”) looks like when opened together with the text grid that was created for that sound file by Montreal Forced Aligner. The text grids we create for the lab contain separate <strong>tiers</strong> for words, sounds, and the sentence containing them. Each tier has <strong>intervals</strong> with <strong>vertical boundaries</strong> separating words and sounds. These files (the text grid and wav file) can be used for automated retrieval of acoustic data such as duration of a word/sound, formant frequencies of vowels, and other variables of interest.</p>
+<p>A <strong>text grid</strong> file is associated with a given audio file and has moveable boundaries and labels to note the occurrence of certain events (like the beginning and end of a vowel) that may be useful for research. Figure 2 shows the phrase from Figure 1 when opened with the text grid produced by the Montreal Forced Aligner. The text grids we create for the lab contain separate <strong>tiers</strong> for words, sounds, and the sentence containing them. Each tier has <strong>intervals</strong> with <strong>vertical boundaries</strong> separating words and sounds. These files (the .TextGrid and .wav file) can be used for automated retrieval of acoustic data such as the duration of a word or sound, formant frequencies of vowels, and other variables of interest.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<figcaption>Figure 3 - “The sign says keep out” when the recording is opened together with a fully annotated “text grid”.</figcaption>
+<figcaption>Figure 2 - “The sign says keep out” when the recording is opened together with a fully annotated text grid.</figcaption>
 <p><img src="alignmentGuide/media/image5.png" class="img-fluid figure-img" style="width:75.0%"></p>
 </figure>
 </div>
@@ -223,24 +217,24 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="b.-hand-correction" class="level3">
 <h3 class="anchored" data-anchor-id="b.-hand-correction">b. Hand-correction</h3>
-<p>Forced aligners are not perfect, however. When a forced aligner creates a text grid, the initial placement of boundaries for words and sounds may not be accurate. During the <strong>hand-correction</strong> process, you will be adjusting boundaries in text grids that have been automatically created using the Montreal Forced Aligner (MFA). When Montreal Forced Aligner pairs a typed transcription with an audio file, it frequently does a pretty good job of putting boundaries in place, and the boundaries might just need some slight shifting, or even no adjustment at all. Other times, the boundaries are placed at the wrong times, and even placed at a time at which an entirely different word is being produced. These boundaries require hand-correction.</p>
-<p>Your job is to ensure that those boundaries have been placed where they ought to go. This guide is intended to help you understand what you are looking at when you look at audio recordings in Praat (or any program that shows a spectrogram and waveform), and it is designed to be a guide for decision-making when boundary placement is difficult to determine.</p>
-<p>Figure 4 shows a text grid prior to hand-correction, and Figure 5 shows the same text grid but with black and gold squares overlaid on the image to show where the word boundaries actually are. Figure 6 then shows what the text grid looks like after hand-correction.</p>
+<p>Forced aligners are far from perfect. When a forced aligner creates a text grid, the initial placement of boundaries for words and sounds may not be accurate. During the <strong>hand-correction</strong> process, researchers manually adjust the boundaries of text grids that have been automatically created using the Montreal Forced Aligner (MFA). When MFA pairs a transcription with an audio file, it often produces fairly accurate boundary placements. In these cases the boundaries may only need some slight shifting, or even no adjustment at all. Other times, the boundaries are placed at the wrong times, or even when an entirely different word is being produced. These boundaries require hand-correction.</p>
+<p>The goal of the researcher performing hand-correction is to ensure proper boundary placement. This guide is intended to help visually identify alignment issues by looking at spectrograms and waveforms, and is designed to be a guide for decision-making when boundary placement is difficult to determine.</p>
+<p>Figure 3 shows a text grid prior to hand-correction, and Figure 4 shows the same text grid but with black and gold squares overlaid on the image to show where the word boundaries actually are. Figure 5 shows what the text grid looks like after hand-correction.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<figcaption>Figure 4 - Force-aligned Text Grid of cowboy boots that has not yet been hand-corrected. The boundaries for cowboy were placed too soon, and boundaries for boots include the -boy part of cowboy.</figcaption>
+<figcaption>Figure 3 - Force-aligned Text Grid of cowboy boots that has not yet been hand-corrected. The boundaries for cowboy were placed too soon, and boundaries for boots include the -boy part of cowboy.</figcaption>
 <p><img src="alignmentGuide/media/image6.png" class="img-fluid figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<figcaption>Figure 5 - Force-aligned Text Grid of cowboy boots that has not yet been hand-corrected. Black and gold squares show where the words actually occur.</figcaption>
+<figcaption>Figure 4 - Force-aligned Text Grid of cowboy boots that has not yet been hand-corrected. Black and gold squares show where the words actually occur.</figcaption>
 <p><img src="alignmentGuide/media/image7.png" class="img-fluid figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<figcaption>Figure 6 - Hand-corrected text grid of cowboy boots. We can now see how the boundaries in the text grid line up with where the box shapes indicated that the word were.</figcaption>
+<figcaption>Figure 5 - Hand-corrected text grid of cowboy boots. We can now see how the boundaries in the text grid line up with where the box shapes indicated that the word were.</figcaption>
 <p><img src="alignmentGuide/media/image8.png" class="img-fluid figure-img" style="width:60.0%"></p>
 </figure>
 </div>
@@ -248,24 +242,24 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="over-arching-questions-and-principles" class="level2">
 <h2 class="anchored" data-anchor-id="over-arching-questions-and-principles">2. Over-arching questions and principles:</h2>
-<p>While the remainder of the document shows specific examples of where boundaries should be placed in certain circumstances, there are just a few main overarching principles to keep in mind. Use the principles immediately below, along with documented circumstances to help you make more efficient decisions regarding boundary placement.</p>
+<p>While the remainder of the document shows specific examples of where boundaries should be placed in certain circumstances, there are a few overarching principles to keep in mind. These should be used in conjunction with the remainder of the guide to make more efficient decisions regarding boundary placement.</p>
 <ol type="1">
 <li><p><strong>What counts as speech?</strong><br>
 We’re counting as speech any sound generated by the articulators that carries information about the sounds produced in the utterance.</p></li>
 <li><p><strong>When should a boundary be moved?</strong><br>
-Boundaries should remain where they were placed by the forced aligner unless you have visual or auditory evidence from the spectrogram/waveform and recording that a given boundary does not line up with either the beginning or end of a sound.</p></li>
+Boundaries should remain where they were placed by the forced aligner unless you have visual or auditory evidence that a given boundary does not line up with the beginning or end of a sound. Minimizing unnecessary movements promotes consistency across alignments.</p></li>
 </ol>
 </section>
 <section id="using-praat" class="level2">
 <h2 class="anchored" data-anchor-id="using-praat">3. Using Praat</h2>
 <section id="download-praat" class="level3">
 <h3 class="anchored" data-anchor-id="download-praat">Download Praat</h3>
-<p>If you don’t have Praat on your computer yet, download Praat: <a href="https://www.fon.hum.uva.nl/praat/" class="uri">https://www.fon.hum.uva.nl/praat/</a></p>
-<p>The download gives you a .zip file, which you can then extract to your Desktop for convenience: Right click on zip folder &gt; Extract all &gt; Browse &gt; select Desktop</p>
+<p>If you don’t already have Praat downloaded on your computer, it can be found here: <a href="https://www.fon.hum.uva.nl/praat/" class="uri">https://www.fon.hum.uva.nl/praat/</a></p>
+<p>The download gives you a .zip file, which you can extract to your location of choice (Desktop, Program Files, etc.).</p>
 </section>
 <section id="set-praat-as-default-program-for-opening-.praat-files" class="level3">
-<h3 class="anchored" data-anchor-id="set-praat-as-default-program-for-opening-.praat-files">Set Praat as default program for opening .praat files</h3>
-<p><u>On Windows machines</u>: right click on any .praat file, and select “Properties”. Under <em>Opens with</em>, select <em>Change</em> and select Praat as the program that automatically opens .praat files (navigate to wherever Praat is saved on your computer. It may be on your desktop, it may be in Program Files).</p>
+<h3 class="anchored" data-anchor-id="set-praat-as-default-program-for-opening-.praat-files">Set Praat as the default program for opening .praat files</h3>
+<p>On Windows machines: right click on any .praat file, and select “Properties”. Under <em>Opens with</em>, select <em>Change</em> and select Praat as the program that automatically opens .praat files (navigate to wherever Praat is saved on your computer).</p>
 </section>
 <section id="praat-shortcuts" class="level3">
 <h3 class="anchored" data-anchor-id="praat-shortcuts">Praat shortcuts</h3>
@@ -283,8 +277,8 @@ Boundaries should remain where they were placed by the forced aligner unless you
 <section id="placement-of-boundaries" class="level3">
 <h3 class="anchored" data-anchor-id="placement-of-boundaries">Placement of boundaries</h3>
 <ul>
-<li>We place boundaries at the beginnings and ends of events. For example, we place a boundary at the beginning and at the end of a sound. In practice, this boundary is often just ever so slightly <em>before</em> the event that we’re marking then and ever so slightly following that event. For two continuous events, the end of one sound is generally the beginning of the next unless there is a clear pause.<br>
-The remainder of this document is a guide to boundary placement for different types of sounds, and for different positions in words and utterances. Use the sidebar to help you navigate to relevant sections within the document.</li>
+<li>We place boundaries at the beginnings and ends of events. For example, we place a boundary at the beginning and at the end of a sound. In practice, this boundary is often just ever so slightly <em>before</em> the event that we’re marking and ever so slightly <em>after</em> that event. For two continuous events, the end of one sound is normally the beginning of the next sound unless there is a clear pause.<br>
+The remainder of this document is a guide to boundary placement for different types of sounds, and for different positions in words and utterances. Use the sidebar and search feature to navigate to relevant sections.</li>
 </ul>
 </section>
 <section id="how-different-sounds-appear-on-the-spectrogram-in-praat" class="level3">
@@ -292,31 +286,60 @@ The remainder of this document is a guide to boundary placement for different ty
 <section id="vowels" class="level4">
 <h4 class="anchored" data-anchor-id="vowels">Vowels</h4>
 <p><strong>Darker energy</strong> - Vowels appear as dark regions of energy with visible pulses as a result of vocal fold vibration.</p>
-<p><strong>Formants</strong> - You will generally see line-like regions called formants. Formants are frequency regions that are emphasized by a given vocal tract configuration, and differ from vowel to vowel. The screenshot below shows the word TOYS, with the vowel OY1 highlighted. Note the formant structure and how one of the formants rises as the diphthong changes from /o/ to /i/.</p>
+<p><strong>Formants</strong> - You will generally see line-like regions called formants. Formants are frequency regions that are emphasized by a given vocal tract configuration, and differ from vowel to vowel. The screenshot below shows the word “toys,” with the vowel OY1 highlighted. Note the formant structure and how one of the formants rises as the diphthong changes from /o/ to /i/.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 6 - Vowels appear dark on the spectrogram with distinct darker bands called formants.</figcaption>
+<p><img src="alignmentGuide/media/image13.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 </section>
 <section id="liquids" class="level4">
 <h4 class="anchored" data-anchor-id="liquids">Liquids</h4>
-<p>L often looks similar to vowels, with highest energy concentrated in lower frequencies. Here L in Figure 10 contrasts against the IY1 and AE1 vowels on either side.</p>
-<p>R<br>
-Like L, R looks much like a vowel, but a clearly articulated R will almost always have a third formant that dips down to 3,000 Hz or lower. Notice the transition that the third band makes from AO1 to R in OR below (the red arrow points to it).</p>
+<p>The lateral approximant L often looks similar to vowels, with the highest energy concentrated in lower frequencies. Here L in Figure 10 contrasts against the IY1 and AE1 vowels on either side.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 7 - L sometimes appears vowel-like as featured, and sometimes has a grey, “hollow” look, similar to a nasal.</figcaption>
+<p><img src="alignmentGuide/media/image15.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<p>Like L, the rhotic R looks much like a vowel, but a clearly articulated R will almost always have a third formant that dips down to 3,000 Hz or lower. Notice the transition that the third band makes from AO1 to R in OR below (the red arrow points to it).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 8 - R in or. Appears vowel-like but notice the third formant dropping down adjacent to the second formant.</figcaption>
+<p><img src="alignmentGuide/media/image17.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 </section>
 <section id="nasals" class="level4">
 <h4 class="anchored" data-anchor-id="nasals">Nasals</h4>
-<p>Nasals will generally show patterns similar to vowels and liquids, but will often have a “hollow” look compared to a vowel, as in the highlighted portion below in the word MAKE.</p>
+<p>The nasals M and N will show patterns similar to vowels and liquids, but will often have a “hollow” look compared to a vowel, as in the highlighted portion below in the word “make.”</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 9 - Nasals have similar energy to vowels, but will appear sparse and grey on the spectrogram.</figcaption>
+<p><img src="alignmentGuide/media/image19.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 </section>
 <section id="fricatives" class="level4">
 <h4 class="anchored" data-anchor-id="fricatives">Fricatives</h4>
-<p>S, SH (sheep), Z, F, V, TH (think), DH (this)<br>
-<strong>Noise</strong> - Fricatives have noise that is generally distributed throughout the frequency spectrum.<br>
-S, SH, and Z are typically longer and with very apparent noise in higher frequency ranges.<br>
-TH, DH, F and V are often less pronounced, but if clearly articulated will have visible noise in the spectrogram. Generally shorter than S and SH.<br>
-DH sometimes appears similar to D</p>
+<p>Fricatives have noise that is generally distributed throughout the frequency spectrum. S, SH, and Z are typically longer and with very apparent noise in higher frequency ranges. TH (think), DH (this), F and V are often less pronounced, but if clearly articulated will have visible noise in the spectrogram. They are also generally shorter than S and SH. DH sometimes appears similar to D.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 10 - Fricatives are generally long sounds that appear as noise in the spectrogram.</figcaption>
+<p><img src="alignmentGuide/media/image21.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 </section>
 <section id="stops" class="level4">
-<h4 class="anchored" data-anchor-id="stops"><img src="alignmentGuide/media/image23.png" class="center img-fluid">Stops</h4>
-<p>P, T, K, B, D, G<br>
-<strong>Burst</strong> – Stops will often be characterized by a thin dark line across the frequency range. This is from the release of the consonant (the “burst”).<br>
-Voiceless stops in English will have a longer period of noisy energy after the burst, and for voiced consonants, the vowel will usually start immediately after the burst.</p>
+<h4 class="anchored" data-anchor-id="stops">Stops</h4>
+<p>The stop sounds P, T, K, B, D, and G will often be characterized by a thin dark line across the frequency range. This is from the release of the consonant (the “burst”). Voiceless stops in English will have a longer period of noisy energy after the burst, and for voiced consonants, the vowel will usually start immediately after the burst.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Figure 11 - Stop consonants articulated as such will have a burst which appears as a brief dark band spanning the frequency range. P, T, and K in the onset position of most words will have aspiration that follows.</figcaption>
+<p><img src="alignmentGuide/media/image23.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
 </section>
 </section>
 </section>
@@ -678,7 +701,7 @@ A: Using the visual of the spectrogram as well as what you can hear, look for th
 What this looks like in context - “m<u>ak</u>e a birdhouse”<br>
 <img src="alignmentGuide/media/image80.png"><br>
 <strong>Figure 70</strong> - Transition from a vowel to a following voiceless consonant</p>
-<p>Zoomed in, You can see there is a little bit of residual phonation in black at the bottom of the spectrogram that continues into the K, but because the formant structure and associated noise in the middle frequencies shuts off about here, this is where we put the boundary.<br>
+<p>Zoomed in, one can see a bit of residual phonation in black at the bottom of the spectrogram that continues into the K, but because the formant structure and associated noise in the middle frequencies shuts off about here, this is where we put the boundary.<br>
 <img src="alignmentGuide/media/image81.png"><br>
 <strong>Figure 71 -</strong> Zoomed in on end of vowel and transition into K</p></li>
 </ul>

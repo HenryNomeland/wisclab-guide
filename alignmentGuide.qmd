@@ -146,7 +146,7 @@ What this looks like in context:\
     
 Zoomed in:\
 
-![Figure 13 - Initial stop consonant boundary placement zoomed in.](alignmentGuide/media/image29.png){width="60%"}
+![Figure 13 - Initial stop consonant boundary placement zoomed in.](alignmentGuide/media/image29.png){width="70%"}
 
 **Voiced stop consonants** – Voiced stop consonants will have a short burst release and the vowel will start very shortly after the release of the consonant. Sometimes, voicing may start before the release of the consonant, which is called *prevoicing*. Figure 30 shows a voiced consonant with prevoicing before the release, and figure 31 shows a voiced consonant without prevoicing.
 
@@ -160,7 +160,7 @@ No prevoicing:\
 
 Zoomed in:\
 
-![Figure 16 - Voiced initial stop with no prevoicing zoomed in.](alignmentGuide/media/image32.png){width="60%"}
+![Figure 16 - Voiced initial stop with no prevoicing zoomed in.](alignmentGuide/media/image32.png){width="70%"}
 
 #### Fricatives (S, Z, H, SH, ZH, F, V, TH, and DH) {#fricatives}
 
@@ -172,7 +172,7 @@ Note that DH most often looks similar to a stop consonant.\
 
 Zoomed in:\
 
-![Figure 18 - Initial fricative boundary placement zoomed in.](alignmentGuide/media/image34.png){width="60%"}
+![Figure 18 - Initial fricative boundary placement zoomed in.](alignmentGuide/media/image34.png){width="70%"}
 
 #### Nasals (M, N, and NG) {#nasals}
 
@@ -182,11 +182,11 @@ Canonical boundary placement – boundary is placed adjacently preceding the ons
 
 After zooming in there appears to be noise related to beginning of nasalization, but because this could not be confirmed with listening and headphones the boundary was placed where the voicing bar of phonation begins in the lower frequency region of the spectrogram.\
 
-![Figure 20 - Initial nasal boundary placement zoomed in.](alignmentGuide/media/image36.png){width="60%"}
+![Figure 20 - Initial nasal boundary placement zoomed in.](alignmentGuide/media/image36.png){width="70%"}
 
 #### Liquids (L and R) {#liquids}
 
-*L*\
+*L* - Lateral Approximant\
 
 Canonical boundary placement – boundary placed at the onset of the segment. This may be clear phonation and intensity seen as nearly black on the spectrogram, or in the case of Figure 21, some formants started to be present as part of the articulation of L, so the boundary was placed at the onset of this noise and formant structure.
 
@@ -194,9 +194,9 @@ Canonical boundary placement – boundary placed at the onset of the segment. Th
 
 Zoomed in:\
 
-![Figure 22 - Initial L boundary placement zoomed in.](alignmentGuide/media/image38.png){width="60%"}
+![Figure 22 - Initial L boundary placement zoomed in.](alignmentGuide/media/image38.png){width="70%"}
 
-*R*\
+*R* - Rhotic\
 
 Canonical boundary placement – Place boundary at the onset of articulation-related noise in the signal. In this case, some articulation of R preceded phonation.
 
@@ -204,7 +204,7 @@ Canonical boundary placement – Place boundary at the onset of articulation-rel
 
 Zoomed in:\
 
-![Figure 24 - Initial R boundary placement zoomed in.](alignmentGuide/media/image40.png){width="60%"}
+![Figure 24 - Initial R boundary placement zoomed in.](alignmentGuide/media/image40.png){width="70%"}
 
 #### Potential issues
 
@@ -248,49 +248,49 @@ What this looks like pre-correction:\
 
 What this looks like after hand-correction:\
 
-![Figure 31 - "new" following deletion of Y.](alignmentGuide/media/image48.png){width="65%"}
+![Figure 32 - "new" following deletion of Y.](alignmentGuide/media/image48.png){width="65%"}
 
 ### b. Word-initial vowels and glides {#b.-word-initial-vowels-and-glides}
 
 #### Word-initial vowels {#word-initial-vowels}
 
--   Canonical boundary placement – Boundary is placed at the onset of phonation/laryngeal activity related to the beginning of the vowel
+Canonical boundary placement – boundary is placed at the onset of phonation/laryngeal activity related to the beginning of the vowel\
 
-    What this looks like in context\
-    <img src="alignmentGuide/media/image49.png"/>\
-    **Figure 39** – Initial vowel boundary placement in context
+![Figure 33 - Initial vowel boundary placement in context.](alignmentGuide/media/image49.png){width="60%"}
 
-    What this looks like zoomed in\
-    <img src="alignmentGuide/media/image50.png"/>\
-    **Figure 40** – Initial vowel boundary placement zoomed in
+Zoomed in:\
+
+![Figure 34 - Initial vowel boundary placement zoomed in.](alignmentGuide/media/image50.png){width="70%"}
 
 #### Word-initial glides – w, y {#word-initial-glides-w-y}
 
--   Canonical placement – Place boundary at the onset of phonation or articulation (onset of glide may be something like a voiceless vowel).
+Canonical placement – boundary placed at the onset of phonation or articulation (onset of glide may be something like a voiceless vowel).\
 
-    What this looks like in context\
-    <img src="alignmentGuide/media/image51.png"/>\
-    **Figure 41** – Initial glide boundary placement in context
+What this looks like in context\
 
-    What this looks like zoomed in\
-    <img src="alignmentGuide/media/image52.png"/>\
-    **Figure 42** – Initial glide boundary placement zoomed in
+![Figure 35 - Initial glide boundary placement in context.](alignmentGuide/media/image51.png){width="60%"}
+
+Zoomed in:\
+
+![Figure 36 - Initial glide boundary placement zoomed in.](alignmentGuide/media/image52.png){width="70%"}
 
 #### Potential Issues with initial vowels and glides {#potential-issues-with-initial-vowels-and-glides}
 
--   *“Glottal pop” at beginning of vowel*\*\*\
-    **Q: When “glottal pops” begin vowels, do we count this as part of the vowel?\
-    A: Yes. It’s the beginning of the production, and uneven phonation is likely to be more common in kids with CP.\
-    <img src="alignmentGuide/media/image53.png"/>\
-    **Figure 43\*\* – Initial vowel boundary placement when vowel begins with “glottal pop”\*\*
+##### “Glottal pop” at the beginning of a vowel
 
-    \*\*
+-   Q: When “glottal pops” begin vowels, do we count this as part of the vowel?\
 
--   *Voiceless beginning of glides*\*\*\
-    **Q: Do we include voiceless /w/ leading in to voiced portion of /w/?\
-    A: Yes, for reasons listed above.\
-    <img src="alignmentGuide/media/image54.png"/>\
-    **Figure 44\*\* – Voiceless beginning of glide W, boundary placement
+-   A: Yes. It’s the beginning of the production, and uneven phonation is likely to be more common in kids with CP.\
+
+![Figure 37 - Initial vowel boundary placement when vowel begins with “glottal pop.”](alignmentGuide/media/image53.png){width="60%"}
+
+##### Voiceless beginning of glides
+
+-   Q: Do we include voiceless /w/ leading in to voiced portion of /w/?\
+
+-   A: Yes, for reasons listed above.\
+
+![Figure 38 - Voiceless beginning of glide W, boundary placement.](alignmentGuide/media/image54.png){width="60%"}
 
 ## 6. Within-utterance issues {#within-utterance-issues}
 

@@ -143,7 +143,7 @@ Canonical boundary placement - boundary is placed adjacently preceding release o
 What this looks like in context:\
 
 ![Figure 12 - Initial voiceless stop consonant boundary placement in context.](alignmentGuide/media/image28.png){width="60%"}
-    
+
 Zoomed in:\
 
 ![Figure 13 - Initial stop consonant boundary placement zoomed in.](alignmentGuide/media/image29.png){width="70%"}
@@ -266,7 +266,7 @@ Zoomed in:\
 
 Canonical placement – boundary placed at the onset of phonation or articulation (onset of glide may be something like a voiceless vowel).\
 
-What this looks like in context\
+What this looks like in context:\
 
 ![Figure 35 - Initial glide boundary placement in context.](alignmentGuide/media/image51.png){width="60%"}
 
@@ -280,7 +280,7 @@ Zoomed in:\
 
 -   Q: When “glottal pops” begin vowels, do we count this as part of the vowel?\
 
--   A: Yes. It’s the beginning of the production, and uneven phonation is likely to be more common in kids with CP.\
+-   A: Yes. It’s the beginning of the production.\
 
 ![Figure 37 - Initial vowel boundary placement when vowel begins with “glottal pop.”](alignmentGuide/media/image53.png){width="60%"}
 
@@ -298,162 +298,181 @@ This section focuses on transitions from one sound to another within a word and 
 
 ### a. Consonant-to-vowel transitions within a word {#a.-consonant-to-vowel-transitions-within-a-word}
 
--   Canonical placement – Place boundary at the clearest vertical onset of formant structure
+Canonical placement – boundary placed at the clearest vertical onset of formant structure.\
 
-    What this looks like in context\
-    <img src="alignmentGuide/media/image55.png"/>\
-    **Figure 45** – Consonant to vowel transition boundary placement in context\
-    What this looks like zoomed in\
-    <img src="alignmentGuide/media/image56.png"/>\
-    **Figure 46** – Consonant to vowel transition boundary placement in context
+What this looks like in context:\
+
+![Figure 39 - Consonant to vowel transition boundary placement in context.](alignmentGuide/media/image55.png){width="60%"}
+
+What this looks like zoomed in:\
+
+![Figure 40 - Consonant to vowel transition boundary placement zoomed in.](alignmentGuide/media/image56.png){width="60%"}
 
 ### b. Consonant-to-vowel transitions across words {#b.-consonant-to-vowel-transitions-across-words}
 
 #### Consonant to vowel transition with a gap between words {#consonant-to-vowel-transition-with-a-gap-between-words}
 
--   **Q:** Where to place boundaries when there is a visible gap between a final consonant of one word and an initial vowel of the following word?
+-   Q: Where to place boundaries when there is a visible gap between a final consonant of one word and an initial vowel of the following word?\
 
--   **A:** If there is a visible gap with no audible vowel sound, there should be a pause between the final consonant of the first word and the initial vowel of the following word. As in figure 45 below\
-    <img src="alignmentGuide/media/image57.png"/>\
-    **Figure 47 -** Small gap between final consonant in *jump* and initial vowel in *over*.
+-   A: If there is a visible gap with no audible vowel sound, there should be a pause between the final consonant of the first word and the initial vowel of the following word. As in figure 41 below\
+
+![Figure 41 - Small gap between final consonant in "jump" and initial vowel in "over".](alignmentGuide/media/image57.png){width="60%"}
 
 #### Consonant-to-vowel boundaries with no pause {#consonant-to-vowel-boundaries-with-no-pause}
 
--   **Q:** There is sort of a pause between the final consonant of a word and the initial vowel of the following word, but I can hear the vowel starting , just not fully going yet. Should there be a pause?\
-    **A:** No, if you can hear the vowel starting to go right after the consonant, even if the vowel isn’t fully going yet, count this as part of the vowel. See figure 46 below.\
-    <img src="alignmentGuide/media/image58.png"/>\
-    **Figure 48 -** What appeared to be a pause between D and A01 actually has audible/visible information as the vowel is starting. In this case, the beginning of the vowel should be the beginning of this information.
+-   Q: There is sort of a pause between the final consonant of a word and the initial vowel of the following word, but I can hear the vowel starting , just not fully going yet. Should there be a pause?\
+
+-   A: No, if you can hear the vowel starting to go right after the consonant, even if the vowel isn’t fully going yet, count this as part of the vowel. See figure 42 below.\
+
+![Figure 42 - What appeared to be a pause between D and A01 actually has audible/visible information as the vowel is starting. In this case, the beginning of the vowel should be the beginning of this information.](alignmentGuide/media/image58.png){width="60%"}
 
 #### Potential issues {#potential-issues-1}
 
 ##### When there’s a “notch” of voicing preceding formant structure and phonation
 
--   **Q:** Do we include the little “notch” of voicing as the beginning of the vowel, or start at formant structure? MFA wants to include the notch.\
-    **A:** We are not going to include the notch. Start vowel when formants start<img src="alignmentGuide/media/image59.png"/>\
-    **Figure 49** – Boundary placement when there is “notch” of voice bar that precedes formant structure in a vowel
+-   Q: Do we include the little “notch” of voicing as the beginning of the vowel, or start at formant structure? MFA wants to include the notch.\
+
+-   A: We are not going to include the notch. Start vowel when formants start.
+
+![Figure 43 - Boundary placement when there is “notch” of voice bar that precedes formant structure in a vowel.](alignmentGuide/media/image59.png){width="60%"}
 
 ##### Vowel starts before phonation
 
--   **Q:** I can hear vowel starting (in OW1 below) before formants actually start. Should there be a pause?\
-    **A:** Yes, let’s treat this as articulation, just like the nasal frication instances (see also figure 46 above.
+-   Q: I can hear vowel starting (in OW1 below) before formants actually start. Should there be a pause?\
 
-    In context\
-    <img src="alignmentGuide/media/image60.png"/>\
-    **Figure 50** – Vowel starts before phonation, viewed in context
+-   A: Yes, include a pause. Anything before phonation and formant structure should not be a part of the vowel interval. The figures below show how MFA sometimes aligns these vowels but this pre-phonation area should be a part of the preceding pause.
 
-    Zoomed in:\
-    <img src="alignmentGuide/media/image61.png"/>\
-    **Figure 51** – Vowel starts before phonation, zoomed in
+In context:\
+
+![Figure 44 - Vowel starts before phonation, viewed in context.](alignmentGuide/media/image60.png){width="60%"}
+
+Zoomed in:\
+
+![Figure 45 - Vowel starts before phonation, zoomed in.](alignmentGuide/media/image61.png){width="60%"}
 
 ##### Voiceless vowels
 
--   **Q:** When first vowel in “potato” is voiceless, what do we count as vowel?\
-    **A:** Look for most vowely part that doesn’t seem to be aspiration.
+-   Q: When the first vowel in a word such as “potato” is voiceless, what do we count as vowel?\
 
-    In context:\
-    <img src="alignmentGuide/media/image62.png"/>\
-    **Figure 52** – Voiceless vowel in “potato”, viewed in context
+-   A: Look for the part that is most similar to a vowel that doesn’t seem to be aspiration.\
 
-    Zoomed in:\
-    <img src="alignmentGuide/media/image63.png"/>\
-    **Figure 53** – Voiceless vowel in “potato”, zoomed in
+In context:\
+
+![Figure 46 - Voiceless vowel in “potato," viewed in context.](alignmentGuide/media/image62.png){width="60%"}
+
+Zoomed in:\
+
+![Figure 47 - Voiceless vowel in “potato," zoomed in.](alignmentGuide/media/image63.png){width="60%"}
 
 ### c. Consonant-to-consonant transitions {#c.-consonant-to-consonant-transitions}
 
 #### Fricative to stop/affricate transitions {#fricative-to-stopaffricate-transitions}
 
 -   Q: Where to put the boundary when there is a transition from a fricative to a stop or affricate?\
-    A: The boundary between a fricative and a stop should be placed at the end of the fricative. There may be a small “silent” period before the stop, which is the closure duration of the stop/affricate, and not actually a pause.\
-    <img src="alignmentGuide/media/image64.png"/>\
-    **Figure 54** – Boundary placement in Fricative \> Stop/Affricate transitions. Here between S of THIS and CH of CHEESE.
+
+-   A: The boundary between a fricative and a stop should be placed at the end of the fricative. There may be a small “silent” period before the stop, which is the closure duration of the stop/affricate, and not actually a pause.\
+
+![Figure 48 - Boundary placement in Fricative \> Stop/Affricate transitions. Here between S of "this" and CH of "cheese."](alignmentGuide/media/image64.png){width="55%"}
 
 #### Fricative to fricative transitions {#fricative-to-fricative-transitions}
 
 -   Q: Where to put the boundary between two fricatives?\
-    A: Look for a shift in the appearance of the noise for the two fricatives. The example below shows the transition from Z in IS to SH in SHOWING.\
-    <img src="alignmentGuide/media/image65.png"/>\
-    **Figure 55** – Fricative to fricative transition. Here there is some noise across the frequency range before, or perhaps as part of the transition to SH, which shows a different noise pattern. This lets us see the shift from Z to SH.
+
+-   A: Look for a shift in the appearance of the noise for the two fricatives. The example below shows the transition from Z in "is" to SH in "showing."\
+
+![Figure 49 - Fricative to fricative transition. Here there is some noise across the frequency range before, or perhaps as part of the transition to SH, which shows a different noise pattern. This lets us see the shift from Z to SH.](alignmentGuide/media/image65.png){width="60%"}
 
 #### Stop to fricative transitions {#stop-to-fricative-transitions}
 
--   Q: Where do we place the boundary between consecutive stops and fricatives (e.g., the boundary between T and S in “cowboy boots”).
+-   Q: Where do we place the boundary between consecutive stops and fricatives (e.g. the boundary between T and S in “cowboy boots”)?
 
--   A: Fricatives will almost always start immediately after the burst release, especially if the fricative and stop\
-    In context:\
+-   A: Fricatives will almost always start immediately after the burst release, especially in the case of a fricative preceded by a stop\
+
+In context:\
+
+![Figure 50 - Stop to fricative boundary in "boots," viewed in context.](alignmentGuide/media/image66.png){width="60%"}
+
     <img src="alignmentGuide/media/image66.png"/>\
     Figure 56 – Stop to fricative boundary in BOOTS
 
-    Zoomed in:\
-    <img src="alignmentGuide/media/image67.png"/>\
-    Figure 57 – T \> S boundary, zoomed in
+Zoomed in:\
+
+![Figure 51 - Stop to fricative boundary in "boots," zoomed in.](alignmentGuide/media/image67.png){width="60%"}
 
 #### When to start HH in C\|HH transitions {#when-to-start-hh-in-chh-transitions}
 
--   Q: When do we begin the HH when transitioning from a stop (e.g., “D” below”)?\
-    A: Look for the transition from burst to HH. HH usually starts to have more formant structure.\
-    <img src="alignmentGuide/media/image68.png"/>\
-    **Figure 58** – When to start HH in consonant-to-consonant transition
+-   Q: When do we begin the HH when transitioning from a stop (e.g. D below)?\
 
-    What this looks like zoomed in:\
-    <img src="alignmentGuide/media/image69.png"/>\
-    **Figure 59** - D\|HH boundary, zoomed in
+-   A: Look for the transition from burst to HH. HH usually starts to have more formant structure.\
+
+In context:\
+
+![Figure 52 - When to start HH in consonant-to-consonant transition, viewed in context.](alignmentGuide/media/image68.png){width="60%"}
+
+Zoomed in:\
+
+![Figure 53 - D\|HH boundary, zoomed in.](alignmentGuide/media/image69.png){width="60%"}
 
 #### Stop to stop transitions (across word boundaries) {#stop-to-stop-transitions-across-word-boundaries}
 
--   Q: Where to place boundaries between stop consonants when there is a word boundary?
+-   Q: Where to place boundaries between stop consonants when there is a word boundary?\
 
 -   A: If the first stop is released, place the boundary after the release of the first stop and at the beginning of the closure for the second stop (see figures below).\
-    If the stop is unreleased, see the next section.
 
-    In context:\
-    <img src="alignmentGuide/media/image70.png"/>\
-    Figure 60 – Cursor is at boundary between G and D
+In context:\
 
-    Zoomed in:\
-    <img src="alignmentGuide/media/image71.png"/>\
-    Figure 61 – Boundary between G and D is placed after release of G and when amplitude in signal reduces as closure for D begins.
+![Figure 54 - Boundary between G and D is placed after release of G and when amplitude in signal reduces as closure for D begins.](alignmentGuide/media/image71.png){width="60%"}
+
+Zoomed in:\
+
+![Figure 55 - Cursor is at boundary between G and D.](alignmentGuide/media/image70.png){width="60%"}
 
 #### Unreleased Cons to Cons transition {#unreleased-cons-to-cons-transition}
 
--   **Q:** Where do we place the boundary if final consonants are unreleased like in “hu**g** daddy”?\
-    **A:** If boundary for 1<sup>st</sup> consonant is placed at least 50 ms before the burst of the 2<sup>nd</sup> consonant, the boundary placement is okay. In the example below, the boundary was placed less than 50 ms before the 2<sup>nd</sup> consonant, so the boundary was moved to 50 ms preceding the consonant\
-    Pre-correction\
-    <img src="alignmentGuide/media/image72.png"/>\
-    **Figure 62** – Boundary placement in unreleased consonants, at least 50 ms before release of 2<sup>nd</sup> consonant (pre-correction)
+-   Q: Where do we place the boundary if final consonants are unreleased like in the G of “hug daddy?"\
 
-    Post-correction:\
-    <img src="alignmentGuide/media/image73.png"/>\
-    **Figure 63** – Boundary for unreleased consonant was moved to 50ms preceding 2<sup>nd</sup> consonant.
+-   A: If boundary for the first consonant is placed at least 50ms before the burst of the second consonant, the boundary placement is okay. In the example below, the boundary was placed less than 50 ms before the second consonant, so the boundary was moved to 50ms preceding the consonant\
 
-    This boundary between G and D would remain where it is because MFA already placed it more than 50 ms prior to the release of D.\
-    <img src="alignmentGuide/media/image74.png"/>\
-    **Figure 64** – Consonant to consonant, unreleased, no correction required.
+Pre-correction:\
 
--   **Q: Where do we place the boundary when the gap between two consonants doesn’t allow for 50ms before the second consonant?**
+![Figure 56 - Boundary placement in unreleased consonants, at least 50ms before the release of the second consonant (pre-correction).](alignmentGuide/media/image72.png){width="60%"}
 
--   **A:** Place the boundary for the end of the first consonant/beginning of the second consonant in the most reasonable place given what you can see/hear.\
-    The boundary between D and DH in figure X below is not placed 50ms before the release of DH, but it’s placed after a relatively clear ending of D, and the audio supported the placement of this boundary.
+Post-correction:\
 
-> <img src="alignmentGuide/media/image75.png"/>\
-> **Figure 65** - Boundary placement between D and DH when less than 50ms available before DH
+![Figure 57 - Boundary for unreleased consonant was moved to 50ms preceding the second consonant.](alignmentGuide/media/image73.png){width="60%"}
+
+This boundary between G and D would remain where it is because MFA already placed it more than 50ms prior to the release of D:\
+
+![Figure 58 - Consonant to consonant, unreleased, no correction required.](alignmentGuide/media/image74.png){width="60%"}
+
+-   Q: Where do we place the boundary when the gap between two consonants doesn’t allow for 50ms before the second consonant?\
+
+-   A: Place the boundary for the end of the first consonant/beginning of the second consonant in the most reasonable place given what you can see/hear.\
+
+The boundary between D and DH in figure 59 below is not placed 50ms before the release of DH, but it’s placed after a relatively clear ending of D, and the audio supported the placement of this boundary.\
+
+![Figure 59 - Boundary placement between D and DH when less than 50ms available before DH.](alignmentGuide/media/image75.png){width="60%"}
 
 #### Pause between words, when do we start the post-pausal consonant? {#pause-between-words-when-do-we-start-the-post-pausal-consonant}
 
--   **Q:** When there is a pause between words, are we doing a bit of space before a within-sentence onset consonant?\
-    **A:** Place boundary 50 ms before beginning of the post-pausal consonant (cf Trouvain & Werner, 2022).\
-    <img src="alignmentGuide/media/image76.png"/>\
-    **Figure 66** – Within utterance pause before a stop consonant. Initial, post-pausal boundary for consonant should be placed 50 ms before release of stop consonant.
+-   Q: When there is a pause between words, are we doing a bit of space before a within-sentence onset consonant?\
+
+-   A: Place the boundary 50ms before beginning of the post-pausal consonant (cf. Trouvain & Werner, 2022).\
+
+![Figure 60 - Within utterance pause before a stop consonant. Initial, post-pausal boundary for consonant should be placed 50ms before release of stop consonant.](alignmentGuide/media/image76.png){width="60%"}
 
 ### d. Vowel-to-vowel boundaries {#d.-vowel-to-vowel-boundaries}
 
 #### Where to place boundary in continuous V\|V transitions {#where-to-place-boundary-in-continuous-vv-transitions}
 
 -   Q: Where should we place the boundary between vowels when there is no pause?\
-    A: Using the visual of the spectrogram as well as what you can hear, look for the border between the two vowels. See “She is…” below, where there is no break between the words and the vowels are sequential and continuous.\
+
+-   A: Using the visual of the spectrogram as well as what you can hear, look for the border between the two vowels. See “she is…” below, where there is no break between the words and the vowels are sequential and continuous.\
+
     <img src="alignmentGuide/media/image77.png"/>\
     **Figure 67** – Vowel to vowel transition with no pause
 
-    Zoomed in:\
+Zoomed in:\
     <img src="alignmentGuide/media/image78.png"/>\
     **Figure 68** – the vertical cursor line shows the transition from IY1 in “she” to IH0 in “is”. Note how the second formant lowers going from IY1 to IH0 (you can see where the dotted red lines cross on the spectrogram).
 

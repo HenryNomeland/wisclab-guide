@@ -340,7 +340,7 @@ What this looks like zoomed in:\
 
 -   Q: I can hear vowel starting (in OW1 below) before formants actually start. Should there be a pause?\
 
--   A: Yes, include a pause. Anything before phonation and formant structure should not be a part of the vowel interval. The figures below show how MFA sometimes aligns these vowels but this pre-phonation area should be a part of the preceding pause.
+-   A: Yes, include a pause. Anything before phonation and formant structure should not be a part of the vowel interval. The figures below show how MFA sometimes aligns these vowels but this pre-phonation area should be a part of the preceding pause.\
 
 In context:\
 
@@ -391,9 +391,6 @@ Zoomed in:\
 In context:\
 
 ![Figure 50 - Stop to fricative boundary in "boots," viewed in context.](alignmentGuide/media/image66.png){width="60%"}
-
-    <img src="alignmentGuide/media/image66.png"/>\
-    Figure 56 – Stop to fricative boundary in BOOTS
 
 Zoomed in:\
 
@@ -469,12 +466,11 @@ The boundary between D and DH in figure 59 below is not placed 50ms before the r
 
 -   A: Using the visual of the spectrogram as well as what you can hear, look for the border between the two vowels. See “she is…” below, where there is no break between the words and the vowels are sequential and continuous.\
 
-    <img src="alignmentGuide/media/image77.png"/>\
-    **Figure 67** – Vowel to vowel transition with no pause
+![Figure 61 - Vowel to vowel transition with no pause.](alignmentGuide/media/image77.png){width="60%"}
 
 Zoomed in:\
-    <img src="alignmentGuide/media/image78.png"/>\
-    **Figure 68** – the vertical cursor line shows the transition from IY1 in “she” to IH0 in “is”. Note how the second formant lowers going from IY1 to IH0 (you can see where the dotted red lines cross on the spectrogram).
+
+![Figure 62 - The vertical cursor line shows the transition from IY1 in “she” to IH0 in “is." Note how the second formant lowers going from IY1 to IH0 (you can see where the dotted red lines cross on the spectrogram).](alignmentGuide/media/image78.png){width="60%"}
 
 #### Where to place boundary in V\|V transitions with a pause between words {#where-to-place-boundary-in-vv-transitions-with-a-pause-between-words}
 

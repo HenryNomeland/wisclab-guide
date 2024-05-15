@@ -332,7 +332,7 @@ What this looks like zoomed in:\
 
 -   Q: Do we include the little “notch” of voicing as the beginning of the vowel, or start at formant structure? MFA wants to include the notch.\
 
--   A: We are not going to include the notch. Start vowel when formants start.
+-   A: We are not going to include the notch. Start the vowel where the formants are visible.
 
 ![Figure 43 - Boundary placement when there is “notch” of voice bar that precedes formant structure in a vowel.](alignmentGuide/media/image59.png){width="60%"}
 
@@ -396,7 +396,7 @@ Zoomed in:\
 
 ![Figure 51 - Stop to fricative boundary in "boots," zoomed in.](alignmentGuide/media/image67.png){width="60%"}
 
-#### When to start HH in C\|HH transitions {#when-to-start-hh-in-chh-transitions}
+#### When to start HH in consonant\|HH transitions {#when-to-start-hh-in-chh-transitions}
 
 -   Q: When do we begin the HH when transitioning from a stop (e.g. D below)?\
 
@@ -424,11 +424,11 @@ Zoomed in:\
 
 ![Figure 55 - Cursor is at boundary between G and D.](alignmentGuide/media/image70.png){width="60%"}
 
-#### Unreleased Cons to Cons transition {#unreleased-cons-to-cons-transition}
+#### Unreleased consonant-to-consonant transition {#unreleased-cons-to-cons-transition}
 
 -   Q: Where do we place the boundary if final consonants are unreleased like in the G of “hug daddy?"\
 
--   A: If boundary for the first consonant is placed at least 50ms before the burst of the second consonant, the boundary placement is okay. In the example below, the boundary was placed less than 50 ms before the second consonant, so the boundary was moved to 50ms preceding the consonant\
+-   A: If the boundary for the first consonant is placed at least 50ms before the burst of the second consonant, the boundary placement is okay. In the example below, the boundary was placed less than 50ms before the second consonant, so the boundary was moved to 50ms before the second consonant\
 
 Pre-correction:\
 
@@ -440,7 +440,7 @@ Post-correction:\
 
 This boundary between G and D would remain where it is because MFA already placed it more than 50ms prior to the release of D:\
 
-![Figure 58 - Consonant to consonant, unreleased, no correction required.](alignmentGuide/media/image74.png){width="60%"}
+![Figure 58 - Consonant-to-consonant, unreleased, no correction required.](alignmentGuide/media/image74.png){width="60%"}
 
 -   Q: Where do we place the boundary when the gap between two consonants doesn’t allow for 50ms before the second consonant?\
 
@@ -475,84 +475,94 @@ Zoomed in:\
 #### Where to place boundary in V\|V transitions with a pause between words {#where-to-place-boundary-in-vv-transitions-with-a-pause-between-words}
 
 -   Q: Should we place a pause between V# #V word boundaries when there is a brief pause and no visible/audible information?\
-    **A:** These should have a pause between them since vowels do not have the same articulatory closure periods that consonants have. Final boundary of the preceding vowel should end at the end of information from that vowel, and initial boundary of the following initial vowel should start at the beginning of audible/visible information related to that vowel.\
-    <img src="alignmentGuide/media/image79.png"/>\
-    **Figure 69** - Pause between vowels
+
+-   A: These should have a pause between them since vowels do not have the same articulatory closure periods that consonants have. Final boundary of the preceding vowel should end at the end of information from that vowel, and initial boundary of the following initial vowel should start at the beginning of audible/visible information related to that vowel.\
+
+![Figure 63 - Pause between vowels.](alignmentGuide/media/image79.png){width="60%"}
 
 ### e. Vowel-to-voiceless consonant transitions {#e.-vowel-to-voiceless-consonant-transitions}
 
--   **Canonical placement** – place end-of-vowel boundary where formant structure and phonation cease. This sometimes precedes the burst of the consonant by what appears to be significant amounts. See below for instances when there is pre-aspiration adjacent to the vowel and preceding the consonant.\
-    What this looks like in context - “m<u>ak</u>e a birdhouse”\
-    <img src="alignmentGuide/media/image80.png"/>\
-    **Figure 70** - Transition from a vowel to a following voiceless consonant
+Canonical placement – end-of-vowel boundary placed where the formant structure and phonation cease. This sometimes precedes the burst of the consonant by what appears to be significant amounts. See below for instances when there is pre-aspiration adjacent to the vowel and preceding the consonant.\
 
-    Zoomed in, one can see a bit of residual phonation in black at the bottom of the spectrogram that continues into the K, but because the formant structure and associated noise in the middle frequencies shuts off about here, this is where we put the boundary.\
-    <img src="alignmentGuide/media/image81.png"/>\
-    **Figure 71 -** Zoomed in on end of vowel and transition into K
+What this looks like in context:\
+    
+![Figure 64 - Transition from a vowel to a following voiceless consonant.](alignmentGuide/media/image80.png){width="50%"}
 
-#### Vowel-to-Consonant with preaspiration {#vowel-to-consonant-with-preaspiration}
+Zoomed in, one can see a bit of residual phonation in black at the bottom of the spectrogram that continues into the K, but because the formant structure and associated noise in the middle frequencies shuts off about here, this is where we put the boundary.\
+    
+![Figure 65 - Zoomed in on end of vowel and transition into K.](alignmentGuide/media/image81.png){width="60%"}
 
--   **Q:** In “coffee”, do we attribute the voiceless vowel portion to the vowel or to the consonant as part of transition to \[f\]? If we’re treating it like a stop, this would be consonant closure, but do we treat fricatives the same?\
-    **A:** We are going to treat this as part of the consonant. Phonation is shutting off due to laryngeal status of following consonant.\
-    Note that this makes boundary placement in vowel \> consonant transitions completely analogous to many transitions from voiceless consonants to vowels (e.g. when there is heavy aspiration on a sound like K, but we start the vowel at onset of phonation for the vowel, even though the vocal tract may already be positioned for the vowel during the aspiration).\
-    <img src="alignmentGuide/media/image82.png"/>\
-    **Figure 72** - Here the phonation of the vowel ends suddenly as the glottis positions for S, resulting in H-like pre-aspiration leading into the F
+#### Vowel-to-consonant with preaspiration {#vowel-to-consonant-with-preaspiration}
+
+-   Q: In “coffee," do we attribute the voiceless vowel portion to the vowel or to the consonant as part of transition to \[f\]? If we’re treating it like a stop, this would be consonant closure, but do we treat fricatives the same?\
+
+-   A: We are going to treat this as part of the consonant. Phonation is shutting off due to laryngeal status of following consonant.\
+
+Note that this makes boundary placement in vowel \> consonant transitions completely analogous to many transitions from voiceless consonants to vowels (e.g. when there is heavy aspiration on a sound like K, but we start the vowel at onset of phonation for the vowel, even though the vocal tract may already be positioned for the vowel during the aspiration).\
+
+![Figure 66 - Here the phonation of the vowel ends suddenly as the glottis positions for S, resulting in H-like pre-aspiration leading into the F.](alignmentGuide/media/image82.png){width="60%"}
 
 ### f. Vowel to voiced consonant transitions {#f.-vowel-to-voiced-consonant-transitions}
 
--   Canonical placement – place boundary at the end of the vowel where you will typically see a sudden reduction in energy in the spectrogram (goes from near-black to lighter grey) as well as a shift in formant structure.
+Canonical placement – boundary placed at the end of the vowel where you will typically see a sudden reduction in energy in the spectrogram (goes from near-black to lighter grey) as well as a shift in formant structure.
 
-    What this looks like in context:\
-    <img src="alignmentGuide/media/image83.png"/>\
-    **Figure 73** – Vowel to voiced consonant transition in context
+What this looks like in context:\
 
-    What this looks like zoomed in\
-    <img src="alignmentGuide/media/image84.png"/>\
-    **Figure 74** – vowel to voiced consonant transition, zoomed
+![Figure 67 - Vowel to voiced consonant transition in context.](alignmentGuide/media/image83.png){width="60%"}
 
--   There can be varying degrees of voicing between when the vowel ends and the consonant is released. The first, canonical examples shows when voicing goes entirely through the consonant closure. The following example shows partial voicing through consonant closure:\
-    In context:\
-    <img src="alignmentGuide/media/image85.png"/>\
-    **Figure 75** - Contextual view of a coda consonant closure with only partial voicing during the closure.
+Zoomed in:\
 
-    Zoomed in:\
-    <img src="alignmentGuide/media/image86.png"/>\
-    **Figure 76** - Closer view of partial voicing during consonant closure
+![Figure 68 - vowel to voiced consonant transition, zoomed in.](alignmentGuide/media/image84.png){width="60%"}
 
-#### Potential issues: Vowel-to-voiced consonant transitions {#potential-issues-vowel-to-voiced-consonant-transitions}
+-   There can be varying degrees of voicing between when the vowel ends and the consonant is released. The first, canonical examples shows when voicing goes entirely through the consonant closure. The following example shows partial voicing through consonant closure.\
 
--   **Where to put boundary when there is a gap in phonation between a vowel and a consonant.**\
-    **Q:** When there’s a gap between end of vowel and beginning of fricative?\
-    **A:** Count it towards the fricative and mark the end of the vowel as the end of the vowel.\
-    <img src="alignmentGuide/media/image87.png"/>\
-    **Figure 77** – Vowel to fricative transition, voicing stops before articulation of consonant
+In context:\
 
--   **When to end a vowel when voicing is inconsistent**\
-    **Q:** When voicing isn’t consistently modal, how do we decide when a vowel actually ends? (in other instances, we would end the vowel with voicing).\
-    **A:** Look for end of formant structure. There should still be formant structure even without phonation.\
-    <img src="alignmentGuide/media/image88.png"/>\
-    **Figure 78** – Vowel to consonant transition, inconsistent phonation of vowel
+![Figure 69 - Contextual view of a coda consonant closure with only partial voicing during the closure.](alignmentGuide/media/image85.png){width="60%"}
+
+Zoomed in:\
+
+![Figure 70 - Closer view of partial voicing during consonant closure.](alignmentGuide/media/image86.png){width="60%"}
+
+#### Potential issues with vowel-to-voiced consonant transitions {#potential-issues-vowel-to-voiced-consonant-transitions}
+
+##### Where to put boundary when there is a gap in phonation between a vowel and a consonant.
+
+-   Q: When there’s a gap between end of vowel and beginning of fricative?\
+
+-   A: Count it towards the fricative and mark the end of the vowel as the end of the vowel.\
+
+![Figure 71 - Vowel to fricative transition, voicing stops before articulation of consonant.](alignmentGuide/media/image87.png){width="60%"}
+
+##### When to end a vowel when voicing is inconsistent
+
+-   Q: When voicing isn’t consistently modal, how do we decide when a vowel actually ends? (in other instances, we would end the vowel with voicing).\
+
+-   A: Look for end of formant structure. There should still be formant structure even without phonation.\
+
+![Figure 72 - Vowel to consonant transition, inconsistent phonation of the vowel.](alignmentGuide/media/image88.png){width="60%"}
 
 ### g. Pauses {#g.-pauses}
 
 #### Pauses from consonant to vowel across word boundaries {#pauses-from-consonant-to-vowel-across-word-boundaries}
 
 -   Sometimes transitions from consonants to vowels across word boundaries are continuous, and there is no break between words. At other times there is a visible break with no audible or visible information between the consonant and the vowel. There should be a break between words in these instances:\
-    <img src="alignmentGuide/media/image57.png"/>\
-    **Figure 79** - Break between consonant and vowel across word boundaries
+
+![Figure 73 - Break between consonant and vowel across word boundaries.](alignmentGuide/media/image57.png){width="60%"}
 
 #### Pauses from vowel to vowel across word boundaries {#pauses-from-vowel-to-vowel-across-word-boundaries}
 
 -   Similarly, sometimes there is a break between two vowels that are on either side of a word boundary. If there is a break with no audible or visible information between the vowels, this break should be reflected with a break between words and phones in the text grid.\
-    <img src="alignmentGuide/media/image79.png"/>\
-    **Figure 80** - Pause between vowels
 
-#### Child holds a pause and phonation keeps going {#child-holds-a-pause-and-phonation-keeps-going}
+![Figure 74 - Pause between vowels.](alignmentGuide/media/image79.png){width="60%"}
 
--   **Q:** When a child is holding a pause with voice going, is this counted as “speech”?\
-    **A:** Seems like inserting a pause here might be best, as it’s not just prolonged coarticulation between two segments.\
-    <img src="alignmentGuide/media/image89.png"/>\
-    **Figure 81** – Pause with phonation
+#### Speaker holds a pause and phonation keeps going {#speaker-holds-a-pause-and-phonation-keeps-going}
+
+-   Q: When a speaker is holding a pause with voice going, is this counted as “speech?"\
+
+-   A: Seems like inserting a pause here might be best, as it’s not just prolonged coarticulation between two segments.\
+
+![Figure 75 - Pause with phonation.](alignmentGuide/media/image89.png){width="60%"}
 
 ## 7. End-of-utterance issues {#end-of-utterance-issues}
 
@@ -560,145 +570,169 @@ Zoomed in:\
 
 #### Stops at end of utterances {#stops-at-end-of-utterances}
 
--   Canonical placement – place boundary at the end of noise associate with the release of the consonant (as long as this noise isn’t exhalation! See “Potential Issues” below)\
-    <img src="alignmentGuide/media/image90.png"/>\
-    **Figure 82** – End of utterance consonant, in context
+Canonical placement – boundary placed at the end of noise associate with the release of the consonant (as long as this noise isn’t exhalation! See “Potential Issues” below)\
 
-    Zoomed in\
-    <img src="alignmentGuide/media/image91.png"/>\
-    **Figure 83** – End of utterance consonant, zoomed
+In context:\
+
+![Figure 76 - End of utterance consonant, in context.](alignmentGuide/media/image90.png){width="60%"}
+
+Zoomed in:\
+
+![Figure 77 - End of utterance consonant, zoomed.](alignmentGuide/media/image91.png){width="60%"}
 
 #### Fricatives at the ends of utterances {#fricatives-at-the-ends-of-utterances}
 
--   Canonical placement – place boundary at the end of noise associated with articulation of the fricative (be sure to listen to make sure that the noise doesn’t include exhalation).\
-    <img src="alignmentGuide/media/image92.png"/>\
-    **Figure 84** - End boundaries for fricatives at the ends of utterances, in context
+Canonical placement – boundary placed at the end of the noise associated with articulation of the fricative (be sure to listen to make sure that the noise doesn’t include exhalation).\
 
-    Zoomed in\
-    <img src="alignmentGuide/media/image93.png"/>\
-    **Figure 85** - End boundaries for fricatives, zoomed in
+In context:\
+
+![Figure 78 - End boundaries for fricatives at the ends of utterances, in context.](alignmentGuide/media/image92.png){width="60%"}
+
+Zoomed in:\
+
+![Figure 79 - End boundaries for fricatives, zoomed in.](alignmentGuide/media/image93.png){width="60%"}
 
 #### Nasals at ends of utterances {#nasals-at-ends-of-utterances}
 
--   Canonical placement – place boundary at the end of phonation and articulation associated with the nasal consonant (see “Potential Issues” below for when the child starts exhaling while the nasal is still being articulated).\
-    <img src="alignmentGuide/media/image94.png"/>\
-    **Figure 86** - Nasals at the ends of words/utterances, in context
+Canonical placement – boundary placed at the end of phonation and articulation associated with the nasal consonant (see “Potential Issues” below for when the speaker starts exhaling while the nasal is still being articulated).\
 
-    Zoomed in\
-    <img src="alignmentGuide/media/image95.png"/>\
-    **Figure 87** - Nasals at the ends of words/utterances, in context
+In context:\
+
+![Figure 80 - Nasals at the ends of words/utterances, in context.](alignmentGuide/media/image94.png){width="60%"}
+
+Zoomed in:\
+
+![Figure 81 - Nasals at the ends of words/utterances, zoomed in.](alignmentGuide/media/image95.png){width="60%"}
 
 #### Liquids at ends of utterances {#liquids-at-ends-of-utterances}
 
--   Canonical placement\
-    <img src="alignmentGuide/media/image96.png"/>\
-    **Figure 88** - Boundary placement for liquids at the ends of words.
+Canonical placement in context:\
 
-    Zoomed in\
-    <img src="alignmentGuide/media/image97.png"/>\
-    **Figure 89** - Boundary placement for utterance-final liquids, zoomed in
+![Figure 82 - Boundary placement for liquids at the ends of words.](alignmentGuide/media/image96.png){width="60%"}
+
+Zoomed in:\
+
+![Figure 83 - Boundary placement for utterance-final liquids, zoomed in.](alignmentGuide/media/image97.png){width="60%"}
 
 #### Final consonant potential issues {#final-consonant-potential-issues}
 
 ##### Unreleased consonants
 
--   Q: Where to place boundaries in final stop consonants when the consonant is unreleased?\
-    A: Place the boundary for the beginning of the sound (e.g., T in OUT, below) at the end of formant structure of the vowel, and place the boundary for the end of the sound at the end of visible energy related to the consonant.\
-    <img src="alignmentGuide/media/image98.png"/>\
-    **Figure 90** - Boundary placement for utterance-final unreleased stops
+-   Q: Where to place the boundaries in final stop consonants when the consonant is unreleased?\
+
+-   A: Place the boundary for the beginning of the sound (e.g. T in OUT, below) at the end of formant structure of the vowel, and place the boundary for the end of the sound at the end of visible energy related to the consonant.\
+
+![Figure 84 - Boundary placement for utterance-final unreleased stops.](alignmentGuide/media/image98.png){width="60%"}
 
 ##### Boundary placement – audible exhale with consonant release
 
--   **Q:** What counts as speech – any sound information? E.g., the little bit of breath escaping at the end of a word?\
-    **A:** We are not including anything after the burst release that is generally just exhale\
-    **Q:** what if the little bit at the end of the word is a new sound (e.g., “bee-ya”)\
-    **A:** don’t count exhale ‘ya’.\
-    <img src="alignmentGuide/media/image99.png"/>\
-    **Figure 91** - Strong exhalation following final stop consonant
+-   Q: What counts as speech – any sound information? E.g., the little bit of breath escaping at the end of a word?\
 
--   **Where to place boundary when exhalation starts during articulation of a nasal**\
-    **Q:** When there is nasal exhalation after/during a final nasal, do we need to count the voiceless finish of a nasal?\
-    **A:** Nasals are often finished this way at the end of an utterance. If the exhaley portion starts while still articulating the nasal, this counts as speech.\
-    Once articulation ends and it is just exhale, then it doesn’t count.
+-   A: We are not including anything after the burst release that is generally just exhale.\
 
-> <img src="alignmentGuide/media/image100.png"/>\
-> **Figure 92** – post-nasal exhale, no articulation (exhale not included in boundary)
->
-> <img src="alignmentGuide/media/image101.png"/>\
-> **Figure 93** – post-nasal exhale with articulation (exhale is during articulation of NG and thus included within NG boundaries)
+-   Q: What if the little bit at the end of the word is a new sound (e.g., “bee-ya”)?\
 
--   **Where to place end-of-word boundary when ER0 is still articulated when exhale starts**\
-    **Q:** Should we include exhale on ER0, as in “together”?\
-    **A:** If it is articulated, and not just exhale, it should count (similarly to nasals and vowels above). If the ER0 sounds complete and the rest is primarily exhale, don’t count it.\
-    <img src="alignmentGuide/media/image102.png"/>\
-    **Figure 94** – Exhale begins during articulation of ER0
+-   A: Don’t count exhale "ya."\
+
+![Figure 85 - Strong exhalation following final stop consonant - this additional noise should not be included as a part of the stop.](alignmentGuide/media/image99.png){width="60%"}
+
+##### Where to place boundary when exhalation starts during articulation of a nasal
+
+-   Q: When there is nasal exhalation after/during a final nasal, do we need to count the voiceless finish of a nasal?\
+
+-   A: Nasals are often finished this way at the end of an utterance. If the exhaley portion starts while still articulating the nasal, this counts as speech.\
+
+Once articulation ends and it is just exhale, then it doesn’t count.\
+
+Without articulation:\
+
+![Figure 86 - Post-nasal exhale, no articulation (exhale not included in boundary).](alignmentGuide/media/image100.png){width="60%"}
+
+With articulation:\
+
+![Figure 87 - Post-nasal exhale with articulation (exhale is during articulation of NG and thus included within NG boundaries).](alignmentGuide/media/image101.png){width="60%"}
+
+##### Where to place end-of-word boundary when ER0 is still articulated when exhale starts
+
+-   Q: Should we include exhale on ER0, as in “together?"\
+
+-   A: If it is articulated, and not just exhale, it should count (similarly to nasals and vowels above). If the ER0 sounds complete and the rest is primarily exhale, don’t count it.\
+
+![Figure 88 - Exhale begins during articulation of ER0.](alignmentGuide/media/image102.png){width="50%"}
 
 ### b. Final vowel to end-of-utterance transition {#b.-final-vowel-to-end-of-utterance-transition}
 
 #### Typical end of vowel {#typical-end-of-vowel}
 
--   Canonical placement – place boundary at the most clear end of both formant structure and phonation\
-    In context\
-    <img src="alignmentGuide/media/image103.png"/>\
-    **Figure 95** - End boundary placement for utterance-final vowel
+Canonical placement – boundary placed at the most clear end of both formant structure and phonation.\
 
-    Zoomed in\
-    <img src="alignmentGuide/media/image104.png"/>\
-    **Figure 96** - End boundary placement for utterance-final vowel
+In context:\
+
+![Figure 89 - End boundary placement for utterance-final vowel.](alignmentGuide/media/image103.png){width="60%"}
+
+Zoomed in:\
+
+![Figure 90 - End boundary placement for utterance-final vowel, zoomed in.](alignmentGuide/media/image104.png){width="60%"}
 
 ### c. Final vowel potential issues {#c.-final-vowel-potential-issues}
 
 #### Boundary placement – phonation for vowel ends before end of word {#boundary-placement-phonation-for-vowel-ends-before-end-of-word}
 
--   **Q:** Do we include voiceless end of vowel as part of vowel?\
-    **A:** As long as it is articulated, and not just exhale, this should be counted as vowel.\
-    <img src="alignmentGuide/media/image105.png"/>\
-    **Figure 97** - Include voiceless portions of vowel if it is still articulated as vowel and not simply exhale
+-   Q: Do we include voiceless end of vowel as part of vowel?\
+
+-   A: As long as it is articulated, and not just exhale, this should be counted as vowel.\
+
+![Figure 91 - Include voiceless portions of vowel if it is still articulated as vowel and not simply exhale.](alignmentGuide/media/image105.png){width="60%"}
 
 #### Where to place end-of-vowel boundary when there is exhale at end of word {#where-to-place-end-of-vowel-boundary-when-there-is-exhale-at-end-of-word}
 
--   **Q:** Is it right to cut this off? (“both faces are happy-uh")\
-    **A:** Yes. If it is just neutral vocal tract exhalation, this should not count.\
-    <img src="alignmentGuide/media/image106.png"/>\*\*\
-    Figure 98\*\* - Exhalation immediately following a sound should not count as part of that sound.
+-   Q: Is it right to cut exhalation off at the end of a word?\
+
+-   A: Yes. If it is just neutral vocal tract exhalation, this should not count.\
+
+![Figure 92 - Exhalation immediately following a sound should not count as part of that sound.](alignmentGuide/media/image106.png){width="60%"}
 
 ## 8. Segmental issues {#segmental-issues}
 
-This sections focuses on issues regarding segment spacing and the number of segments in an utterance.
+This section focuses on issues regarding segment spacing and the number of segments in an utterance.
 
 ### a. Blend coalescence {#a.-blend-coalescence}
 
 #### SM coalesces to F {#sm-coalesces-to-f}
 
--   **Q:** For coalescences: Do we treat one as “deleted” (“to fall fieces”)? How do we space them?\
-    **A:** Let the two segments (S and M below) have a relatively equal amount of the segment.\
-    <img src="alignmentGuide/media/image107.png"/>\
-    **Figure 99** – Segment boundaries when segments are coalesced
+-   Q: For coalescences: Do we treat one sound as “deleted” (e.g. “two fall pieces” in place of "two small pieces")? How do we space them?\
+
+-   A: Let the two segments (S and M below) have a relatively equal amount of the segment.\
+
+![Figure 93 - Segment boundaries when segments are coalesced.](alignmentGuide/media/image107.png){width="60%"}
 
 ### b. Vocalization of L and Syllabic L {#b.-vocalization-of-l-and-syllabic-l}
 
-#### Final L is produced as OW1 (“animo”) {#final-l-is-produced-as-ow1-animo}
+#### Final L is produced as OW1 {#final-l-is-produced-as-ow1}
 
--   **Q:** When we’ve got /l/ as /o/ at the end of a word, what counts as AH0 and L?\
-    **A:** Luke’s initial response would be that it should all count as L. Make AH0 small, and L longer because the target production would primarily be L.\
-    <img src="alignmentGuide/media/image108.png"/>\
-    **Figure 100** – Vocalic L (pronounced as /o/) should have very short AH0 segment, L should make up nearly all of the sound.
+-   Q: When there is /l/ in place of /o/ at the end of a word (e.g. “animo” in place of "animal"), what counts as AH0 and L?\
+
+-   A: In general it should all count as L. Make AH0 small, and L longer because the target production would primarily be L.\
+
+![Figure 94 - Vocalic L (pronounced as /o/) should have very short AH0 segment, L should make up nearly all of the sound.](alignmentGuide/media/image108.png){width="60%"}
 
 #### Where to place L boundaries in AH0 L sequence when L is syllabic {#where-to-place-l-boundaries-in-ah0-l-sequence-when-l-is-syllabic}
 
--   **Q:** syllabic L (can we justify “AH0 L” pronunciations over “L”? “soccer” has S AA1 K ER0, for instance).\
-    **A:** We need to keep these due to the adult models and assumed pronunciations. If it’s a syllabic L, just make AH0 shorter.\
-    <img src="alignmentGuide/media/image109.png"/>\
-    **Figure 101** – Syllabic L, if there is no vowel to be heard between M and L in *animal*, AH0 should be minimal and L should take up nearly the entire duration of the sound.
+-   Q: Can we justify AH0 L pronunciations over L?\
+
+-   A: We need to keep these due to the standard speech models used in forced aligners and assumed pronunciations. If it’s a syllabic L, just make AH0 shorter.\
+
+![Figure 95 - Syllabic L, if there is no vowel to be heard between M and L in *animal*, AH0 should be minimal and L should take up nearly the entire duration of the sound.](alignmentGuide/media/image109.png){width="60%"}
 
 ### c. Syllabic R issues {#c.-syllabic-r-issues}
 
 #### Where to place boundaries and whether to keep segments when R is syllabic {#where-to-place-boundaries-and-whether-to-keep-segments-when-r-is-syllabic}
 
--   **Q:** Change pronunciation from ”R” to “AA1\|R”\
-    **A:** Luke’s initial response, syllabic R happens in these positions. Or just make AA1 very small.\
-    <img src="alignmentGuide/media/image110.png"/>\
-    **Figure 102** - Syllabic R
+-   Q: Should we change the pronunciation from ”R” to “AA1\|R” in cases when R is syllabic?\
+
+-   A: Just make AA1 very small.\
+
+![Figure 95 - Syllabic R.](alignmentGuide/media/image110.png){width="60%"}
 
 ## References {#references}
 

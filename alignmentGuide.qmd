@@ -51,6 +51,14 @@ Figure 3 shows a text grid prior to hand-correction, and Figure 4 shows the same
 
 ![Figure 5 - Hand-corrected text grid of cowboy boots. We can now see how the boundaries in the text grid line up with where the box shapes indicated that the word were.](alignmentGuide/media/image8.png){width="60%"}
 
+### c. phonetic alphabets {#c.-phonetic-alphabets}
+
+This guide makes use of two different phonetic alphabets. The first is the International Phonetic Alphabet which is described [here](https://www.internationalphoneticassociation.org/content/full-ipa-chart) and will be notated using conventional forward slashes as in /t/ or /u/. The second is the ARPAbet symbol set developed by the Advanced Research Projects Agency. This is the alphabet seen in example alignments, as MFA alignments performed in the WISC Lab make use of the [CMU pronunciation dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict). Symbols which use this alphabet will be denoted in all-caps as in T or UW. A detailed description of each of the 39 phonemes included in the ARPAbet symbol set can be found on [Wikipedia](https://en.wikipedia.org/wiki/ARPABET). It is important to note that this symbol set makes use of numbers to denote tone. Furthermore, the alignments performed in the WISC Lab and any alignments using the CMU dictionary are based on North American pronunciations. Additional considerations for the use of dictionaries outside of these pronunciations are not considered at this time.
+
+### d. Montreal Forced Aligner {#d.-montreal-forced-aligner}
+
+This guide assumes that you have access to audio files and corresponding text grids which have been aligned using MFA. If you do not have access to such files or have audio files but do not know how to force align them, it would be best to learn how to do so before continuing any further into the guide. Eleanor Chodroff has published an excellent tutorial on how to use MFA which can be accessed [here](https://www.eleanorchodroff.com/tutorial/montreal-forced-aligner.html#montreal-forced-aligner). The tutorial is part of a larger guide on corpus phonetics which including theoretical explanations of how forced alignment works.
+
 ## 2. Over-arching principles {#over-arching-principles}
 
 While the remainder of this guide shows specific examples of where boundaries should be placed in certain circumstances, there are a few overarching principles to keep in mind. These should be used in conjunction with the remainder of the guide to make more efficient decisions regarding boundary placement.
@@ -65,7 +73,7 @@ While the remainder of this guide shows specific examples of where boundaries sh
 
 ### a. Download Praat {#download-praat}
 
-If you don’t already have Praat downloaded on your computer, it can be found here: <https://www.fon.hum.uva.nl/praat/>
+If you don’t already have Praat downloaded on your computer, it can be found [here](https://www.fon.hum.uva.nl/praat/).
 
 The download gives you a .zip file, which you can extract to your location of choice (Desktop, Program Files, etc.).
 
@@ -108,7 +116,7 @@ The lateral approximant L often looks similar to vowels, with the highest energy
 
 ![Figure 7 - L sometimes appears vowel-like as featured, and sometimes has a grey, "hollow" look, similar to a nasal.](alignmentGuide/media/image15.png){width="60%"}
 
-Like L, the rhotic R looks much like a vowel, but a clearly articulated R will almost always have a third formant that dips down to 3,000 Hz or lower. Notice the transition that the third band makes from AO1 to R in OR below (the red arrow points to it).
+Like L, the rhotic R looks much like a vowel, but a clearly articulated R will almost always have a third formant that dips down to 3,000 Hz or lower. Notice the transition that the third band makes from AO1 to R in "or" below.
 
 ![Figure 8 - R in or. Appears vowel-like but notice the third formant dropping down adjacent to the second formant.](alignmentGuide/media/image17.png){width="60%"}
 
@@ -262,7 +270,7 @@ Zoomed in:\
 
 ![Figure 34 - Initial vowel boundary placement zoomed in.](alignmentGuide/media/image50.png){width="70%"}
 
-#### Word-initial glides – w, y {#word-initial-glides-w-y}
+#### Word-initial glides – W and Y {#word-initial-glides-w-y}
 
 Canonical placement – boundary placed at the onset of phonation or articulation (onset of glide may be something like a voiceless vowel).\
 

@@ -116,6 +116,8 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#a.-forced-alignment-and-text-grids" id="toc-a.-forced-alignment-and-text-grids" class="nav-link" data-scroll-target="#a.-forced-alignment-and-text-grids">a. Forced alignment and text grids</a></li>
   <li><a href="#b.-hand-correction" id="toc-b.-hand-correction" class="nav-link" data-scroll-target="#b.-hand-correction">b. Hand-correction</a></li>
+  <li><a href="#c.-phonetic-alphabets" id="toc-c.-phonetic-alphabets" class="nav-link" data-scroll-target="#c.-phonetic-alphabets">c.&nbsp;phonetic alphabets</a></li>
+  <li><a href="#d.-montreal-forced-aligner" id="toc-d.-montreal-forced-aligner" class="nav-link" data-scroll-target="#d.-montreal-forced-aligner">d.&nbsp;Montreal Forced Aligner</a></li>
   </ul></li>
   <li><a href="#over-arching-principles" id="toc-over-arching-principles" class="nav-link" data-scroll-target="#over-arching-principles">2. Over-arching principles</a></li>
   <li><a href="#using-praat" id="toc-using-praat" class="nav-link" data-scroll-target="#using-praat">3. Using Praat</a>
@@ -232,6 +234,14 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
+<section id="c.-phonetic-alphabets" class="level3">
+<h3 class="anchored" data-anchor-id="c.-phonetic-alphabets">c.&nbsp;phonetic alphabets</h3>
+<p>This guide makes use of two different phonetic alphabets. The first is the International Phonetic Alphabet which is described <a href="https://www.internationalphoneticassociation.org/content/full-ipa-chart">here</a> and will be notated using conventional forward slashes as in /t/ or /u/. The second is the ARPAbet symbol set developed by the Advanced Research Projects Agency. This is the alphabet seen in example alignments, as MFA alignments performed in the WISC Lab make use of the <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">CMU pronunciation dictionary</a>. Symbols which use this alphabet will be denoted in all-caps as in T or UW. A detailed description of each of the 39 phonemes included in the ARPAbet symbol set can be found on <a href="https://en.wikipedia.org/wiki/ARPABET">Wikipedia</a>. It is important to note that this symbol set makes use of numbers to denote tone. Furthermore, the alignments performed in the WISC Lab and any alignments using the CMU dictionary are based on North American pronunciations. Additional considerations for the use of dictionaries outside of these pronunciations are not considered at this time.</p>
+</section>
+<section id="d.-montreal-forced-aligner" class="level3">
+<h3 class="anchored" data-anchor-id="d.-montreal-forced-aligner">d.&nbsp;Montreal Forced Aligner</h3>
+<p>This guide assumes that you have access to audio files and corresponding text grids which have been aligned using MFA. If you do not have access to such files or have audio files but do not know how to force align them, it would be best to learn how to do so before continuing any further into the guide. Eleanor Chodroff has published an excellent tutorial on how to use MFA which can be accessed <a href="https://www.eleanorchodroff.com/tutorial/montreal-forced-aligner.html#montreal-forced-aligner">here</a>. The tutorial is part of a larger guide on corpus phonetics which including theoretical explanations of how forced alignment works.</p>
+</section>
 </section>
 <section id="over-arching-principles" class="level2">
 <h2 class="anchored" data-anchor-id="over-arching-principles">2. Over-arching principles</h2>
@@ -247,7 +257,7 @@ Boundaries should remain where they were placed by the forced aligner unless you
 <h2 class="anchored" data-anchor-id="using-praat">3. Using Praat</h2>
 <section id="download-praat" class="level3">
 <h3 class="anchored" data-anchor-id="download-praat">a. Download Praat</h3>
-<p>If you don’t already have Praat downloaded on your computer, it can be found here: <a href="https://www.fon.hum.uva.nl/praat/" class="uri">https://www.fon.hum.uva.nl/praat/</a></p>
+<p>If you don’t already have Praat downloaded on your computer, it can be found <a href="https://www.fon.hum.uva.nl/praat/">here</a>.</p>
 <p>The download gives you a .zip file, which you can extract to your location of choice (Desktop, Program Files, etc.).</p>
 </section>
 <section id="set-praat-as-the-default" class="level3">
@@ -296,7 +306,7 @@ The remainder of this document is a guide to boundary placement for different ty
 <p><img src="alignmentGuide/media/image15.png" class="img-fluid figure-img" style="width:60.0%"></p>
 </figure>
 </div>
-<p>Like L, the rhotic R looks much like a vowel, but a clearly articulated R will almost always have a third formant that dips down to 3,000 Hz or lower. Notice the transition that the third band makes from AO1 to R in OR below (the red arrow points to it).</p>
+<p>Like L, the rhotic R looks much like a vowel, but a clearly articulated R will almost always have a third formant that dips down to 3,000 Hz or lower. Notice the transition that the third band makes from AO1 to R in “or” below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption>Figure 8 - R in or. Appears vowel-like but notice the third formant dropping down adjacent to the second formant.</figcaption>
@@ -571,7 +581,7 @@ The remainder of this document is a guide to boundary placement for different ty
 </div>
 </section>
 <section id="word-initial-glides-w-y" class="level4">
-<h4 class="anchored" data-anchor-id="word-initial-glides-w-y">Word-initial glides – w, y</h4>
+<h4 class="anchored" data-anchor-id="word-initial-glides-w-y">Word-initial glides – W and Y</h4>
 <p>Canonical placement – boundary placed at the onset of phonation or articulation (onset of glide may be something like a voiceless vowel).<br>
 </p>
 <p>What this looks like in context:<br>

@@ -11,45 +11,45 @@ format:
       margin-width: 400px
 ---
 
-**WISC Lab guide to the hand-correction of force-aligned text grids**
+**WISC Lab guide to the hand-correction of force-aligned textgrids**
 
 Written by [Lucas Annear](https://kidspeech.wisc.edu/staff/annear-lucas/)
 
 Published and Edited by [Henry Nomeland](https://kidspeech.wisc.edu/staff/nomeland-henry/)
 
-## 1. Introduction {#introduction}
+## 1. Introduction
 
-### a. Forced alignment and text grids {#a.-forced-alignment-and-text-grids}
+### a. Forced alignment and textgrids
 
-In the WISC Lab we have audio recordings of children with both typical speech development and speech and motor impairments due to Cerebral Palsy. In these recordings the child is repeating words and phrases from the *Test of Children’s Speech* (TOCS). Examples include phrases like “Cowboy boots” and “put all the toys away." Recordings are used to calculate articulation rate, speech sound accuracy, and measures of how intelligible a child is. Figure 1 shows what it looks like when we open the file “The sign says keep out” in Praat.
+In the WISC Lab we have audio recordings of children with both typical speech development and speech and motor impairments due to Cerebral Palsy. In these recordings the child is repeating words and phrases from the *Test of Children’s Speech* (TOCS). Examples include phrases like “Cowboy boots” and “put all the toys away." Recordings are used to calculate articulation rate, speech sound accuracy, and measures of how intelligible a child is. @fig-1 shows what it looks like when we open the file “The sign says keep out” in Praat.
 
 We can see the waveform (top) and the spectrogram (bottom), but what if we want to keep track of how long different words and sounds are?
 
-![Figure 1 - Recording of “the sign says keep out” in Praat.](alignmentGuide/media/image4.png){width="60%"}
+![Recording of “the sign says keep out” in Praat.](alignmentGuide/media/image4.png){#fig-1 width="60%"}
 
 Marking the start and end points of sounds and words in a recording is useful for a variety of research purposes. However, we can’t annotate sound files directly, so we need to create a separate file that stores all of the locations of events like the start and end of a word or sound.
 
-The tool that we use to create a separate document containing annotations and labels for different words and sounds is called a **forced aligner**. A forced aligner takes an audio file (typically a .wav file) and a transcription of what was said in the audio file (usually a .txt or .lab file) and uses speech recognition technology to create a new file called a **text grid** that is designed to be paired with the audio file. The text grid has boundaries and labels indicating the locations of the words and phonemes in the audio file.
+The tool that we use to create a separate document containing annotations and labels for different words and sounds is called a **forced aligner**. A forced aligner takes an audio file (typically a .wav file) and a transcription of what was said in the audio file (usually a .txt or .lab file) and uses speech recognition technology to create a new file called a **textgrid** that is designed to be paired with the audio file. The textgrid has boundaries and labels indicating the locations of the words and phonemes in the audio file.
 
-A text grid file is associated with a given audio file and has moveable boundaries and labels to note the occurrence of certain events (like the beginning and end of a vowel) that may be useful for research. Figure 2 shows the phrase from Figure 1 when opened with the text grid produced by the Montreal Forced Aligner. The text grids we create for the lab contain separate **tiers** for words, sounds, and the sentence containing them. Each tier has **intervals** with **vertical boundaries** separating words and sounds. These files (the .TextGrid and .wav file) can be used for automated retrieval of acoustic data such as the duration of a word or sound, formant frequencies of vowels, and other variables of interest.
+A textgrid file is associated with a given audio file and has moveable boundaries and labels to note the occurrence of certain events (like the beginning and end of a vowel) that may be useful for research. @fig-2 shows the phrase from @fig-1 when opened with the textgrid produced by the Montreal Forced Aligner. The textgrids we create for the lab contain separate **tiers** for words, sounds, and the sentence containing them. Each tier has **intervals** with **vertical boundaries** separating words and sounds. These files (the .TextGrid and .wav file) can be used for automated retrieval of acoustic data such as the duration of a word or sound, formant frequencies of vowels, and other variables of interest.
 
-![Figure 2 - “The sign says keep out” when the recording is opened together with a fully annotated text grid.](alignmentGuide/media/image5.png){width="75%"}
+![“The sign says keep out” when the recording is opened together with a fully annotated textgrid.](alignmentGuide/media/image5.png){#fig-2 width="75%"}
 
-We can open these text grids along with the audio file in a program called **Praat** (Dutch for “speech”, sounds like “praht” - /pra:t/). When the text grids and audio files are paired together in Praat, it is now easier and quicker for us to make measurements because we have labels for each word and sound, as well as the time intervals during which these events occur.
+We can open these textgrids along with the audio file in a program called **Praat** (Dutch for “speech”, sounds like “praht” - /pra:t/). When the textgrids and audio files are paired together in Praat, it is now easier and quicker for us to make measurements because we have labels for each word and sound, as well as the time intervals during which these events occur.
 
 ### b. Hand-correction {#b.-hand-correction}
 
-Forced aligners are far from perfect. When a forced aligner creates a text grid, the initial placement of boundaries for words and sounds may not be accurate. During the **hand-correction** process, researchers manually adjust the boundaries of text grids that have been automatically created using the Montreal Forced Aligner (MFA). When MFA pairs a transcription with an audio file, it often produces fairly accurate boundary placements. In these cases the boundaries may only need some slight shifting, or even no adjustment at all. Other times, the boundaries are placed at the wrong times, or even when an entirely different word is being produced. These boundaries require hand-correction.
+Forced aligners are far from perfect. When a forced aligner creates a textgrid, the initial placement of boundaries for words and sounds may not be accurate. During the **hand-correction** process, researchers manually adjust the boundaries of textgrids that have been automatically created using the Montreal Forced Aligner (MFA). When MFA pairs a transcription with an audio file, it often produces fairly accurate boundary placements. In these cases the boundaries may only need some slight shifting, or even no adjustment at all. Other times, the boundaries are placed at the wrong times, or even when an entirely different word is being produced. These boundaries require hand-correction.
 
 The goal of the researcher performing hand-correction is to ensure proper boundary placement. This guide is intended to help visually identify alignment issues by looking at spectrograms and waveforms, and is designed to be a guide for decision-making when boundary placement is difficult to determine.
 
-Figure 3 shows a text grid prior to hand-correction, and Figure 4 shows the same text grid but with black and gold squares overlaid on the image to show where the word boundaries actually are. Figure 5 shows what the text grid looks like after hand-correction.
+@fig-3 shows a textgrid prior to hand-correction, and @fig-4 shows the same textgrid but with black and gold squares overlaid on the image to show where the word boundaries actually are. @fig-5 shows what the textgrid looks like after hand-correction.
 
-![Figure 3 - Force-aligned Text Grid of cowboy boots that has not yet been hand-corrected. The boundaries for cowboy were placed too soon, and boundaries for boots include the -boy part of cowboy.](alignmentGuide/media/image6.png){width="60%"}
+![Force-aligned textgrid of cowboy boots that has not yet been hand-corrected. The boundaries for cowboy were placed too soon, and boundaries for boots include the -boy part of cowboy.](alignmentGuide/media/image6.png){#fig-3 width="60%"}
 
-![Figure 4 - Force-aligned Text Grid of cowboy boots that has not yet been hand-corrected. Black and gold squares show where the words actually occur.](alignmentGuide/media/image7.png){width="60%"}
+![Force-aligned textgrid of cowboy boots that has not yet been hand-corrected. Black and gold squares show where the words actually occur.](alignmentGuide/media/image7.png){#fig-4 width="60%"}
 
-![Figure 5 - Hand-corrected text grid of cowboy boots. We can now see how the boundaries in the text grid line up with where the box shapes indicated that the word were.](alignmentGuide/media/image8.png){width="60%"}
+![Hand-corrected textgrid of cowboy boots. We can now see how the boundaries in the textgrid line up with where the box shapes indicated that the word were.](alignmentGuide/media/image8.png){#fig-5 width="60%"}
 
 ### c. phonetic alphabets {#c.-phonetic-alphabets}
 
@@ -57,7 +57,7 @@ This guide makes use of two different phonetic alphabets. The first is the Inter
 
 ### d. Montreal Forced Aligner {#d.-montreal-forced-aligner}
 
-This guide assumes that you have access to audio files and corresponding text grids which have been aligned using MFA. If you do not have access to such files or have audio files but do not know how to force align them, it would be best to learn how to do so before continuing any further into the guide. Eleanor Chodroff has published an excellent tutorial on how to use MFA which can be accessed [here](https://www.eleanorchodroff.com/tutorial/montreal-forced-aligner.html#montreal-forced-aligner). The tutorial is part of a larger guide on corpus phonetics which including theoretical explanations of how forced alignment works.
+This guide assumes that you have access to audio files and corresponding textgrids which have been aligned using MFA. If you do not have access to such files or have audio files but do not know how to force align them, it would be best to learn how to do so before continuing any further into the guide. Eleanor Chodroff has published an excellent tutorial on how to use MFA which can be accessed [here](https://www.eleanorchodroff.com/tutorial/montreal-forced-aligner.html#montreal-forced-aligner). The tutorial is part of a larger guide on corpus phonetics which including theoretical explanations of how forced alignment works.
 
 ## 2. Over-arching principles {#over-arching-principles}
 
@@ -108,35 +108,35 @@ Darker energy - Vowels appear as dark regions of energy with visible pulses as a
 
 Formants - You will generally see line-like regions called formants. Formants are frequency regions that are emphasized by a given vocal tract configuration, and differ from vowel to vowel. The screenshot below shows the word "toys," with the vowel OY1 highlighted. Note the formant structure and how one of the formants rises as the diphthong changes from /o/ to /i/.
 
-![Figure 6 - Vowels appear dark on the spectrogram with distinct darker bands called formants.](alignmentGuide/media/image13.png){width="60%"}
+![Vowels appear dark on the spectrogram with distinct darker bands called formants.](alignmentGuide/media/image13.png){#fig-6 width="60%"}
 
 #### Liquids {#liquids}
 
 The lateral approximant L often looks similar to vowels, with the highest energy concentrated in lower frequencies. Here L in Figure 10 contrasts against the IY1 and AE1 vowels on either side.
 
-![Figure 7 - L sometimes appears vowel-like as featured, and sometimes has a grey, "hollow" look, similar to a nasal.](alignmentGuide/media/image15.png){width="60%"}
+![L sometimes appears vowel-like as featured, and sometimes has a grey, "hollow" look, similar to a nasal.](alignmentGuide/media/image15.png){#fig-7 width="60%"}
 
 Like L, the rhotic R looks much like a vowel, but a clearly articulated R will almost always have a third formant that dips down to 3,000 Hz or lower. Notice the transition that the third band makes from AO1 to R in "or" below.
 
-![Figure 8 - R in or. Appears vowel-like but notice the third formant dropping down adjacent to the second formant.](alignmentGuide/media/image17.png){width="60%"}
+![R in or. Appears vowel-like but notice the third formant dropping down adjacent to the second formant.](alignmentGuide/media/image17.png){#fig-8 width="60%"}
 
 #### Nasals {#nasals}
 
 The nasals M, N, and NG will show patterns similar to vowels and liquids, but will often have a “hollow” look compared to a vowel, as in the highlighted portion below in the word "make."
 
-![Figure 9 - Nasals have similar energy to vowels, but will appear sparse and grey on the spectrogram.](alignmentGuide/media/image19.png){width="60%"}
+![Nasals have similar energy to vowels, but will appear sparse and grey on the spectrogram.](alignmentGuide/media/image19.png){#fig-9 width="60%"}
 
 #### Fricatives {#fricatives}
 
 Fricatives have noise that is generally distributed throughout the frequency spectrum. S, SH, and Z are typically longer and with very apparent noise in higher frequency ranges. TH, DH, F and V are often less pronounced, but if clearly articulated will have visible noise in the spectrogram. They are also generally shorter than S and SH. DH sometimes appears similar to D.
 
-![Figure 10 - Fricatives are generally long sounds that appear as noise in the spectrogram.](alignmentGuide/media/image21.png){width="60%"}
+![Fricatives are generally long sounds that appear as noise in the spectrogram.](alignmentGuide/media/image21.png){#fig-10 width="60%"}
 
 #### Stops
 
 The stop sounds P, T, K, B, D, and G will often be characterized by a thin dark line across the frequency range. This is from the release of the consonant (the “burst”). Voiceless stops in English will have a longer period of noisy energy after the burst, and for voiced consonants, the vowel will usually start immediately after the burst.
 
-![Figure 11 - Stop consonants articulated as such will have a burst which appears as a brief dark band spanning the frequency range. P, T, and K in the onset position of most words will have aspiration that follows.](alignmentGuide/media/image23.png){width="60%"}
+![Stop consonants articulated as such will have a burst which appears as a brief dark band spanning the frequency range. P, T, and K in the onset position of most words will have aspiration that follows.](alignmentGuide/media/image23.png){#fig-11 width="60%"}
 
 ## 5. Beginning-of-utterance issues
 
@@ -150,25 +150,25 @@ Canonical boundary placement - boundary is placed adjacently preceding release o
 
 What this looks like in context:\
 
-![Figure 12 - Initial voiceless stop consonant boundary placement in context.](alignmentGuide/media/image28.png){width="60%"}
+![Initial voiceless stop consonant boundary placement in context.](alignmentGuide/media/image28.png){#fig-12 width="60%"}
 
 Zoomed in:\
 
-![Figure 13 - Initial stop consonant boundary placement zoomed in.](alignmentGuide/media/image29.png){width="70%"}
+![Initial stop consonant boundary placement zoomed in.](alignmentGuide/media/image29.png){#fig-13 width="70%"}
 
 **Voiced stop consonants** – Voiced stop consonants will have a short burst release and the vowel will start very shortly after the release of the consonant. Sometimes, voicing may start before the release of the consonant, which is called *prevoicing*. Figure 30 shows a voiced consonant with prevoicing before the release, and figure 31 shows a voiced consonant without prevoicing.
 
 Prevoicing:\
 
-![Figure 14 - Voiced stop that has prevoicing leading up to the burst release.](alignmentGuide/media/image30.png){width="60%"}
+![Voiced stop that has prevoicing leading up to the burst release.](alignmentGuide/media/image30.png){#fig-14 width="60%"}
 
 No prevoicing:\
 
-![Figure 15 - Voiced initial stop with no prevoicing (this is typical).](alignmentGuide/media/image31.png){width="60%"}
+![Voiced initial stop with no prevoicing (this is typical).](alignmentGuide/media/image31.png){#fig-15 width="60%"}
 
 Zoomed in:\
 
-![Figure 16 - Voiced initial stop with no prevoicing zoomed in.](alignmentGuide/media/image32.png){width="70%"}
+![Voiced initial stop with no prevoicing zoomed in.](alignmentGuide/media/image32.png){#fig-16 width="70%"}
 
 #### Fricatives (S, Z, H, SH, ZH, F, V, TH, and DH) {#fricatives}
 
@@ -176,21 +176,21 @@ Canonical boundary placement – boundary is placed adjacently preceding the fir
 
 Note that DH most often looks similar to a stop consonant.\
 
-![Figure 17 - Initial fricative boundary placement in context.](alignmentGuide/media/image33.png){width="60%"}
+![Initial fricative boundary placement in context.](alignmentGuide/media/image33.png){#fig-17 width="60%"}
 
 Zoomed in:\
 
-![Figure 18 - Initial fricative boundary placement zoomed in.](alignmentGuide/media/image34.png){width="70%"}
+![Initial fricative boundary placement zoomed in.](alignmentGuide/media/image34.png){#fig-18 width="70%"}
 
 #### Nasals (M, N, and NG) {#nasals}
 
 Canonical boundary placement – boundary is placed adjacently preceding the onset of phonation/nasalization.
 
-![Figure 19 - Initial nasal boundary placement in context.](alignmentGuide/media/image35.png){width="60%"}
+![Initial nasal boundary placement in context.](alignmentGuide/media/image35.png){#fig-19 width="60%"}
 
 After zooming in there appears to be noise related to beginning of nasalization, but because this could not be confirmed with listening and headphones the boundary was placed where the voicing bar of phonation begins in the lower frequency region of the spectrogram.\
 
-![Figure 20 - Initial nasal boundary placement zoomed in.](alignmentGuide/media/image36.png){width="70%"}
+![Initial nasal boundary placement zoomed in.](alignmentGuide/media/image36.png){#fig-20 width="70%"}
 
 #### Liquids (L and R) {#liquids}
 
@@ -198,21 +198,21 @@ After zooming in there appears to be noise related to beginning of nasalization,
 
 Canonical boundary placement – boundary placed at the onset of the segment. This may be clear phonation and intensity seen as nearly black on the spectrogram, or in the case of Figure 21, some formants started to be present as part of the articulation of L, so the boundary was placed at the onset of this noise and formant structure.
 
-![Figure 21 - Initial L boundary placement in context.](alignmentGuide/media/image37.png){width="60%"}
+![Initial L boundary placement in context.](alignmentGuide/media/image37.png){#fig-21 width="60%"}
 
 Zoomed in:\
 
-![Figure 22 - Initial L boundary placement zoomed in.](alignmentGuide/media/image38.png){width="70%"}
+![Initial L boundary placement zoomed in.](alignmentGuide/media/image38.png){#fig-22 width="70%"}
 
 *R* - Rhotic\
 
 Canonical boundary placement – Place boundary at the onset of articulation-related noise in the signal. In this case, some articulation of R preceded phonation.
 
-![Figure 23 - Initial R boundary placement in context.](alignmentGuide/media/image39.png){width="60%"}
+![Initial R boundary placement in context.](alignmentGuide/media/image39.png){#fig-23 width="60%"}
 
 Zoomed in:\
 
-![Figure 24 - Initial R boundary placement zoomed in.](alignmentGuide/media/image40.png){width="70%"}
+![Initial R boundary placement zoomed in.](alignmentGuide/media/image40.png){#fig-24 width="70%"}
 
 #### Potential issues
 
@@ -222,19 +222,19 @@ Zoomed in:\
 
 -   A: You’ll need to place a boundary at the beginning of the sound (Boundary \> Add on Tier 1, Add on Tier 2).\
 
-![Figure 25 - HH is missing the initial boundary.](alignmentGuide/media/image41.png){width="60%"}
+![HH is missing the initial boundary.](alignmentGuide/media/image41.png){#fig-25 width="60%"}
 
 Placing the boundaries will put the phone and word-level text to the left of the new boundaries:\
 
-![Figure 26 - With boundaries placed but before text has been moved.](alignmentGuide/media/image42.png){width="60%"}
+![With boundaries placed but before text has been moved.](alignmentGuide/media/image42.png){#fig-26 width="60%"}
 
 Cut the text from the text field near the top of the window and paste it into the appropriate interval.\
 
-![Figure 27 - Cutting text from the interval.](alignmentGuide/media/image43.png){width="55%"}
+![Cutting text from the interval.](alignmentGuide/media/image43.png){#fig-27 width="55%"}
 
 With text moved:\
 
-![Figure 28 - After text has been moved to appropriate intervals.](alignmentGuide/media/image44.png){width="50%"}
+![After text has been moved to appropriate intervals.](alignmentGuide/media/image44.png){#fig-28 width="50%"}
 
 ##### Voiceless and breathy beginnings
 
@@ -242,9 +242,9 @@ With text moved:\
 
 -   A: Yes, especially with liquids and nasals, the initial H-like element typically carries phonetic information from the initial segment (be it L, R, or N).\
 
-![Figure 29 - Boundary placement for breathy HH-like beginning of L.](alignmentGuide/media/image45.png){width="60%"}
+![Boundary placement for breathy HH-like beginning of L.](alignmentGuide/media/image45.png){#fig-29 width="60%"}
 
-![Figure 30 - Boundary placement for breathy HH-like beginning of N.](alignmentGuide/media/image46.png){width="60%"}
+![Boundary placement for breathy HH-like beginning of N.](alignmentGuide/media/image46.png){#fig-30 width="60%"}
 
 ##### “New” is transcribed as N Y UW1
 
@@ -252,11 +252,11 @@ American English dialects typically do not pronounce "new" as /nju:/. The Y segm
 
 What this looks like pre-correction:\
 
-![Figure 31 - Y in the word "new" should be deleted.](alignmentGuide/media/image47.png){width="65%"}
+![Y in the word "new" should be deleted.](alignmentGuide/media/image47.png){#fig-31 width="65%"}
 
 What this looks like after hand-correction:\
 
-![Figure 32 - "new" following deletion of Y.](alignmentGuide/media/image48.png){width="65%"}
+!["new" following deletion of Y.](alignmentGuide/media/image48.png){#fig-32 width="65%"}
 
 ### b. Word-initial vowels and glides {#b.-word-initial-vowels-and-glides}
 
@@ -264,11 +264,11 @@ What this looks like after hand-correction:\
 
 Canonical boundary placement – boundary is placed at the onset of phonation/laryngeal activity related to the beginning of the vowel\
 
-![Figure 33 - Initial vowel boundary placement in context.](alignmentGuide/media/image49.png){width="60%"}
+![Initial vowel boundary placement in context.](alignmentGuide/media/image49.png){#fig-33 width="60%"}
 
 Zoomed in:\
 
-![Figure 34 - Initial vowel boundary placement zoomed in.](alignmentGuide/media/image50.png){width="70%"}
+![Initial vowel boundary placement zoomed in.](alignmentGuide/media/image50.png){#fig-34 width="70%"}
 
 #### Word-initial glides – W and Y {#word-initial-glides-w-y}
 
@@ -276,11 +276,11 @@ Canonical placement – boundary placed at the onset of phonation or articulatio
 
 What this looks like in context:\
 
-![Figure 35 - Initial glide boundary placement in context.](alignmentGuide/media/image51.png){width="60%"}
+![Initial glide boundary placement in context.](alignmentGuide/media/image51.png){#fig-35 width="60%"}
 
 Zoomed in:\
 
-![Figure 36 - Initial glide boundary placement zoomed in.](alignmentGuide/media/image52.png){width="70%"}
+![Initial glide boundary placement zoomed in.](alignmentGuide/media/image52.png){#fig-36 width="70%"}
 
 #### Potential Issues with initial vowels and glides {#potential-issues-with-initial-vowels-and-glides}
 
@@ -290,7 +290,7 @@ Zoomed in:\
 
 -   A: Yes. It’s the beginning of the production.\
 
-![Figure 37 - Initial vowel boundary placement when vowel begins with “glottal pop.”](alignmentGuide/media/image53.png){width="60%"}
+![Initial vowel boundary placement when vowel begins with “glottal pop.”](alignmentGuide/media/image53.png){#fig-37 width="60%"}
 
 ##### Voiceless beginning of glides
 
@@ -298,7 +298,7 @@ Zoomed in:\
 
 -   A: Yes, for reasons listed above.\
 
-![Figure 38 - Voiceless beginning of glide W, boundary placement.](alignmentGuide/media/image54.png){width="60%"}
+![Voiceless beginning of glide W, boundary placement.](alignmentGuide/media/image54.png){#fig-38 width="60%"}
 
 ## 6. Within-utterance issues {#within-utterance-issues}
 
@@ -310,11 +310,11 @@ Canonical placement – boundary placed at the clearest vertical onset of forman
 
 What this looks like in context:\
 
-![Figure 39 - Consonant to vowel transition boundary placement in context.](alignmentGuide/media/image55.png){width="60%"}
+![Consonant to vowel transition boundary placement in context.](alignmentGuide/media/image55.png){#fig-39 width="60%"}
 
 What this looks like zoomed in:\
 
-![Figure 40 - Consonant to vowel transition boundary placement zoomed in.](alignmentGuide/media/image56.png){width="60%"}
+![Consonant to vowel transition boundary placement zoomed in.](alignmentGuide/media/image56.png){#fig-40 width="60%"}
 
 ### b. Consonant-to-vowel transitions across words {#b.-consonant-to-vowel-transitions-across-words}
 
@@ -324,7 +324,7 @@ What this looks like zoomed in:\
 
 -   A: If there is a visible gap with no audible vowel sound, there should be a pause between the final consonant of the first word and the initial vowel of the following word. As in figure 41 below\
 
-![Figure 41 - Small gap between final consonant in "jump" and initial vowel in "over".](alignmentGuide/media/image57.png){width="60%"}
+![Small gap between final consonant in "jump" and initial vowel in "over".](alignmentGuide/media/image57.png){#fig-41 width="60%"}
 
 #### Consonant-to-vowel boundaries with no pause {#consonant-to-vowel-boundaries-with-no-pause}
 
@@ -332,7 +332,7 @@ What this looks like zoomed in:\
 
 -   A: No, if you can hear the vowel starting to go right after the consonant, even if the vowel isn’t fully going yet, count this as part of the vowel. See figure 42 below.\
 
-![Figure 42 - What appeared to be a pause between D and A01 actually has audible/visible information as the vowel is starting. In this case, the beginning of the vowel should be the beginning of this information.](alignmentGuide/media/image58.png){width="60%"}
+![What appeared to be a pause between D and A01 actually has audible/visible information as the vowel is starting. In this case, the beginning of the vowel should be the beginning of this information.](alignmentGuide/media/image58.png){#fig-42 width="60%"}
 
 #### Potential issues {#potential-issues-1}
 
@@ -342,7 +342,7 @@ What this looks like zoomed in:\
 
 -   A: We are not going to include the notch. Start the vowel where the formants are visible.
 
-![Figure 43 - Boundary placement when there is “notch” of voice bar that precedes formant structure in a vowel.](alignmentGuide/media/image59.png){width="60%"}
+![Boundary placement when there is “notch” of voice bar that precedes formant structure in a vowel.](alignmentGuide/media/image59.png){#fig-43 width="60%"}
 
 ##### Vowel starts before phonation
 
@@ -352,11 +352,11 @@ What this looks like zoomed in:\
 
 In context:\
 
-![Figure 44 - Vowel starts before phonation, viewed in context.](alignmentGuide/media/image60.png){width="60%"}
+![Vowel starts before phonation, viewed in context.](alignmentGuide/media/image60.png){#fig-44 width="60%"}
 
 Zoomed in:\
 
-![Figure 45 - Vowel starts before phonation, zoomed in.](alignmentGuide/media/image61.png){width="60%"}
+![Vowel starts before phonation, zoomed in.](alignmentGuide/media/image61.png){#fig-45 width="60%"}
 
 ##### Voiceless vowels
 
@@ -366,11 +366,11 @@ Zoomed in:\
 
 In context:\
 
-![Figure 46 - Voiceless vowel in “potato," viewed in context.](alignmentGuide/media/image62.png){width="60%"}
+![Voiceless vowel in “potato," viewed in context.](alignmentGuide/media/image62.png){#fig-46 width="60%"}
 
 Zoomed in:\
 
-![Figure 47 - Voiceless vowel in “potato," zoomed in.](alignmentGuide/media/image63.png){width="60%"}
+![Voiceless vowel in “potato," zoomed in.](alignmentGuide/media/image63.png){#fig-47 width="60%"}
 
 ### c. Consonant-to-consonant transitions {#c.-consonant-to-consonant-transitions}
 
@@ -380,7 +380,7 @@ Zoomed in:\
 
 -   A: The boundary between a fricative and a stop should be placed at the end of the fricative. There may be a small “silent” period before the stop, which is the closure duration of the stop/affricate, and not actually a pause.\
 
-![Figure 48 - Boundary placement in Fricative \> Stop/Affricate transitions. Here between S of "this" and CH of "cheese."](alignmentGuide/media/image64.png){width="55%"}
+![Boundary placement in Fricative \> Stop/Affricate transitions. Here between S of "this" and CH of "cheese."](alignmentGuide/media/image64.png){#fig-48 width="55%"}
 
 #### Fricative to fricative transitions {#fricative-to-fricative-transitions}
 
@@ -388,7 +388,7 @@ Zoomed in:\
 
 -   A: Look for a shift in the appearance of the noise for the two fricatives. The example below shows the transition from Z in "is" to SH in "showing."\
 
-![Figure 49 - Fricative to fricative transition. Here there is some noise across the frequency range before, or perhaps as part of the transition to SH, which shows a different noise pattern. This lets us see the shift from Z to SH.](alignmentGuide/media/image65.png){width="60%"}
+![Fricative to fricative transition. Here there is some noise across the frequency range before, or perhaps as part of the transition to SH, which shows a different noise pattern. This lets us see the shift from Z to SH.](alignmentGuide/media/image65.png){#fig-49 width="60%"}
 
 #### Stop to fricative transitions {#stop-to-fricative-transitions}
 
@@ -398,11 +398,11 @@ Zoomed in:\
 
 In context:\
 
-![Figure 50 - Stop to fricative boundary in "boots," viewed in context.](alignmentGuide/media/image66.png){width="60%"}
+![Stop to fricative boundary in "boots," viewed in context.](alignmentGuide/media/image66.png){#fig-50 width="60%"}
 
 Zoomed in:\
 
-![Figure 51 - Stop to fricative boundary in "boots," zoomed in.](alignmentGuide/media/image67.png){width="60%"}
+![Stop to fricative boundary in "boots," zoomed in.](alignmentGuide/media/image67.png){#fig-51 width="60%"}
 
 #### When to start HH in consonant\|HH transitions {#when-to-start-hh-in-chh-transitions}
 
@@ -412,11 +412,11 @@ Zoomed in:\
 
 In context:\
 
-![Figure 52 - When to start HH in consonant-to-consonant transition, viewed in context.](alignmentGuide/media/image68.png){width="60%"}
+![When to start HH in consonant-to-consonant transition, viewed in context.](alignmentGuide/media/image68.png){#fig-52 width="60%"}
 
 Zoomed in:\
 
-![Figure 53 - D\|HH boundary, zoomed in.](alignmentGuide/media/image69.png){width="60%"}
+![D\|HH boundary, zoomed in.](alignmentGuide/media/image69.png){#fig-53 width="60%"}
 
 #### Stop to stop transitions (across word boundaries) {#stop-to-stop-transitions-across-word-boundaries}
 
@@ -426,11 +426,11 @@ Zoomed in:\
 
 In context:\
 
-![Figure 54 - Boundary between G and D is placed after release of G and when amplitude in signal reduces as closure for D begins.](alignmentGuide/media/image71.png){width="60%"}
+![Boundary between G and D is placed after release of G and when amplitude in signal reduces as closure for D begins.](alignmentGuide/media/image71.png){#fig-54 width="60%"}
 
 Zoomed in:\
 
-![Figure 55 - Cursor is at boundary between G and D.](alignmentGuide/media/image70.png){width="60%"}
+![Cursor is at boundary between G and D.](alignmentGuide/media/image70.png){#fig-55 width="60%"}
 
 #### Unreleased consonant-to-consonant transition {#unreleased-cons-to-cons-transition}
 
@@ -440,15 +440,15 @@ Zoomed in:\
 
 Pre-correction:\
 
-![Figure 56 - Boundary placement in unreleased consonants, at least 50ms before the release of the second consonant (pre-correction).](alignmentGuide/media/image72.png){width="60%"}
+![Boundary placement in unreleased consonants, at least 50ms before the release of the second consonant (pre-correction).](alignmentGuide/media/image72.png){#fig-56 width="60%"}
 
 Post-correction:\
 
-![Figure 57 - Boundary for unreleased consonant was moved to 50ms preceding the second consonant.](alignmentGuide/media/image73.png){width="60%"}
+![Boundary for unreleased consonant was moved to 50ms preceding the second consonant.](alignmentGuide/media/image73.png){#fig-57 width="60%"}
 
 This boundary between G and D would remain where it is because MFA already placed it more than 50ms prior to the release of D:\
 
-![Figure 58 - Consonant-to-consonant, unreleased, no correction required.](alignmentGuide/media/image74.png){width="60%"}
+![Consonant-to-consonant, unreleased, no correction required.](alignmentGuide/media/image74.png){#fig-58 width="60%"}
 
 -   Q: Where do we place the boundary when the gap between two consonants doesn’t allow for 50ms before the second consonant?\
 
@@ -456,7 +456,7 @@ This boundary between G and D would remain where it is because MFA already place
 
 The boundary between D and DH in figure 59 below is not placed 50ms before the release of DH, but it’s placed after a relatively clear ending of D, and the audio supported the placement of this boundary.\
 
-![Figure 59 - Boundary placement between D and DH when less than 50ms available before DH.](alignmentGuide/media/image75.png){width="60%"}
+![Boundary placement between D and DH when less than 50ms available before DH.](alignmentGuide/media/image75.png){#fig-59 width="60%"}
 
 #### Pause between words, when do we start the post-pausal consonant? {#pause-between-words-when-do-we-start-the-post-pausal-consonant}
 
@@ -464,7 +464,7 @@ The boundary between D and DH in figure 59 below is not placed 50ms before the r
 
 -   A: Place the boundary 50ms before beginning of the post-pausal consonant (cf. Trouvain & Werner, 2022).\
 
-![Figure 60 - Within utterance pause before a stop consonant. Initial, post-pausal boundary for consonant should be placed 50ms before release of stop consonant.](alignmentGuide/media/image76.png){width="60%"}
+![Within utterance pause before a stop consonant. Initial, post-pausal boundary for consonant should be placed 50ms before release of stop consonant.](alignmentGuide/media/image76.png){#fig-60 width="60%"}
 
 ### d. Vowel-to-vowel boundaries {#d.-vowel-to-vowel-boundaries}
 
@@ -474,11 +474,11 @@ The boundary between D and DH in figure 59 below is not placed 50ms before the r
 
 -   A: Using the visual of the spectrogram as well as what you can hear, look for the border between the two vowels. See “she is…” below, where there is no break between the words and the vowels are sequential and continuous.\
 
-![Figure 61 - Vowel to vowel transition with no pause.](alignmentGuide/media/image77.png){width="60%"}
+![Vowel to vowel transition with no pause.](alignmentGuide/media/image77.png){#fig-61 width="60%"}
 
 Zoomed in:\
 
-![Figure 62 - The vertical cursor line shows the transition from IY1 in “she” to IH0 in “is." Note how the second formant lowers going from IY1 to IH0 (you can see where the dotted red lines cross on the spectrogram).](alignmentGuide/media/image78.png){width="60%"}
+![The vertical cursor line shows the transition from IY1 in “she” to IH0 in “is." Note how the second formant lowers going from IY1 to IH0 (you can see where the dotted red lines cross on the spectrogram).](alignmentGuide/media/image78.png){#fig-62 width="60%"}
 
 #### Where to place boundary in V\|V transitions with a pause between words {#where-to-place-boundary-in-vv-transitions-with-a-pause-between-words}
 
@@ -486,19 +486,19 @@ Zoomed in:\
 
 -   A: These should have a pause between them since vowels do not have the same articulatory closure periods that consonants have. Final boundary of the preceding vowel should end at the end of information from that vowel, and initial boundary of the following initial vowel should start at the beginning of audible/visible information related to that vowel.\
 
-![Figure 63 - Pause between vowels.](alignmentGuide/media/image79.png){width="60%"}
+![Pause between vowels.](alignmentGuide/media/image79.png){#fig-63 width="60%"}
 
 ### e. Vowel-to-voiceless consonant transitions {#e.-vowel-to-voiceless-consonant-transitions}
 
 Canonical placement – end-of-vowel boundary placed where the formant structure and phonation cease. This sometimes precedes the burst of the consonant by what appears to be significant amounts. See below for instances when there is pre-aspiration adjacent to the vowel and preceding the consonant.\
 
 What this looks like in context:\
-    
-![Figure 64 - Transition from a vowel to a following voiceless consonant.](alignmentGuide/media/image80.png){width="50%"}
+
+![Transition from a vowel to a following voiceless consonant.](alignmentGuide/media/image80.png){#fig-64 width="50%"}
 
 Zoomed in, one can see a bit of residual phonation in black at the bottom of the spectrogram that continues into the K, but because the formant structure and associated noise in the middle frequencies shuts off about here, this is where we put the boundary.\
-    
-![Figure 65 - Zoomed in on end of vowel and transition into K.](alignmentGuide/media/image81.png){width="60%"}
+
+![Zoomed in on end of vowel and transition into K.](alignmentGuide/media/image81.png){#fig-65 width="60%"}
 
 #### Vowel-to-consonant with preaspiration {#vowel-to-consonant-with-preaspiration}
 
@@ -508,7 +508,7 @@ Zoomed in, one can see a bit of residual phonation in black at the bottom of the
 
 Note that this makes boundary placement in vowel \> consonant transitions completely analogous to many transitions from voiceless consonants to vowels (e.g. when there is heavy aspiration on a sound like K, but we start the vowel at onset of phonation for the vowel, even though the vocal tract may already be positioned for the vowel during the aspiration).\
 
-![Figure 66 - Here the phonation of the vowel ends suddenly as the glottis positions for S, resulting in H-like pre-aspiration leading into the F.](alignmentGuide/media/image82.png){width="60%"}
+![Here the phonation of the vowel ends suddenly as the glottis positions for S, resulting in H-like pre-aspiration leading into the F.](alignmentGuide/media/image82.png){#fig-66 width="60%"}
 
 ### f. Vowel to voiced consonant transitions {#f.-vowel-to-voiced-consonant-transitions}
 
@@ -516,21 +516,21 @@ Canonical placement – boundary placed at the end of the vowel where you will t
 
 What this looks like in context:\
 
-![Figure 67 - Vowel to voiced consonant transition in context.](alignmentGuide/media/image83.png){width="60%"}
+![Vowel to voiced consonant transition in context.](alignmentGuide/media/image83.png){#fig-67 width="60%"}
 
 Zoomed in:\
 
-![Figure 68 - vowel to voiced consonant transition, zoomed in.](alignmentGuide/media/image84.png){width="60%"}
+![vowel to voiced consonant transition, zoomed in.](alignmentGuide/media/image84.png){#fig-68 width="60%"}
 
 -   There can be varying degrees of voicing between when the vowel ends and the consonant is released. The first, canonical examples shows when voicing goes entirely through the consonant closure. The following example shows partial voicing through consonant closure.\
 
 In context:\
 
-![Figure 69 - Contextual view of a coda consonant closure with only partial voicing during the closure.](alignmentGuide/media/image85.png){width="60%"}
+![Contextual view of a coda consonant closure with only partial voicing during the closure.](alignmentGuide/media/image85.png){#fig-69 width="60%"}
 
 Zoomed in:\
 
-![Figure 70 - Closer view of partial voicing during consonant closure.](alignmentGuide/media/image86.png){width="60%"}
+![Closer view of partial voicing during consonant closure.](alignmentGuide/media/image86.png){#fig-70 width="60%"}
 
 #### Potential issues with vowel-to-voiced consonant transitions {#potential-issues-vowel-to-voiced-consonant-transitions}
 
@@ -540,7 +540,7 @@ Zoomed in:\
 
 -   A: Count it towards the fricative and mark the end of the vowel as the end of the vowel.\
 
-![Figure 71 - Vowel to fricative transition, voicing stops before articulation of consonant.](alignmentGuide/media/image87.png){width="60%"}
+![Vowel to fricative transition, voicing stops before articulation of consonant.](alignmentGuide/media/image87.png){#fig-71 width="60%"}
 
 ##### When to end a vowel when voicing is inconsistent
 
@@ -548,7 +548,7 @@ Zoomed in:\
 
 -   A: Look for end of formant structure. There should still be formant structure even without phonation.\
 
-![Figure 72 - Vowel to consonant transition, inconsistent phonation of the vowel.](alignmentGuide/media/image88.png){width="60%"}
+![Vowel to consonant transition, inconsistent phonation of the vowel.](alignmentGuide/media/image88.png){#fig-72 width="60%"}
 
 ### g. Pauses {#g.-pauses}
 
@@ -556,13 +556,13 @@ Zoomed in:\
 
 -   Sometimes transitions from consonants to vowels across word boundaries are continuous, and there is no break between words. At other times there is a visible break with no audible or visible information between the consonant and the vowel. There should be a break between words in these instances:\
 
-![Figure 73 - Break between consonant and vowel across word boundaries.](alignmentGuide/media/image57.png){width="60%"}
+![Break between consonant and vowel across word boundaries.](alignmentGuide/media/image57.png){#fig-73 width="60%"}
 
 #### Pauses from vowel to vowel across word boundaries {#pauses-from-vowel-to-vowel-across-word-boundaries}
 
--   Similarly, sometimes there is a break between two vowels that are on either side of a word boundary. If there is a break with no audible or visible information between the vowels, this break should be reflected with a break between words and phones in the text grid.\
+-   Similarly, sometimes there is a break between two vowels that are on either side of a word boundary. If there is a break with no audible or visible information between the vowels, this break should be reflected with a break between words and phones in the textgrid.\
 
-![Figure 74 - Pause between vowels.](alignmentGuide/media/image79.png){width="60%"}
+![Pause between vowels.](alignmentGuide/media/image79.png){#fig-74 width="60%"}
 
 #### Speaker holds a pause and phonation keeps going {#speaker-holds-a-pause-and-phonation-keeps-going}
 
@@ -570,7 +570,7 @@ Zoomed in:\
 
 -   A: Seems like inserting a pause here might be best, as it’s not just prolonged coarticulation between two segments.\
 
-![Figure 75 - Pause with phonation.](alignmentGuide/media/image89.png){width="60%"}
+![Pause with phonation.](alignmentGuide/media/image89.png){#fig-75 width="60%"}
 
 ## 7. End-of-utterance issues {#end-of-utterance-issues}
 
@@ -582,11 +582,11 @@ Canonical placement – boundary placed at the end of noise associate with the r
 
 In context:\
 
-![Figure 76 - End of utterance consonant, in context.](alignmentGuide/media/image90.png){width="60%"}
+![End of utterance consonant, in context.](alignmentGuide/media/image90.png){#fig-76 width="60%"}
 
 Zoomed in:\
 
-![Figure 77 - End of utterance consonant, zoomed.](alignmentGuide/media/image91.png){width="60%"}
+![End of utterance consonant, zoomed.](alignmentGuide/media/image91.png){#fig-77 width="60%"}
 
 #### Fricatives at the ends of utterances {#fricatives-at-the-ends-of-utterances}
 
@@ -594,11 +594,11 @@ Canonical placement – boundary placed at the end of the noise associated with 
 
 In context:\
 
-![Figure 78 - End boundaries for fricatives at the ends of utterances, in context.](alignmentGuide/media/image92.png){width="60%"}
+![End boundaries for fricatives at the ends of utterances, in context.](alignmentGuide/media/image92.png){#fig-78 width="60%"}
 
 Zoomed in:\
 
-![Figure 79 - End boundaries for fricatives, zoomed in.](alignmentGuide/media/image93.png){width="60%"}
+![End boundaries for fricatives, zoomed in.](alignmentGuide/media/image93.png){#fig-79 width="60%"}
 
 #### Nasals at ends of utterances {#nasals-at-ends-of-utterances}
 
@@ -606,21 +606,21 @@ Canonical placement – boundary placed at the end of phonation and articulation
 
 In context:\
 
-![Figure 80 - Nasals at the ends of words/utterances, in context.](alignmentGuide/media/image94.png){width="60%"}
+![Nasals at the ends of words/utterances, in context.](alignmentGuide/media/image94.png){#fig-80 width="60%"}
 
 Zoomed in:\
 
-![Figure 81 - Nasals at the ends of words/utterances, zoomed in.](alignmentGuide/media/image95.png){width="60%"}
+![Nasals at the ends of words/utterances, zoomed in.](alignmentGuide/media/image95.png){#fig-81 width="60%"}
 
 #### Liquids at ends of utterances {#liquids-at-ends-of-utterances}
 
 Canonical placement in context:\
 
-![Figure 82 - Boundary placement for liquids at the ends of words.](alignmentGuide/media/image96.png){width="60%"}
+![Boundary placement for liquids at the ends of words.](alignmentGuide/media/image96.png){#fig-82 width="60%"}
 
 Zoomed in:\
 
-![Figure 83 - Boundary placement for utterance-final liquids, zoomed in.](alignmentGuide/media/image97.png){width="60%"}
+![Boundary placement for utterance-final liquids, zoomed in.](alignmentGuide/media/image97.png){#fig-83 width="60%"}
 
 #### Final consonant potential issues {#final-consonant-potential-issues}
 
@@ -630,7 +630,7 @@ Zoomed in:\
 
 -   A: Place the boundary for the beginning of the sound (e.g. T in OUT, below) at the end of formant structure of the vowel, and place the boundary for the end of the sound at the end of visible energy related to the consonant.\
 
-![Figure 84 - Boundary placement for utterance-final unreleased stops.](alignmentGuide/media/image98.png){width="60%"}
+![Boundary placement for utterance-final unreleased stops.](alignmentGuide/media/image98.png){#fig-84 width="60%"}
 
 ##### Boundary placement – audible exhale with consonant release
 
@@ -642,7 +642,7 @@ Zoomed in:\
 
 -   A: Don’t count exhale "ya."\
 
-![Figure 85 - Strong exhalation following final stop consonant - this additional noise should not be included as a part of the stop.](alignmentGuide/media/image99.png){width="60%"}
+![Strong exhalation following final stop consonant - this additional noise should not be included as a part of the stop.](alignmentGuide/media/image99.png){#fig-85 width="60%"}
 
 ##### Where to place boundary when exhalation starts during articulation of a nasal
 
@@ -654,11 +654,11 @@ Once articulation ends and it is just exhale, then it doesn’t count.\
 
 Without articulation:\
 
-![Figure 86 - Post-nasal exhale, no articulation (exhale not included in boundary).](alignmentGuide/media/image100.png){width="60%"}
+![Post-nasal exhale, no articulation (exhale not included in boundary).](alignmentGuide/media/image100.png){#fig-86 width="60%"}
 
 With articulation:\
 
-![Figure 87 - Post-nasal exhale with articulation (exhale is during articulation of NG and thus included within NG boundaries).](alignmentGuide/media/image101.png){width="60%"}
+![Post-nasal exhale with articulation (exhale is during articulation of NG and thus included within NG boundaries).](alignmentGuide/media/image101.png){#fig-87 width="60%"}
 
 ##### Where to place end-of-word boundary when ER0 is still articulated when exhale starts
 
@@ -666,7 +666,7 @@ With articulation:\
 
 -   A: If it is articulated, and not just exhale, it should count (similarly to nasals and vowels above). If the ER0 sounds complete and the rest is primarily exhale, don’t count it.\
 
-![Figure 88 - Exhale begins during articulation of ER0.](alignmentGuide/media/image102.png){width="50%"}
+![Exhale begins during articulation of ER0.](alignmentGuide/media/image102.png){#fig-88 width="50%"}
 
 ### b. Final vowel to end-of-utterance transition {#b.-final-vowel-to-end-of-utterance-transition}
 
@@ -676,11 +676,11 @@ Canonical placement – boundary placed at the most clear end of both formant st
 
 In context:\
 
-![Figure 89 - End boundary placement for utterance-final vowel.](alignmentGuide/media/image103.png){width="60%"}
+![End boundary placement for utterance-final vowel.](alignmentGuide/media/image103.png){#fig-89 width="60%"}
 
 Zoomed in:\
 
-![Figure 90 - End boundary placement for utterance-final vowel, zoomed in.](alignmentGuide/media/image104.png){width="60%"}
+![End boundary placement for utterance-final vowel, zoomed in.](alignmentGuide/media/image104.png){#fig-90 width="60%"}
 
 ### c. Final vowel potential issues {#c.-final-vowel-potential-issues}
 
@@ -690,7 +690,7 @@ Zoomed in:\
 
 -   A: As long as it is articulated, and not just exhale, this should be counted as vowel.\
 
-![Figure 91 - Include voiceless portions of vowel if it is still articulated as vowel and not simply exhale.](alignmentGuide/media/image105.png){width="60%"}
+![Include voiceless portions of vowel if it is still articulated as vowel and not simply exhale.](alignmentGuide/media/image105.png){#fig-91 width="60%"}
 
 #### Where to place end-of-vowel boundary when there is exhale at end of word {#where-to-place-end-of-vowel-boundary-when-there-is-exhale-at-end-of-word}
 
@@ -698,7 +698,7 @@ Zoomed in:\
 
 -   A: Yes. If it is just neutral vocal tract exhalation, this should not count.\
 
-![Figure 92 - Exhalation immediately following a sound should not count as part of that sound.](alignmentGuide/media/image106.png){width="60%"}
+![Exhalation immediately following a sound should not count as part of that sound.](alignmentGuide/media/image106.png){#fig-92 width="60%"}
 
 ## 8. Segmental issues {#segmental-issues}
 
@@ -712,7 +712,7 @@ This section focuses on issues regarding segment spacing and the number of segme
 
 -   A: Let the two segments (S and M below) have a relatively equal amount of the segment.\
 
-![Figure 93 - Segment boundaries when segments are coalesced.](alignmentGuide/media/image107.png){width="60%"}
+![Segment boundaries when segments are coalesced.](alignmentGuide/media/image107.png){#fig-93 width="60%"}
 
 ### b. Vocalization of L and Syllabic L {#b.-vocalization-of-l-and-syllabic-l}
 
@@ -722,7 +722,7 @@ This section focuses on issues regarding segment spacing and the number of segme
 
 -   A: In general it should all count as L. Make AH0 small, and L longer because the target production would primarily be L.\
 
-![Figure 94 - Vocalic L (pronounced as /o/) should have very short AH0 segment, L should make up nearly all of the sound.](alignmentGuide/media/image108.png){width="60%"}
+![Vocalic L (pronounced as /o/) should have very short AH0 segment, L should make up nearly all of the sound.](alignmentGuide/media/image108.png){#fig-94 width="60%"}
 
 #### Where to place L boundaries in AH0 L sequence when L is syllabic {#where-to-place-l-boundaries-in-ah0-l-sequence-when-l-is-syllabic}
 
@@ -730,7 +730,7 @@ This section focuses on issues regarding segment spacing and the number of segme
 
 -   A: We need to keep these due to the standard speech models used in forced aligners and assumed pronunciations. If it’s a syllabic L, just make AH0 shorter.\
 
-![Figure 95 - Syllabic L, if there is no vowel to be heard between M and L in *animal*, AH0 should be minimal and L should take up nearly the entire duration of the sound.](alignmentGuide/media/image109.png){width="60%"}
+![Syllabic L, if there is no vowel to be heard between M and L in *animal*, AH0 should be minimal and L should take up nearly the entire duration of the sound.](alignmentGuide/media/image109.png){#fig-95 width="60%"}
 
 ### c. Syllabic R issues {#c.-syllabic-r-issues}
 
@@ -740,7 +740,7 @@ This section focuses on issues regarding segment spacing and the number of segme
 
 -   A: Just make AA1 very small.\
 
-![Figure 95 - Syllabic R.](alignmentGuide/media/image110.png){width="60%"}
+![Syllabic R.](alignmentGuide/media/image110.png){#fig-95 width="60%"}
 
 ## References {#references}
 

@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/clipboard/clipboard.min.js"></script>
@@ -47,6 +67,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="citation_author" content="Henry Nomeland">
 <meta name="citation_author" content="Tristan Mahr">
 <meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=TOCS+ intelligibility measures [Computer software];,citation_author=Megan M. Hodge;,citation_author=Jason Daniels;,citation_publication_date=2007;,citation_cover_date=2007;,citation_year=2007;,citation_publisher=University of Alberta;">
 </head>
 
 <body>
@@ -143,34 +164,31 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
 </div>
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
   
 
 
-<p><strong>WISC Lab guide to the hand-correction of force-aligned textgrids</strong></p>
-<p>Written by <a href="https://kidspeech.wisc.edu/staff/annear-lucas/">Lucas Annear</a></p>
-<p>Published and Edited by <a href="https://kidspeech.wisc.edu/staff/nomeland-henry/">Henry Nomeland</a></p>
-<section id="introduction" class="level2" data-number="1">
+<section id="introduction" class="level2 page-columns page-full" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1</span> Introduction</h2>
-<section id="forced-alignment-and-textgrids" class="level3" data-number="1.1">
+<section id="forced-alignment-and-textgrids" class="level3 page-columns page-full" data-number="1.1">
 <h3 data-number="1.1" class="anchored" data-anchor-id="forced-alignment-and-textgrids"><span class="header-section-number">1.1</span> Forced alignment and textgrids</h3>
-<p>In the WISC Lab we have audio recordings of children with both typical speech development and speech and motor impairments due to Cerebral Palsy. In these recordings the child is repeating words and phrases from the <em>Test of Children’s Speech</em> (TOCS). Examples include phrases like “Cowboy boots” and “put all the toys away.” Recordings are used to calculate articulation rate, speech sound accuracy, and measures of how intelligible a child is. <a href="#fig-1" class="quarto-xref">Figure&nbsp;1</a> shows what it looks like when we open the file “The sign says keep out” in Praat.</p>
-<p>We can see the waveform (top) and the spectrogram (bottom), but what if we want to keep track of how long different words and sounds are?</p>
+<p>In the <a href="https://kidspeech.wisc.edu/">WISC Lab</a> we have audio recordings of children with both typical speech development and speech and motor impairments due to Cerebral Palsy. In these recordings the child is repeating words and phrases from the <em>Test of Children’s Speech</em> <span class="citation" data-cites="tocs2007">(TOCS, <a href="#ref-tocs2007" role="doc-biblioref">Hodge &amp; Daniels, 2007</a>)</span>. Examples include phrases like “cowboy boots” and “put all the toys away.” Recordings are used to calculate articulation rate, speech sound accuracy, and measures of how intelligible a child is. <a href="#fig-1" class="quarto-xref">Figure&nbsp;1</a> shows what it looks like when we open the file “The sign says keep out” in Praat.</p>
 <div id="fig-1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Recording of “the sign says keep out” in Praat.
+Figure&nbsp;1: Recording of “the sign says keep out” in Praat. This screenshot is taking from a Praat editor window. In this screenshot and all others, we have removed parts of the surrounding Praat interface.
 </figcaption>
 <div aria-describedby="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Recording of “the sign says keep out” in Praat."><img src="alignmentGuide/media/image4.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Recording of “the sign says keep out” in Praat. This screenshot is taking from a Praat editor window. In this screenshot and all others, we have removed parts of the surrounding Praat interface."><img src="alignmentGuide/media/image4.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
-<p>Marking the start and end points of sounds and words in a recording is useful for a variety of research purposes. However, we can’t annotate sound files directly, so we need to create a separate file that stores all of the locations of events like the start and end of a word or sound.</p>
-<p>The tool that we use to create a separate document containing annotations and labels for different words and sounds is called a <strong>forced aligner</strong>. A forced aligner takes an audio file (typically a .wav file) and a transcription of what was said in the audio file (usually a .txt or .lab file) and uses speech recognition technology to create a new file called a <strong>textgrid</strong> that is designed to be paired with the audio file. The textgrid has boundaries and labels indicating the locations of the words and phonemes in the audio file.</p>
+<p>We can see the waveform (top) and the spectrogram (bottom), but what if we want to keep track of how long different words and sounds are?</p>
+<p>Marking the start and end points of sounds and words in a recording is useful for a variety of research purposes. However, we can’t annotate sound files directly, so we need to create a separate file that stores all of the locations of events like the start and end of a word or sound. Such a companion file is called a <strong>textgrid</strong>. This file is designed to be paired with the audio file, and it contains boundaries and labels indicating the locations of the words and phonemes in the audio file.</p>
+<p>The tool that we use to create a separate document containing annotations and labels for different words and sounds is called a <strong>forced aligner</strong>. A forced aligner takes an audio file (typically a .wav file) and a transcription of what was said in the audio file (usually a .txt or .lab file) and uses speech recognition technology to create textgrid.</p>
 <p>A textgrid file is associated with a given audio file and has moveable boundaries and labels to note the occurrence of certain events (like the beginning and end of a vowel) that may be useful for research. <a href="#fig-2" class="quarto-xref">Figure&nbsp;2</a> shows the phrase from <a href="#fig-1" class="quarto-xref">Figure&nbsp;1</a> when opened with the textgrid produced by the Montreal Forced Aligner. The textgrids we create for the lab contain separate <strong>tiers</strong> for words, sounds, and the sentence containing them. Each tier has <strong>intervals</strong> with <strong>vertical boundaries</strong> separating words and sounds. These files (the .TextGrid and .wav file) can be used for automated retrieval of acoustic data such as the duration of a word or sound, formant frequencies of vowels, and other variables of interest.</p>
 <div id="fig-2" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -182,7 +200,11 @@ Figure&nbsp;2: “The sign says keep out” when the recording is opened togethe
 </div>
 </figure>
 </div>
-<p>We can open these textgrids along with the audio file in a program called <strong>Praat</strong> (Dutch for “speech”, sounds like “praht” - /pra:t/). When the textgrids and audio files are paired together in Praat, it is now easier and quicker for us to make measurements because we have labels for each word and sound, as well as the time intervals during which these events occur.</p>
+<p>We can open these textgrids along with the audio file in a program called <strong>Praat</strong>. When the textgrids and audio files are paired together in Praat, it is now easier and quicker for us to make measurements because we have labels for each word and sound, as well as the time intervals during which these events occur.</p>
+<aside>
+<em>Praat</em> is Dutch for “talk” or “talking”, and it sounds like “praht” /pra:t/.
+</aside>
+<p>.</p>
 </section>
 <section id="b.-hand-correction" class="level3" data-number="1.2">
 <h3 data-number="1.2" class="anchored" data-anchor-id="b.-hand-correction"><span class="header-section-number">1.2</span> Hand-correction</h3>
@@ -1775,9 +1797,14 @@ Figure&nbsp;94: Syllabic L, if there is no vowel to be heard between M and L in 
 <section id="references" class="level2" data-number="9">
 <h2 data-number="9" class="anchored" data-anchor-id="references"><span class="header-section-number">9</span> References</h2>
 <p>Trouvain, J. &amp; Werner, R. 2022. A phonetic view on annotating speech pauses and pause-internal phonetic principles. <em>Transkription und Annotation Gesprochener Sprache und Multimodaler Interaktion: Konzepte, Probleme, Lösungen</em>, <em>64</em>, pp.&nbsp;55-73.</p>
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-tocs2007" class="csl-entry" role="listitem">
+Hodge, M. M., &amp; Daniels, J. (2007). <em><span>TOCS</span>+ intelligibility measures [<span>Computer</span> software]</em>. University of Alberta.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -2200,7 +2227,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"loop":false,"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","openEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

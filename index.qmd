@@ -31,11 +31,11 @@ In the [WISC Lab](https://kidspeech.wisc.edu/) we have audio recordings
 of children with both typical speech development and speech and motor
 impairments due to Cerebral Palsy. In these recordings the child is
 repeating words and phrases from the *Test of Children’s Speech* [TOCS,
-@tocs2007]. Examples include phrases like “cowboy boots” and “put all
-the toys away." Recordings are used to calculate articulation rate,
+@tocs2007]. Examples include phrases like *cowboy boots* and *put all
+the toys away*. Recordings are used to calculate articulation rate,
 speech sound accuracy, and measures of how intelligible a child is.
-@fig-1 shows what it looks like when we open the file “The sign says
-keep out” in Praat.
+@fig-1 shows what it looks like when we open a recording of the sentence 
+*the sign says keep out* in Praat.
 
 ![Recording of “the sign says keep out” in Praat. This screenshot is taking from a Praat editor window. In this screenshot and all others, we have removed parts of the surrounding Praat interface.](alignmentGuide/media/image4.png){#fig-1 width="60%"}
 
@@ -68,15 +68,20 @@ Forced aligners are far from perfect. When a forced aligner creates a textgrid, 
 
 The goal of the researcher performing hand-correction is to ensure proper boundary placement. This guide is intended to help visually identify alignment issues by looking at spectrograms and waveforms, and is designed to be a guide for decision-making when boundary placement is difficult to determine.
 
-@fig-3 shows a textgrid prior to hand-correction, and @fig-4 shows the same textgrid but with black and gold squares overlaid on the image to show where the word boundaries actually are. @fig-5 shows what the textgrid looks like after hand-correction.
+@fig-3 shows a textgrid prior to hand correction, the same textgrid but with black and gold squares overlaid on the image to show where the word boundaries actually are, and the textgrid after hand-correction.
 
-![Force-aligned textgrid of cowboy boots that has not yet been hand-corrected. The boundaries for cowboy were placed too soon, and boundaries for boots include the -boy part of cowboy.](alignmentGuide/media/image6.png){#fig-3 width="60%"}
 
-![Force-aligned textgrid of cowboy boots that has not yet been hand-corrected. Black and gold squares show where the words actually occur.](alignmentGuide/media/image7.png){#fig-4 width="60%"}
+::: {#fig-3 layout-nrow="2"}
+![Before correction. The boundaries for *cowboy* were placed too soon, and boundaries for *boots* include the *boy* part of *cowboy*.](alignmentGuide/media/image6.png){width="60%"}
+  
+![With correction of the word boundaries. (Black and gold squares show where the words actually occur.)](alignmentGuide/media/image7.png){width="70%"}
+![With correction of the phone boundaries.](alignmentGuide/media/image8.png){width="70%"}
 
-![Hand-corrected textgrid of cowboy boots. We can now see how the boundaries in the textgrid line up with where the box shapes indicated that the word were.](alignmentGuide/media/image8.png){#fig-5 width="60%"}
+Force-aligned textgrid of *cowboy boots* before and after hand correction.
+:::
 
-### Phonetic alphabets {#c.-phonetic-alphabets}
+
+### Phonetic alphabets
 
 This guide makes use of two different phonetic alphabets. The first is the International Phonetic Alphabet which is described [here](https://www.internationalphoneticassociation.org/content/full-ipa-chart) and will be notated using conventional forward slashes as in /t/ or /u/. The second is the ARPAbet symbol set developed by the Advanced Research Projects Agency. This is the alphabet seen in example alignments, as MFA alignments performed in the WISC Lab make use of the [CMU pronunciation dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict). Symbols which use this alphabet will be denoted in all-caps as in T or UW. A detailed description of each of the 39 phonemes included in the ARPAbet symbol set can be found on [Wikipedia](https://en.wikipedia.org/wiki/ARPABET). It is important to note that this symbol set makes use of numbers to denote tone. Furthermore, the alignments performed in the WISC Lab and any alignments using the CMU dictionary are based on North American pronunciations. Additional considerations for the use of dictionaries outside of these pronunciations are not considered at this time.
 
@@ -181,19 +186,21 @@ Canonical boundary placement: boundary is placed adjacently preceding release of
 Initial stop consonant boundary placement
 :::
 
-**Voiced stop consonants** – Voiced stop consonants will have a short burst release and the vowel will start very shortly after the release of the consonant. Sometimes, voicing may start before the release of the consonant, which is called *prevoicing*. Figure 30 shows a voiced consonant with prevoicing before the release, and figure 31 shows a voiced consonant without prevoicing.
+**Voiced stop consonants** – Voiced stop consonants will have a short burst release and the vowel will start very shortly after the release of the consonant. Sometimes, voicing may start before the release of the consonant, which is called *prevoicing*. @fig-14 shows a voiced consonant with prevoicing before the release, and @fig-15 shows a voiced consonant without prevoicing.
 
-Prevoicing:\
+
 
 ![Voiced stop that has prevoicing leading up to the burst release.](alignmentGuide/media/image30.png){#fig-14 width="60%"}
 
-No prevoicing:\
 
-![Voiced initial stop with no prevoicing (this is typical).](alignmentGuide/media/image31.png){#fig-15 width="60%"}
+::: {#fig-15 layout-nrow="2"}
+![In context.](alignmentGuide/media/image31.png){width="60%"}
 
-Zoomed in:\
+![Zoomed in.](alignmentGuide/media/image32.png){width="70%"}
 
-![Voiced initial stop with no prevoicing zoomed in.](alignmentGuide/media/image32.png){#fig-16 width="70%"}
+Voiced initial stop with no prevoicing (this is typical).
+:::
+
 
 #### Fricatives (S, Z, H, SH, ZH, F, V, TH, and DH)
 
@@ -201,43 +208,61 @@ Canonical boundary placement – boundary is placed adjacently preceding the fir
 
 Note that DH most often looks similar to a stop consonant.\
 
-![Initial fricative boundary placement in context.](alignmentGuide/media/image33.png){#fig-17 width="60%"}
+::: {#fig-17 layout-nrow="2"}
+![In context.](alignmentGuide/media/image33.png){width="60%"}
 
-Zoomed in:\
+![Zoomed in.](alignmentGuide/media/image34.png){width="70%"}
 
-![Initial fricative boundary placement zoomed in.](alignmentGuide/media/image34.png){#fig-18 width="70%"}
+Initial fricative boundary placement.
+:::
+
+
 
 #### Nasals (M, N, and NG)
 
 Canonical boundary placement – boundary is placed adjacently preceding the onset of phonation/nasalization.
 
-![Initial nasal boundary placement in context.](alignmentGuide/media/image35.png){#fig-19 width="60%"}
+::: {#fig-19 layout-nrow="2"}
+![In context.](alignmentGuide/media/image35.png){width="100%"}
+
+![Zoomed in.](alignmentGuide/media/image36.png){width="70%"}
+
+Initial nasal boundary placement.
+:::
 
 After zooming in there appears to be noise related to beginning of nasalization, but because this could not be confirmed with listening and headphones the boundary was placed where the voicing bar of phonation begins in the lower frequency region of the spectrogram.\
 
-![Initial nasal boundary placement zoomed in.](alignmentGuide/media/image36.png){#fig-20 width="70%"}
 
 #### Liquids (L and R)
 
 *L* - Lateral Approximant\
 
-Canonical boundary placement – boundary placed at the onset of the segment. This may be clear phonation and intensity seen as nearly black on the spectrogram, or in the case of Figure 21, some formants started to be present as part of the articulation of L, so the boundary was placed at the onset of this noise and formant structure.
+Canonical boundary placement – boundary placed at the onset of the segment. This may be clear phonation and intensity seen as nearly black on the spectrogram, or in the case of @fig-21, some formants started to be present as part of the articulation of L, so the boundary was placed at the onset of this noise and formant structure.
 
-![Initial L boundary placement in context.](alignmentGuide/media/image37.png){#fig-21 width="60%"}
 
-Zoomed in:\
+::: {#fig-21 layout-nrow="2"}
+![In context.](alignmentGuide/media/image37.png){width="60%"}
 
-![Initial L boundary placement zoomed in.](alignmentGuide/media/image38.png){#fig-22 width="70%"}
+![Zoomed in.](alignmentGuide/media/image38.png){width="70%"}
+
+Initial L boundary placement.
+:::
 
 *R* - Rhotic\
 
 Canonical boundary placement – Place boundary at the onset of articulation-related noise in the signal. In this case, some articulation of R preceded phonation.
 
-![Initial R boundary placement in context.](alignmentGuide/media/image39.png){#fig-23 width="60%"}
 
-Zoomed in:\
+::: {#fig-23 layout-nrow="2"}
+![In context.](alignmentGuide/media/image39.png){width="60%"}
 
-![Initial R boundary placement zoomed in.](alignmentGuide/media/image40.png){#fig-24 width="70%"}
+![Zoomed in.](alignmentGuide/media/image38.png){width="70%"}
+
+Initial R boundary placement.
+:::
+
+
+
 
 #### Potential issues
 
@@ -271,41 +296,49 @@ With text moved:\
 
 ![Boundary placement for breathy HH-like beginning of N.](alignmentGuide/media/image46.png){#fig-30 width="60%"}
 
-##### “New” is transcribed as N Y UW1
+##### *New* is transcribed as N Y UW1
 
-American English dialects typically do not pronounce "new" as /nju:/. The Y segment can be deleted (click in the interval and press backspace), as well as the boundary between Y and UW1 (click on the boundary and press alt + backspace.\
+American English dialects typically do not pronounce *new* as N Y UW1 /nju/. The Y segment can be deleted (click in the interval and press backspace), as well as the boundary between Y and UW1 (click on the boundary and press alt + backspace).
 
-What this looks like pre-correction:\
 
-![Y in the word "new" should be deleted.](alignmentGuide/media/image47.png){#fig-31 width="65%"}
+::: {#fig-31 layout-nrow="2"}
+![Before correction.](alignmentGuide/media/image47.png){width="60%"}
+  
+![After correction in.](alignmentGuide/media/image48.png){width="70%"}
 
-What this looks like after hand-correction:\
+Example where the Y in the word *new* should be deleted.
+:::
 
-!["new" following deletion of Y.](alignmentGuide/media/image48.png){#fig-32 width="65%"}
 
-### Word-initial vowels and glides {#b.-word-initial-vowels-and-glides}
 
-#### Word-initial vowels {#word-initial-vowels}
+
+### Word-initial vowels and glides
+
+#### Word-initial vowels
 
 Canonical boundary placement – boundary is placed at the onset of phonation/laryngeal activity related to the beginning of the vowel\
 
-![Initial vowel boundary placement in context.](alignmentGuide/media/image49.png){#fig-33 width="60%"}
+::: {#fig-33 layout-nrow="2"}
+![In context.](alignmentGuide/media/image49.png){width="60%"}
+  
+![Zoomed in.](alignmentGuide/media/image50.png){width="70%"}
 
-Zoomed in:\
+Initial vowel boundary placement.
+:::
 
-![Initial vowel boundary placement zoomed in.](alignmentGuide/media/image50.png){#fig-34 width="70%"}
 
-#### Word-initial glides – W and Y {#word-initial-glides-w-y}
+#### Word-initial glides – W and Y
 
 Canonical placement – boundary placed at the onset of phonation or articulation (onset of glide may be something like a voiceless vowel).\
 
-What this looks like in context:\
+::: {#fig-35 layout-nrow="2"}
+![In context.](alignmentGuide/media/image51.png){width="60%"}
+  
+![Zoomed in.](alignmentGuide/media/image52.png){width="70%"}
 
-![Initial glide boundary placement in context.](alignmentGuide/media/image51.png){#fig-35 width="60%"}
+Initial glide boundary placement.
+:::
 
-Zoomed in:\
-
-![Initial glide boundary placement zoomed in.](alignmentGuide/media/image52.png){#fig-36 width="70%"}
 
 #### Potential Issues with initial vowels and glides {#potential-issues-with-initial-vowels-and-glides}
 
@@ -325,31 +358,34 @@ Zoomed in:\
 
 ![Voiceless beginning of glide W, boundary placement.](alignmentGuide/media/image54.png){#fig-38 width="60%"}
 
-## Within-utterance issues {#within-utterance-issues}
+## Within-utterance issues
 
 This section focuses on transitions from one sound to another within a word and within utterances.
 
-### Consonant-to-vowel transitions within a word {#a.-consonant-to-vowel-transitions-within-a-word}
+### Consonant-to-vowel transitions within a word
 
 Canonical placement – boundary placed at the clearest vertical onset of formant structure.\
 
-What this looks like in context:\
+::: {#fig-39 layout-nrow="2"}
+![In context.](alignmentGuide/media/image55.png){width="60%"}
+  
+![Zoomed in.](alignmentGuide/media/image56.png){width="70%"}
 
-![Consonant to vowel transition boundary placement in context.](alignmentGuide/media/image55.png){#fig-39 width="60%"}
+Consonant to vowel transition boundary placement.
+:::
 
-What this looks like zoomed in:\
 
-![Consonant to vowel transition boundary placement zoomed in.](alignmentGuide/media/image56.png){#fig-40 width="60%"}
 
-### Consonant-to-vowel transitions across words {#b.-consonant-to-vowel-transitions-across-words}
 
-#### Consonant to vowel transition with a gap between words {#consonant-to-vowel-transition-with-a-gap-between-words}
+### Consonant-to-vowel transitions across words 
+
+#### Consonant to vowel transition with a gap between words 
 
 -   Q: Where to place boundaries when there is a visible gap between a final consonant of one word and an initial vowel of the following word?\
 
 -   A: If there is a visible gap with no audible vowel sound, there should be a pause between the final consonant of the first word and the initial vowel of the following word. As in figure 41 below\
 
-![Small gap between final consonant in "jump" and initial vowel in "over".](alignmentGuide/media/image57.png){#fig-41 width="60%"}
+![Small gap between final consonant in *jump* and initial vowel in *over*.](alignmentGuide/media/image57.png){#fig-41 width="60%"}
 
 #### Consonant-to-vowel boundaries with no pause {#consonant-to-vowel-boundaries-with-no-pause}
 
@@ -375,27 +411,33 @@ What this looks like zoomed in:\
 
 -   A: Yes, include a pause. Anything before phonation and formant structure should not be a part of the vowel interval. The figures below show how MFA sometimes aligns these vowels but this pre-phonation area should be a part of the preceding pause.\
 
-In context:\
 
-![Vowel starts before phonation, viewed in context.](alignmentGuide/media/image60.png){#fig-44 width="60%"}
 
-Zoomed in:\
 
-![Vowel starts before phonation, zoomed in.](alignmentGuide/media/image61.png){#fig-45 width="60%"}
+::: {#fig-44 layout-nrow="2"}
+![In context.](alignmentGuide/media/image60.png){width="60%"}
+  
+![Zoomed in.](alignmentGuide/media/image61.png){width="70%"}
+
+Vowel starts before phonation.
+:::
+
+
 
 ##### Voiceless vowels
 
--   Q: When the first vowel in a word such as “potato” is voiceless, what do we count as vowel?\
+-   Q: When the first vowel in a word such as *potato* is voiceless, what do we count as vowel?\
 
 -   A: Look for the part that is most similar to a vowel that doesn’t seem to be aspiration.\
 
-In context:\
 
-![Voiceless vowel in “potato," viewed in context.](alignmentGuide/media/image62.png){#fig-46 width="60%"}
+::: {#fig-46 layout-nrow="2"}
+![In context.](alignmentGuide/media/image62.png){width="60%"}
+  
+![Zoomed in.](alignmentGuide/media/image63.png){width="70%"}
 
-Zoomed in:\
-
-![Voiceless vowel in “potato," zoomed in.](alignmentGuide/media/image63.png){#fig-47 width="60%"}
+Voiceless vowel in *potato*.
+:::
 
 ### Consonant-to-consonant transitions {#c.-consonant-to-consonant-transitions}
 
@@ -421,13 +463,17 @@ Zoomed in:\
 
 -   A: Fricatives will almost always start immediately after the burst release, especially in the case of a fricative preceded by a stop\
 
-In context:\
 
-![Stop to fricative boundary in "boots," viewed in context.](alignmentGuide/media/image66.png){#fig-50 width="60%"}
 
-Zoomed in:\
 
-![Stop to fricative boundary in "boots," zoomed in.](alignmentGuide/media/image67.png){#fig-51 width="60%"}
+::: {#fig-50 layout-nrow="2"}
+![In context.](alignmentGuide/media/image66.png){width="60%"}
+  
+![Zoomed in.](alignmentGuide/media/image67.png){width="70%"}
+
+Stop to fricative boundary in *boots*.
+:::
+
 
 #### When to start HH in consonant\|HH transitions {#when-to-start-hh-in-chh-transitions}
 
@@ -435,15 +481,20 @@ Zoomed in:\
 
 -   A: Look for the transition from burst to HH. HH usually starts to have more formant structure.\
 
-In context:\
 
-![When to start HH in consonant-to-consonant transition, viewed in context.](alignmentGuide/media/image68.png){#fig-52 width="60%"}
 
-Zoomed in:\
 
-![D\|HH boundary, zoomed in.](alignmentGuide/media/image69.png){#fig-53 width="60%"}
 
-#### Stop to stop transitions (across word boundaries) {#stop-to-stop-transitions-across-word-boundaries}
+::: {#fig-52 layout-nrow="2"}
+![In context.](alignmentGuide/media/image68.png){width="60%"}
+  
+![Zoomed in.](alignmentGuide/media/image69.png){width="70%"}
+
+When to start HH in consonant-to-consonant transition.
+:::
+
+
+#### Stop to stop transitions (across word boundaries) 
 
 -   Q: Where to place boundaries between stop consonants when there is a word boundary?\
 

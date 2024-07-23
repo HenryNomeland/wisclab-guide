@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.54">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -116,7 +116,7 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#forced-alignment-and-textgrids" id="toc-forced-alignment-and-textgrids" class="nav-link" data-scroll-target="#forced-alignment-and-textgrids"><span class="header-section-number">1.1</span> Forced alignment and textgrids</a></li>
   <li><a href="#b.-hand-correction" id="toc-b.-hand-correction" class="nav-link" data-scroll-target="#b.-hand-correction"><span class="header-section-number">1.2</span> Hand-correction</a></li>
-  <li><a href="#c.-phonetic-alphabets" id="toc-c.-phonetic-alphabets" class="nav-link" data-scroll-target="#c.-phonetic-alphabets"><span class="header-section-number">1.3</span> Phonetic alphabets</a></li>
+  <li><a href="#phonetic-alphabets" id="toc-phonetic-alphabets" class="nav-link" data-scroll-target="#phonetic-alphabets"><span class="header-section-number">1.3</span> Phonetic alphabets</a></li>
   <li><a href="#d.-montreal-forced-aligner" id="toc-d.-montreal-forced-aligner" class="nav-link" data-scroll-target="#d.-montreal-forced-aligner"><span class="header-section-number">1.4</span> Montreal Forced Aligner</a></li>
   </ul></li>
   <li><a href="#overarching-principles" id="toc-overarching-principles" class="nav-link" data-scroll-target="#overarching-principles"><span class="header-section-number">2</span> Overarching principles</a></li>
@@ -134,12 +134,12 @@ div.csl-indent {
   <li><a href="#beginning-of-utterance-issues" id="toc-beginning-of-utterance-issues" class="nav-link" data-scroll-target="#beginning-of-utterance-issues"><span class="header-section-number">5</span> Beginning-of-utterance issues</a>
   <ul class="collapse">
   <li><a href="#a.-initial-consonants" id="toc-a.-initial-consonants" class="nav-link" data-scroll-target="#a.-initial-consonants"><span class="header-section-number">5.1</span> Initial consonants</a></li>
-  <li><a href="#b.-word-initial-vowels-and-glides" id="toc-b.-word-initial-vowels-and-glides" class="nav-link" data-scroll-target="#b.-word-initial-vowels-and-glides"><span class="header-section-number">5.2</span> Word-initial vowels and glides</a></li>
+  <li><a href="#word-initial-vowels-and-glides" id="toc-word-initial-vowels-and-glides" class="nav-link" data-scroll-target="#word-initial-vowels-and-glides"><span class="header-section-number">5.2</span> Word-initial vowels and glides</a></li>
   </ul></li>
   <li><a href="#within-utterance-issues" id="toc-within-utterance-issues" class="nav-link" data-scroll-target="#within-utterance-issues"><span class="header-section-number">6</span> Within-utterance issues</a>
   <ul class="collapse">
-  <li><a href="#a.-consonant-to-vowel-transitions-within-a-word" id="toc-a.-consonant-to-vowel-transitions-within-a-word" class="nav-link" data-scroll-target="#a.-consonant-to-vowel-transitions-within-a-word"><span class="header-section-number">6.1</span> Consonant-to-vowel transitions within a word</a></li>
-  <li><a href="#b.-consonant-to-vowel-transitions-across-words" id="toc-b.-consonant-to-vowel-transitions-across-words" class="nav-link" data-scroll-target="#b.-consonant-to-vowel-transitions-across-words"><span class="header-section-number">6.2</span> Consonant-to-vowel transitions across words</a></li>
+  <li><a href="#consonant-to-vowel-transitions-within-a-word" id="toc-consonant-to-vowel-transitions-within-a-word" class="nav-link" data-scroll-target="#consonant-to-vowel-transitions-within-a-word"><span class="header-section-number">6.1</span> Consonant-to-vowel transitions within a word</a></li>
+  <li><a href="#consonant-to-vowel-transitions-across-words" id="toc-consonant-to-vowel-transitions-across-words" class="nav-link" data-scroll-target="#consonant-to-vowel-transitions-across-words"><span class="header-section-number">6.2</span> Consonant-to-vowel transitions across words</a></li>
   <li><a href="#c.-consonant-to-consonant-transitions" id="toc-c.-consonant-to-consonant-transitions" class="nav-link" data-scroll-target="#c.-consonant-to-consonant-transitions"><span class="header-section-number">6.3</span> Consonant-to-consonant transitions</a></li>
   <li><a href="#d.-vowel-to-vowel-boundaries" id="toc-d.-vowel-to-vowel-boundaries" class="nav-link" data-scroll-target="#d.-vowel-to-vowel-boundaries"><span class="header-section-number">6.4</span> Vowel-to-vowel boundaries</a></li>
   <li><a href="#e.-vowel-to-voiceless-consonant-transitions" id="toc-e.-vowel-to-voiceless-consonant-transitions" class="nav-link" data-scroll-target="#e.-vowel-to-voiceless-consonant-transitions"><span class="header-section-number">6.5</span> Vowel-to-voiceless consonant transitions</a></li>
@@ -175,7 +175,7 @@ div.csl-indent {
 <h2 data-number="1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1</span> Introduction</h2>
 <section id="forced-alignment-and-textgrids" class="level3 page-columns page-full" data-number="1.1">
 <h3 data-number="1.1" class="anchored" data-anchor-id="forced-alignment-and-textgrids"><span class="header-section-number">1.1</span> Forced alignment and textgrids</h3>
-<p>In the <a href="https://kidspeech.wisc.edu/">WISC Lab</a> we have audio recordings of children with both typical speech development and speech and motor impairments due to Cerebral Palsy. In these recordings the child is repeating words and phrases from the <em>Test of Children’s Speech</em> <span class="citation" data-cites="tocs2007">(TOCS, <a href="#ref-tocs2007" role="doc-biblioref">Hodge &amp; Daniels, 2007</a>)</span>. Examples include phrases like “cowboy boots” and “put all the toys away.” Recordings are used to calculate articulation rate, speech sound accuracy, and measures of how intelligible a child is. <a href="#fig-1" class="quarto-xref">Figure&nbsp;1</a> shows what it looks like when we open the file “The sign says keep out” in Praat.</p>
+<p>In the <a href="https://kidspeech.wisc.edu/">WISC Lab</a> we have audio recordings of children with both typical speech development and speech and motor impairments due to Cerebral Palsy. In these recordings the child is repeating words and phrases from the <em>Test of Children’s Speech</em> <span class="citation" data-cites="tocs2007">(TOCS, <a href="#ref-tocs2007" role="doc-biblioref">Hodge &amp; Daniels, 2007</a>)</span>. Examples include phrases like <em>cowboy boots</em> and <em>put all the toys away</em>. Recordings are used to calculate articulation rate, speech sound accuracy, and measures of how intelligible a child is. <a href="#fig-1" class="quarto-xref">Figure&nbsp;1</a> shows what it looks like when we open a recording of the sentence <em>the sign says keep out</em> in Praat.</p>
 <div id="fig-1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -210,41 +210,227 @@ Figure&nbsp;2: “The sign says keep out” when the recording is opened togethe
 <h3 data-number="1.2" class="anchored" data-anchor-id="b.-hand-correction"><span class="header-section-number">1.2</span> Hand-correction</h3>
 <p>Forced aligners are far from perfect. When a forced aligner creates a textgrid, the initial placement of boundaries for words and sounds may not be accurate. During the <strong>hand-correction</strong> process, researchers manually adjust the boundaries of textgrids that have been automatically created using the Montreal Forced Aligner (MFA). When MFA pairs a transcription with an audio file, it often produces fairly accurate boundary placements. In these cases the boundaries may only need some slight shifting, or even no adjustment at all. Other times, the boundaries are placed at the wrong times, or even when an entirely different word is being produced. These boundaries require hand-correction.</p>
 <p>The goal of the researcher performing hand-correction is to ensure proper boundary placement. This guide is intended to help visually identify alignment issues by looking at spectrograms and waveforms, and is designed to be a guide for decision-making when boundary placement is difficult to determine.</p>
-<p><a href="#fig-3" class="quarto-xref">Figure&nbsp;3</a> shows a textgrid prior to hand-correction, and <a href="#fig-4" class="quarto-xref">Figure&nbsp;4</a> shows the same textgrid but with black and gold squares overlaid on the image to show where the word boundaries actually are. <a href="#fig-5" class="quarto-xref">Figure&nbsp;5</a> shows what the textgrid looks like after hand-correction.</p>
-<div id="fig-3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p><a href="#fig-3" class="quarto-xref">Figure&nbsp;3</a> shows a textgrid prior to hand correction, the same textgrid but with black and gold squares overlaid on the image to show where the word boundaries actually are, and the textgrid after hand-correction.</p>
+<div id="fig-3" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Force-aligned textgrid of cowboy boots that has not yet been hand-corrected. The boundaries for cowboy were placed too soon, and boundaries for boots include the -boy part of cowboy.
+Figure&nbsp;3: Force-aligned textgrid of <em>cowboy boots</em> before and after hand correction.
 </figcaption>
 <div aria-describedby="fig-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;3: Force-aligned textgrid of cowboy boots that has not yet been hand-corrected. The boundaries for cowboy were placed too soon, and boundaries for boots include the -boy part of cowboy."><img src="alignmentGuide/media/image6.png" class="img-fluid figure-img" style="width:60.0%"></a>
-</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Before correction. The boundaries for <em>cowboy</em> were placed too soon, and boundaries for <em>boots</em> include the <em>boy</em> part of <em>cowboy</em>.</figcaption>
+<p><a href="alignmentGuide/media/image6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Before correction. The boundaries for cowboy were placed too soon, and boundaries for boots include the boy part of cowboy."><img src="alignmentGuide/media/image6.png" class="img-fluid figure-img" style="width:60.0%"></a></p>
 </figure>
 </div>
-<div id="fig-4" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Force-aligned textgrid of cowboy boots that has not yet been hand-corrected. Black and gold squares show where the words actually occur.
-</figcaption>
-<div aria-describedby="fig-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image7.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;4: Force-aligned textgrid of cowboy boots that has not yet been hand-corrected. Black and gold squares show where the words actually occur."><img src="alignmentGuide/media/image7.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>With correction of the word boundaries. (Black and gold squares show where the words actually occur.)</figcaption>
+<p><a href="alignmentGuide/media/image7.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="With correction of the word boundaries. (Black and gold squares show where the words actually occur.)"><img src="alignmentGuide/media/image7.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
 </figure>
 </div>
-<div id="fig-5" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Hand-corrected textgrid of cowboy boots. We can now see how the boundaries in the textgrid line up with where the box shapes indicated that the word were.
-</figcaption>
-<div aria-describedby="fig-5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image8.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;5: Hand-corrected textgrid of cowboy boots. We can now see how the boundaries in the textgrid line up with where the box shapes indicated that the word were."><img src="alignmentGuide/media/image8.png" class="img-fluid figure-img" style="width:60.0%"></a>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>With correction of the phone boundaries.</figcaption>
+<p><a href="alignmentGuide/media/image8.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="With correction of the phone boundaries."><img src="alignmentGuide/media/image8.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </figure>
 </div>
 </section>
-<section id="c.-phonetic-alphabets" class="level3" data-number="1.3">
-<h3 data-number="1.3" class="anchored" data-anchor-id="c.-phonetic-alphabets"><span class="header-section-number">1.3</span> Phonetic alphabets</h3>
-<p>This guide makes use of two different phonetic alphabets. The first is the International Phonetic Alphabet which is described <a href="https://www.internationalphoneticassociation.org/content/full-ipa-chart">here</a> and will be notated using conventional forward slashes as in /t/ or /u/. The second is the ARPAbet symbol set developed by the Advanced Research Projects Agency. This is the alphabet seen in example alignments, as MFA alignments performed in the WISC Lab make use of the <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">CMU pronunciation dictionary</a>. Symbols which use this alphabet will be denoted in all-caps as in T or UW. A detailed description of each of the 39 phonemes included in the ARPAbet symbol set can be found on <a href="https://en.wikipedia.org/wiki/ARPABET">Wikipedia</a>. It is important to note that this symbol set makes use of numbers to denote tone. Furthermore, the alignments performed in the WISC Lab and any alignments using the CMU dictionary are based on North American pronunciations. Additional considerations for the use of dictionaries outside of these pronunciations are not considered at this time.</p>
+<section id="phonetic-alphabets" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="phonetic-alphabets"><span class="header-section-number">1.3</span> Phonetic alphabets</h3>
+<p>This guide makes use of two different phonetic alphabets. The first is the <a href="https://www.internationalphoneticassociation.org/content/full-ipa-chart">International Phonetic Alphabet (IPA)</a> and will be notated using conventional forward slashes as in /t/ or /u/. The IPA includes many non-English characters or diacritics, which can cause headaches for computing systems. A more computing-friendly alphabet is <a href="https://en.wikipedia.org/wiki/ARPABET">ARPABET</a> which uses ASCII characters, specifically all-caps English letters. We use a particular flavor of ARPABET called CMUBET. It is the alphabet used by the <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">CMU pronunciation dictionary</a> and used in the MFA alignments. CMUBET is the ARPABET but with numbers added onto vowels indicate stress. We note here that the alignments performed in the WISC Lab and any alignments using the CMU dictionary are based on North American pronunciations. <a href="#tbl-vowels" class="quarto-xref">Table&nbsp;1</a> and <a href="#tbl-consonants" class="quarto-xref">Table&nbsp;2</a> show vowels and consonants in North American English in the two alphabets.</p>
+<div id="tbl-vowels" class="quarto-float quarto-figure quarto-figure-center anchored" data-quarto-postprocess="true">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-vowels-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Vowels in CMUBET (<code>monospaced</code>) and IPA (plain text)
+</figcaption>
+<div aria-describedby="tbl-vowels-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table id="tbl-vowels" class="caption-top table" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th rowspan="2" style="text-align: left;" data-quarto-table-cell-role="th" scope="col">Location</th>
+<th colspan="2" style="text-align: center;" data-quarto-table-cell-role="th" scope="colgroup">Front</th>
+<th colspan="2" style="text-align: center;" data-quarto-table-cell-role="th" scope="colgroup">Central</th>
+<th colspan="2" style="text-align: center;" data-quarto-table-cell-role="th" scope="colgroup">Back</th>
+</tr>
+<tr class="odd">
+<th style="text-align: center;" data-quarto-table-cell-role="th" scope="col">lax</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th" scope="col">tense</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th" scope="col">lax</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th" scope="col">tense</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th" scope="col">lax</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th" scope="col">tense</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Close</td>
+<td style="text-align: center;"><code>IH</code> ɪ</td>
+<td style="text-align: center;"><code>IY</code> i</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>UH</code> ʊ</td>
+<td style="text-align: center;"><code>UW</code> u</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mid</td>
+<td style="text-align: center;"><code>EH</code> ɛ</td>
+<td style="text-align: center;"><code>EY</code> eɪ</td>
+<td style="text-align: center;"><code>AH</code> ə, ʌ</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>OW</code> oʊ</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Open</td>
+<td style="text-align: center;"><code>AE</code> æ</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>AA</code> ɑ</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>AO</code> ɔ</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Diphthongs</td>
+<td colspan="6" style="text-align: center;"><code>AW</code> aʊ <code>AY</code> aɪ <code>OY</code> ɔɪ</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">R-colored</td>
+<td colspan="6" style="text-align: center;"><code>ER</code> ɝ, ɚ</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+
+
+<div id="tbl-consonants" class="quarto-float quarto-figure quarto-figure-center anchored" data-quarto-postprocess="true">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-consonants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Consonants in CMUBET (<code>monospaced</code>) and IPA (plain text)
+</figcaption>
+<div aria-describedby="tbl-consonants-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table id="tbl-consonants" class="caption-top table" data-quarto-postprocess="true">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th" scope="col">Manner</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th" scope="col">Bilabial</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th" scope="col">Labiodental</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th" scope="col">Dental</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th" scope="col">Alveolar</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th" scope="col">Postalveolar</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th" scope="col">Palatal</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th" scope="col">Velar</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th" scope="col">Glottal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Plosive</td>
+<td style="text-align: left;"><code>P</code> p<br>
+<code>B</code> b</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>T</code> t<br>
+<code>D</code> d</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>K</code> k<br>
+<code>G</code> g</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Affricate</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>CH</code> tʃ<br>
+<code>JH</code> dʒ</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Nasal</td>
+<td style="text-align: left;"><code>M</code> m</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>N</code> n</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>NG</code> ŋ</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fricative</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>F</code> f<br>
+<code>V</code> v</td>
+<td style="text-align: left;"><code>TH</code> θ<br>
+<code>DH</code> ð</td>
+<td style="text-align: left;"><code>S</code> s<br>
+<code>Z</code> z</td>
+<td style="text-align: left;"><code>SH</code> ʃ<br>
+<code>ZH</code> ʒ</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>H</code> h</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Approximant</td>
+<td style="text-align: left;"><code>W</code> w</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>R</code> r</td>
+<td style="text-align: left;"><code>Y</code> j</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Lateral</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>L</code> l</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
 </section>
 <section id="d.-montreal-forced-aligner" class="level3" data-number="1.4">
 <h3 data-number="1.4" class="anchored" data-anchor-id="d.-montreal-forced-aligner"><span class="header-section-number">1.4</span> Montreal Forced Aligner</h3>
@@ -301,10 +487,10 @@ The remainder of this document is a guide to boundary placement for different ty
 <div id="fig-6" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: Vowels appear dark on the spectrogram with distinct darker bands called formants.
+Figure&nbsp;4: Vowels appear dark on the spectrogram with distinct darker bands called formants.
 </figcaption>
 <div aria-describedby="fig-6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image13.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure&nbsp;6: Vowels appear dark on the spectrogram with distinct darker bands called formants."><img src="alignmentGuide/media/image13.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image13.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure&nbsp;4: Vowels appear dark on the spectrogram with distinct darker bands called formants."><img src="alignmentGuide/media/image13.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -315,10 +501,10 @@ Figure&nbsp;6: Vowels appear dark on the spectrogram with distinct darker bands 
 <div id="fig-7" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7: L sometimes appears vowel-like as featured, and sometimes has a grey, “hollow” look, similar to a nasal.
+Figure&nbsp;5: L sometimes appears vowel-like as featured, and sometimes has a grey, “hollow” look, similar to a nasal.
 </figcaption>
 <div aria-describedby="fig-7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image15.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;7: L sometimes appears vowel-like as featured, and sometimes has a grey, “hollow” look, similar to a nasal."><img src="alignmentGuide/media/image15.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image15.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;5: L sometimes appears vowel-like as featured, and sometimes has a grey, “hollow” look, similar to a nasal."><img src="alignmentGuide/media/image15.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -326,10 +512,10 @@ Figure&nbsp;7: L sometimes appears vowel-like as featured, and sometimes has a g
 <div id="fig-8" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8: R in or. Appears vowel-like but notice the third formant dropping down adjacent to the second formant.
+Figure&nbsp;6: R in or. Appears vowel-like but notice the third formant dropping down adjacent to the second formant.
 </figcaption>
 <div aria-describedby="fig-8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image17.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figure&nbsp;8: R in or. Appears vowel-like but notice the third formant dropping down adjacent to the second formant."><img src="alignmentGuide/media/image17.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image17.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figure&nbsp;6: R in or. Appears vowel-like but notice the third formant dropping down adjacent to the second formant."><img src="alignmentGuide/media/image17.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -340,10 +526,10 @@ Figure&nbsp;8: R in or. Appears vowel-like but notice the third formant dropping
 <div id="fig-9" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;9: Nasals have similar energy to vowels, but will appear sparse and grey on the spectrogram.
+Figure&nbsp;7: Nasals have similar energy to vowels, but will appear sparse and grey on the spectrogram.
 </figcaption>
 <div aria-describedby="fig-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image19.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Figure&nbsp;9: Nasals have similar energy to vowels, but will appear sparse and grey on the spectrogram."><img src="alignmentGuide/media/image19.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image19.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Figure&nbsp;7: Nasals have similar energy to vowels, but will appear sparse and grey on the spectrogram."><img src="alignmentGuide/media/image19.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -354,10 +540,10 @@ Figure&nbsp;9: Nasals have similar energy to vowels, but will appear sparse and 
 <div id="fig-10" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10: Fricatives are generally long sounds that appear as noise in the spectrogram.
+Figure&nbsp;8: Fricatives are generally long sounds that appear as noise in the spectrogram.
 </figcaption>
 <div aria-describedby="fig-10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image21.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Figure&nbsp;10: Fricatives are generally long sounds that appear as noise in the spectrogram."><img src="alignmentGuide/media/image21.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image21.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Figure&nbsp;8: Fricatives are generally long sounds that appear as noise in the spectrogram."><img src="alignmentGuide/media/image21.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -368,10 +554,10 @@ Figure&nbsp;10: Fricatives are generally long sounds that appear as noise in the
 <div id="fig-11" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11: Stop consonants articulated as such will have a burst which appears as a brief dark band spanning the frequency range. P, T, and K in the onset position of most words will have aspiration that follows.
+Figure&nbsp;9: Stop consonants articulated as such will have a burst which appears as a brief dark band spanning the frequency range. P, T, and K in the onset position of most words will have aspiration that follows.
 </figcaption>
 <div aria-describedby="fig-11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image23.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Figure&nbsp;11: Stop consonants articulated as such will have a burst which appears as a brief dark band spanning the frequency range. P, T, and K in the onset position of most words will have aspiration that follows."><img src="alignmentGuide/media/image23.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image23.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Figure&nbsp;9: Stop consonants articulated as such will have a burst which appears as a brief dark band spanning the frequency range. P, T, and K in the onset position of most words will have aspiration that follows."><img src="alignmentGuide/media/image23.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -389,7 +575,7 @@ Figure&nbsp;11: Stop consonants articulated as such will have a burst which appe
 <div id="fig-12" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;12: Initial stop consonant boundary placement
+Figure&nbsp;10: Initial stop consonant boundary placement
 </figcaption>
 <div aria-describedby="fig-12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row">
@@ -415,40 +601,43 @@ Figure&nbsp;12: Initial stop consonant boundary placement
 </div>
 </figure>
 </div>
-<p><strong>Voiced stop consonants</strong> – Voiced stop consonants will have a short burst release and the vowel will start very shortly after the release of the consonant. Sometimes, voicing may start before the release of the consonant, which is called <em>prevoicing</em>. Figure 30 shows a voiced consonant with prevoicing before the release, and figure 31 shows a voiced consonant without prevoicing.</p>
-<p>Prevoicing:<br>
-</p>
+<p><strong>Voiced stop consonants</strong> – Voiced stop consonants will have a short burst release and the vowel will start very shortly after the release of the consonant. Sometimes, voicing may start before the release of the consonant, which is called <em>prevoicing</em>. <a href="#fig-14" class="quarto-xref">Figure&nbsp;11</a> shows a voiced consonant with prevoicing before the release, and <a href="#fig-15" class="quarto-xref">Figure&nbsp;12</a> shows a voiced consonant without prevoicing.</p>
 <div id="fig-14" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;13: Voiced stop that has prevoicing leading up to the burst release.
+Figure&nbsp;11: Voiced stop that has prevoicing leading up to the burst release.
 </figcaption>
 <div aria-describedby="fig-14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image30.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Figure&nbsp;13: Voiced stop that has prevoicing leading up to the burst release."><img src="alignmentGuide/media/image30.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image30.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Figure&nbsp;11: Voiced stop that has prevoicing leading up to the burst release."><img src="alignmentGuide/media/image30.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
-<p>No prevoicing:<br>
-</p>
-<div id="fig-15" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-15" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-15-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;14: Voiced initial stop with no prevoicing (this is typical).
+Figure&nbsp;12: Voiced initial stop with no prevoicing (this is typical).
 </figcaption>
 <div aria-describedby="fig-15-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image31.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Figure&nbsp;14: Voiced initial stop with no prevoicing (this is typical)."><img src="alignmentGuide/media/image31.png" class="img-fluid figure-img" style="width:60.0%"></a>
-</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>In context.</figcaption>
+<p><a href="alignmentGuide/media/image31.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="In context."><img src="alignmentGuide/media/image31.png" class="img-fluid figure-img" style="width:60.0%"></a></p>
 </figure>
 </div>
-<p>Zoomed in:<br>
-</p>
-<div id="fig-16" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;15: Voiced initial stop with no prevoicing zoomed in.
-</figcaption>
-<div aria-describedby="fig-16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image32.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Figure&nbsp;15: Voiced initial stop with no prevoicing zoomed in."><img src="alignmentGuide/media/image32.png" class="img-fluid figure-img" style="width:70.0%"></a>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Zoomed in.</figcaption>
+<p><a href="alignmentGuide/media/image32.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Zoomed in."><img src="alignmentGuide/media/image32.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </figure>
 </div>
@@ -459,25 +648,32 @@ Figure&nbsp;15: Voiced initial stop with no prevoicing zoomed in.
 </p>
 <p>Note that DH most often looks similar to a stop consonant.<br>
 </p>
-<div id="fig-17" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-17" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;16: Initial fricative boundary placement in context.
+Figure&nbsp;13: Initial fricative boundary placement.
 </figcaption>
 <div aria-describedby="fig-17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image33.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Figure&nbsp;16: Initial fricative boundary placement in context."><img src="alignmentGuide/media/image33.png" class="img-fluid figure-img" style="width:60.0%"></a>
-</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>In context.</figcaption>
+<p><a href="alignmentGuide/media/image33.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="In context."><img src="alignmentGuide/media/image33.png" class="img-fluid figure-img" style="width:60.0%"></a></p>
 </figure>
 </div>
-<p>Zoomed in:<br>
-</p>
-<div id="fig-18" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-18-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;17: Initial fricative boundary placement zoomed in.
-</figcaption>
-<div aria-describedby="fig-18-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image34.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="Figure&nbsp;17: Initial fricative boundary placement zoomed in."><img src="alignmentGuide/media/image34.png" class="img-fluid figure-img" style="width:70.0%"></a>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Zoomed in.</figcaption>
+<p><a href="alignmentGuide/media/image34.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="Zoomed in."><img src="alignmentGuide/media/image34.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </figure>
 </div>
@@ -485,78 +681,101 @@ Figure&nbsp;17: Initial fricative boundary placement zoomed in.
 <section id="nasals-m-n-and-ng" class="level4" data-number="5.1.3">
 <h4 data-number="5.1.3" class="anchored" data-anchor-id="nasals-m-n-and-ng"><span class="header-section-number">5.1.3</span> Nasals (M, N, and NG)</h4>
 <p>Canonical boundary placement – boundary is placed adjacently preceding the onset of phonation/nasalization.</p>
-<div id="fig-19" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-19" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-19-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;18: Initial nasal boundary placement in context.
+Figure&nbsp;14: Initial nasal boundary placement.
 </figcaption>
 <div aria-describedby="fig-19-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image35.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19" title="Figure&nbsp;18: Initial nasal boundary placement in context."><img src="alignmentGuide/media/image35.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>In context.</figcaption>
+<p><a href="alignmentGuide/media/image35.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19" title="In context."><img src="alignmentGuide/media/image35.png" class="img-fluid figure-img" style="width:100.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Zoomed in.</figcaption>
+<p><a href="alignmentGuide/media/image36.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20" title="Zoomed in."><img src="alignmentGuide/media/image36.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </figure>
 </div>
 <p>After zooming in there appears to be noise related to beginning of nasalization, but because this could not be confirmed with listening and headphones the boundary was placed where the voicing bar of phonation begins in the lower frequency region of the spectrogram.<br>
 </p>
-<div id="fig-20" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-20-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;19: Initial nasal boundary placement zoomed in.
-</figcaption>
-<div aria-describedby="fig-20-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image36.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20" title="Figure&nbsp;19: Initial nasal boundary placement zoomed in."><img src="alignmentGuide/media/image36.png" class="img-fluid figure-img" style="width:70.0%"></a>
-</div>
-</figure>
-</div>
 </section>
 <section id="liquids-l-and-r" class="level4" data-number="5.1.4">
 <h4 data-number="5.1.4" class="anchored" data-anchor-id="liquids-l-and-r"><span class="header-section-number">5.1.4</span> Liquids (L and R)</h4>
 <p><em>L</em> - Lateral Approximant<br>
 </p>
-<p>Canonical boundary placement – boundary placed at the onset of the segment. This may be clear phonation and intensity seen as nearly black on the spectrogram, or in the case of Figure 21, some formants started to be present as part of the articulation of L, so the boundary was placed at the onset of this noise and formant structure.</p>
-<div id="fig-21" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>Canonical boundary placement – boundary placed at the onset of the segment. This may be clear phonation and intensity seen as nearly black on the spectrogram, or in the case of <a href="#fig-21" class="quarto-xref">Figure&nbsp;15</a>, some formants started to be present as part of the articulation of L, so the boundary was placed at the onset of this noise and formant structure.</p>
+<div id="fig-21" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-21-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;20: Initial L boundary placement in context.
+Figure&nbsp;15: Initial L boundary placement.
 </figcaption>
 <div aria-describedby="fig-21-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image37.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21" title="Figure&nbsp;20: Initial L boundary placement in context."><img src="alignmentGuide/media/image37.png" class="img-fluid figure-img" style="width:60.0%"></a>
-</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>In context.</figcaption>
+<p><a href="alignmentGuide/media/image37.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21" title="In context."><img src="alignmentGuide/media/image37.png" class="img-fluid figure-img" style="width:60.0%"></a></p>
 </figure>
 </div>
-<p>Zoomed in:<br>
-</p>
-<div id="fig-22" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-22-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;21: Initial L boundary placement zoomed in.
-</figcaption>
-<div aria-describedby="fig-22-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image38.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22" title="Figure&nbsp;21: Initial L boundary placement zoomed in."><img src="alignmentGuide/media/image38.png" class="img-fluid figure-img" style="width:70.0%"></a>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Zoomed in.</figcaption>
+<p><a href="alignmentGuide/media/image38.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22" title="Zoomed in."><img src="alignmentGuide/media/image38.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </figure>
 </div>
 <p><em>R</em> - Rhotic<br>
 </p>
 <p>Canonical boundary placement – Place boundary at the onset of articulation-related noise in the signal. In this case, some articulation of R preceded phonation.</p>
-<div id="fig-23" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-23" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;22: Initial R boundary placement in context.
+Figure&nbsp;16: Initial R boundary placement.
 </figcaption>
 <div aria-describedby="fig-23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image39.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23" title="Figure&nbsp;22: Initial R boundary placement in context."><img src="alignmentGuide/media/image39.png" class="img-fluid figure-img" style="width:60.0%"></a>
-</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>In context.</figcaption>
+<p><a href="alignmentGuide/media/image39.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23" title="In context."><img src="alignmentGuide/media/image39.png" class="img-fluid figure-img" style="width:60.0%"></a></p>
 </figure>
 </div>
-<p>Zoomed in:<br>
-</p>
-<div id="fig-24" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;23: Initial R boundary placement zoomed in.
-</figcaption>
-<div aria-describedby="fig-24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image40.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24" title="Figure&nbsp;23: Initial R boundary placement zoomed in."><img src="alignmentGuide/media/image40.png" class="img-fluid figure-img" style="width:70.0%"></a>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Zoomed in.</figcaption>
+<p><a href="alignmentGuide/media/image38.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24" title="Zoomed in."><img src="alignmentGuide/media/image38.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </figure>
 </div>
@@ -574,10 +793,10 @@ Figure&nbsp;23: Initial R boundary placement zoomed in.
 <div id="fig-25" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-25-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;24: HH is missing the initial boundary.
+Figure&nbsp;17: HH is missing the initial boundary.
 </figcaption>
 <div aria-describedby="fig-25-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image41.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25" title="Figure&nbsp;24: HH is missing the initial boundary."><img src="alignmentGuide/media/image41.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image41.png" class="lightbox" data-gallery="quarto-lightbox-gallery-25" title="Figure&nbsp;17: HH is missing the initial boundary."><img src="alignmentGuide/media/image41.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -586,10 +805,10 @@ Figure&nbsp;24: HH is missing the initial boundary.
 <div id="fig-26" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-26-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;25: With boundaries placed but before text has been moved.
+Figure&nbsp;18: With boundaries placed but before text has been moved.
 </figcaption>
 <div aria-describedby="fig-26-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image42.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26" title="Figure&nbsp;25: With boundaries placed but before text has been moved."><img src="alignmentGuide/media/image42.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image42.png" class="lightbox" data-gallery="quarto-lightbox-gallery-26" title="Figure&nbsp;18: With boundaries placed but before text has been moved."><img src="alignmentGuide/media/image42.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -598,10 +817,10 @@ Figure&nbsp;25: With boundaries placed but before text has been moved.
 <div id="fig-27" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-27-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;26: Cutting text from the interval.
+Figure&nbsp;19: Cutting text from the interval.
 </figcaption>
 <div aria-describedby="fig-27-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image43.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27" title="Figure&nbsp;26: Cutting text from the interval."><img src="alignmentGuide/media/image43.png" class="img-fluid figure-img" style="width:55.0%"></a>
+<a href="alignmentGuide/media/image43.png" class="lightbox" data-gallery="quarto-lightbox-gallery-27" title="Figure&nbsp;19: Cutting text from the interval."><img src="alignmentGuide/media/image43.png" class="img-fluid figure-img" style="width:55.0%"></a>
 </div>
 </figure>
 </div>
@@ -610,10 +829,10 @@ Figure&nbsp;26: Cutting text from the interval.
 <div id="fig-28" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-28-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;27: After text has been moved to appropriate intervals.
+Figure&nbsp;20: After text has been moved to appropriate intervals.
 </figcaption>
 <div aria-describedby="fig-28-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image44.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28" title="Figure&nbsp;27: After text has been moved to appropriate intervals."><img src="alignmentGuide/media/image44.png" class="img-fluid figure-img" style="width:50.0%"></a>
+<a href="alignmentGuide/media/image44.png" class="lightbox" data-gallery="quarto-lightbox-gallery-28" title="Figure&nbsp;20: After text has been moved to appropriate intervals."><img src="alignmentGuide/media/image44.png" class="img-fluid figure-img" style="width:50.0%"></a>
 </div>
 </figure>
 </div>
@@ -629,109 +848,125 @@ Figure&nbsp;27: After text has been moved to appropriate intervals.
 <div id="fig-29" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-29-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;28: Boundary placement for breathy HH-like beginning of L.
+Figure&nbsp;21: Boundary placement for breathy HH-like beginning of L.
 </figcaption>
 <div aria-describedby="fig-29-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image45.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29" title="Figure&nbsp;28: Boundary placement for breathy HH-like beginning of L."><img src="alignmentGuide/media/image45.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image45.png" class="lightbox" data-gallery="quarto-lightbox-gallery-29" title="Figure&nbsp;21: Boundary placement for breathy HH-like beginning of L."><img src="alignmentGuide/media/image45.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
 <div id="fig-30" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-30-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;29: Boundary placement for breathy HH-like beginning of N.
+Figure&nbsp;22: Boundary placement for breathy HH-like beginning of N.
 </figcaption>
 <div aria-describedby="fig-30-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image46.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30" title="Figure&nbsp;29: Boundary placement for breathy HH-like beginning of N."><img src="alignmentGuide/media/image46.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image46.png" class="lightbox" data-gallery="quarto-lightbox-gallery-30" title="Figure&nbsp;22: Boundary placement for breathy HH-like beginning of N."><img src="alignmentGuide/media/image46.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
 </section>
 <section id="new-is-transcribed-as-n-y-uw1" class="level5" data-number="5.1.5.3">
-<h5 data-number="5.1.5.3" class="anchored" data-anchor-id="new-is-transcribed-as-n-y-uw1"><span class="header-section-number">5.1.5.3</span> “New” is transcribed as N Y UW1</h5>
-<p>American English dialects typically do not pronounce “new” as /nju:/. The Y segment can be deleted (click in the interval and press backspace), as well as the boundary between Y and UW1 (click on the boundary and press alt + backspace.<br>
-</p>
-<p>What this looks like pre-correction:<br>
-</p>
-<div id="fig-31" class="quarto-float quarto-figure quarto-figure-center anchored">
+<h5 data-number="5.1.5.3" class="anchored" data-anchor-id="new-is-transcribed-as-n-y-uw1"><span class="header-section-number">5.1.5.3</span> <em>New</em> is transcribed as N Y UW1</h5>
+<p>American English dialects typically do not pronounce <em>new</em> as N Y UW1 /nju/. The Y segment can be deleted (click in the interval and press backspace), as well as the boundary between Y and UW1 (click on the boundary and press alt + backspace).</p>
+<div id="fig-31" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-31-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;30: Y in the word “new” should be deleted.
+Figure&nbsp;23: Example where the Y in the word <em>new</em> should be deleted.
 </figcaption>
 <div aria-describedby="fig-31-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image47.png" class="lightbox" data-gallery="quarto-lightbox-gallery-31" title="Figure&nbsp;30: Y in the word “new” should be deleted."><img src="alignmentGuide/media/image47.png" class="img-fluid figure-img" style="width:65.0%"></a>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Before correction.</figcaption>
+<p><a href="alignmentGuide/media/image47.png" class="lightbox" data-gallery="quarto-lightbox-gallery-31" title="Before correction."><img src="alignmentGuide/media/image47.png" class="img-fluid figure-img" style="width:60.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>After correction in.</figcaption>
+<p><a href="alignmentGuide/media/image48.png" class="lightbox" data-gallery="quarto-lightbox-gallery-32" title="After correction in."><img src="alignmentGuide/media/image48.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </figure>
 </div>
-<p>What this looks like after hand-correction:<br>
-</p>
-<div id="fig-32" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-32-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;31: “new” following deletion of Y.
-</figcaption>
-<div aria-describedby="fig-32-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image48.png" class="lightbox" data-gallery="quarto-lightbox-gallery-32" title="Figure&nbsp;31: “new” following deletion of Y."><img src="alignmentGuide/media/image48.png" class="img-fluid figure-img" style="width:65.0%"></a>
-</div>
-</figure>
-</div>
 </section>
 </section>
 </section>
-<section id="b.-word-initial-vowels-and-glides" class="level3" data-number="5.2">
-<h3 data-number="5.2" class="anchored" data-anchor-id="b.-word-initial-vowels-and-glides"><span class="header-section-number">5.2</span> Word-initial vowels and glides</h3>
+<section id="word-initial-vowels-and-glides" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="word-initial-vowels-and-glides"><span class="header-section-number">5.2</span> Word-initial vowels and glides</h3>
 <section id="word-initial-vowels" class="level4" data-number="5.2.1">
 <h4 data-number="5.2.1" class="anchored" data-anchor-id="word-initial-vowels"><span class="header-section-number">5.2.1</span> Word-initial vowels</h4>
 <p>Canonical boundary placement – boundary is placed at the onset of phonation/laryngeal activity related to the beginning of the vowel<br>
 </p>
-<div id="fig-33" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-33" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-33-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;32: Initial vowel boundary placement in context.
+Figure&nbsp;24: Initial vowel boundary placement.
 </figcaption>
 <div aria-describedby="fig-33-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image49.png" class="lightbox" data-gallery="quarto-lightbox-gallery-33" title="Figure&nbsp;32: Initial vowel boundary placement in context."><img src="alignmentGuide/media/image49.png" class="img-fluid figure-img" style="width:60.0%"></a>
-</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>In context.</figcaption>
+<p><a href="alignmentGuide/media/image49.png" class="lightbox" data-gallery="quarto-lightbox-gallery-33" title="In context."><img src="alignmentGuide/media/image49.png" class="img-fluid figure-img" style="width:60.0%"></a></p>
 </figure>
 </div>
-<p>Zoomed in:<br>
-</p>
-<div id="fig-34" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-34-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;33: Initial vowel boundary placement zoomed in.
-</figcaption>
-<div aria-describedby="fig-34-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image50.png" class="lightbox" data-gallery="quarto-lightbox-gallery-34" title="Figure&nbsp;33: Initial vowel boundary placement zoomed in."><img src="alignmentGuide/media/image50.png" class="img-fluid figure-img" style="width:70.0%"></a>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Zoomed in.</figcaption>
+<p><a href="alignmentGuide/media/image50.png" class="lightbox" data-gallery="quarto-lightbox-gallery-34" title="Zoomed in."><img src="alignmentGuide/media/image50.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </figure>
 </div>
 </section>
-<section id="word-initial-glides-w-y" class="level4" data-number="5.2.2">
-<h4 data-number="5.2.2" class="anchored" data-anchor-id="word-initial-glides-w-y"><span class="header-section-number">5.2.2</span> Word-initial glides – W and Y</h4>
+<section id="word-initial-glides-w-and-y" class="level4" data-number="5.2.2">
+<h4 data-number="5.2.2" class="anchored" data-anchor-id="word-initial-glides-w-and-y"><span class="header-section-number">5.2.2</span> Word-initial glides – W and Y</h4>
 <p>Canonical placement – boundary placed at the onset of phonation or articulation (onset of glide may be something like a voiceless vowel).<br>
 </p>
-<p>What this looks like in context:<br>
-</p>
-<div id="fig-35" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-35" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-35-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;34: Initial glide boundary placement in context.
+Figure&nbsp;25: Initial glide boundary placement.
 </figcaption>
 <div aria-describedby="fig-35-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image51.png" class="lightbox" data-gallery="quarto-lightbox-gallery-35" title="Figure&nbsp;34: Initial glide boundary placement in context."><img src="alignmentGuide/media/image51.png" class="img-fluid figure-img" style="width:60.0%"></a>
-</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>In context.</figcaption>
+<p><a href="alignmentGuide/media/image51.png" class="lightbox" data-gallery="quarto-lightbox-gallery-35" title="In context."><img src="alignmentGuide/media/image51.png" class="img-fluid figure-img" style="width:60.0%"></a></p>
 </figure>
 </div>
-<p>Zoomed in:<br>
-</p>
-<div id="fig-36" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-36-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;35: Initial glide boundary placement zoomed in.
-</figcaption>
-<div aria-describedby="fig-36-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image52.png" class="lightbox" data-gallery="quarto-lightbox-gallery-36" title="Figure&nbsp;35: Initial glide boundary placement zoomed in."><img src="alignmentGuide/media/image52.png" class="img-fluid figure-img" style="width:70.0%"></a>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Zoomed in.</figcaption>
+<p><a href="alignmentGuide/media/image52.png" class="lightbox" data-gallery="quarto-lightbox-gallery-36" title="Zoomed in."><img src="alignmentGuide/media/image52.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </figure>
 </div>
@@ -749,10 +984,10 @@ Figure&nbsp;35: Initial glide boundary placement zoomed in.
 <div id="fig-37" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-37-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;36: Initial vowel boundary placement when vowel begins with “glottal pop.”
+Figure&nbsp;26: Initial vowel boundary placement when vowel begins with “glottal pop.”
 </figcaption>
 <div aria-describedby="fig-37-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image53.png" class="lightbox" data-gallery="quarto-lightbox-gallery-37" title="Figure&nbsp;36: Initial vowel boundary placement when vowel begins with “glottal pop.”"><img src="alignmentGuide/media/image53.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image53.png" class="lightbox" data-gallery="quarto-lightbox-gallery-37" title="Figure&nbsp;26: Initial vowel boundary placement when vowel begins with “glottal pop.”"><img src="alignmentGuide/media/image53.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -768,10 +1003,10 @@ Figure&nbsp;36: Initial vowel boundary placement when vowel begins with “glott
 <div id="fig-38" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-38-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;37: Voiceless beginning of glide W, boundary placement.
+Figure&nbsp;27: Voiceless beginning of glide W, boundary placement.
 </figcaption>
 <div aria-describedby="fig-38-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image54.png" class="lightbox" data-gallery="quarto-lightbox-gallery-38" title="Figure&nbsp;37: Voiceless beginning of glide W, boundary placement."><img src="alignmentGuide/media/image54.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image54.png" class="lightbox" data-gallery="quarto-lightbox-gallery-38" title="Figure&nbsp;27: Voiceless beginning of glide W, boundary placement."><img src="alignmentGuide/media/image54.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -782,37 +1017,42 @@ Figure&nbsp;37: Voiceless beginning of glide W, boundary placement.
 <section id="within-utterance-issues" class="level2" data-number="6">
 <h2 data-number="6" class="anchored" data-anchor-id="within-utterance-issues"><span class="header-section-number">6</span> Within-utterance issues</h2>
 <p>This section focuses on transitions from one sound to another within a word and within utterances.</p>
-<section id="a.-consonant-to-vowel-transitions-within-a-word" class="level3" data-number="6.1">
-<h3 data-number="6.1" class="anchored" data-anchor-id="a.-consonant-to-vowel-transitions-within-a-word"><span class="header-section-number">6.1</span> Consonant-to-vowel transitions within a word</h3>
+<section id="consonant-to-vowel-transitions-within-a-word" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="consonant-to-vowel-transitions-within-a-word"><span class="header-section-number">6.1</span> Consonant-to-vowel transitions within a word</h3>
 <p>Canonical placement – boundary placed at the clearest vertical onset of formant structure.<br>
 </p>
-<p>What this looks like in context:<br>
-</p>
-<div id="fig-39" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-39" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-39-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;38: Consonant to vowel transition boundary placement in context.
+Figure&nbsp;28: Consonant to vowel transition boundary placement.
 </figcaption>
 <div aria-describedby="fig-39-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image55.png" class="lightbox" data-gallery="quarto-lightbox-gallery-39" title="Figure&nbsp;38: Consonant to vowel transition boundary placement in context."><img src="alignmentGuide/media/image55.png" class="img-fluid figure-img" style="width:60.0%"></a>
-</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>In context.</figcaption>
+<p><a href="alignmentGuide/media/image55.png" class="lightbox" data-gallery="quarto-lightbox-gallery-39" title="In context."><img src="alignmentGuide/media/image55.png" class="img-fluid figure-img" style="width:60.0%"></a></p>
 </figure>
 </div>
-<p>What this looks like zoomed in:<br>
-</p>
-<div id="fig-40" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-40-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;39: Consonant to vowel transition boundary placement zoomed in.
-</figcaption>
-<div aria-describedby="fig-40-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image56.png" class="lightbox" data-gallery="quarto-lightbox-gallery-40" title="Figure&nbsp;39: Consonant to vowel transition boundary placement zoomed in."><img src="alignmentGuide/media/image56.png" class="img-fluid figure-img" style="width:60.0%"></a>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Zoomed in.</figcaption>
+<p><a href="alignmentGuide/media/image56.png" class="lightbox" data-gallery="quarto-lightbox-gallery-40" title="Zoomed in."><img src="alignmentGuide/media/image56.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </figure>
 </div>
 </section>
-<section id="b.-consonant-to-vowel-transitions-across-words" class="level3" data-number="6.2">
-<h3 data-number="6.2" class="anchored" data-anchor-id="b.-consonant-to-vowel-transitions-across-words"><span class="header-section-number">6.2</span> Consonant-to-vowel transitions across words</h3>
+<section id="consonant-to-vowel-transitions-across-words" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="consonant-to-vowel-transitions-across-words"><span class="header-section-number">6.2</span> Consonant-to-vowel transitions across words</h3>
 <section id="consonant-to-vowel-transition-with-a-gap-between-words" class="level4" data-number="6.2.1">
 <h4 data-number="6.2.1" class="anchored" data-anchor-id="consonant-to-vowel-transition-with-a-gap-between-words"><span class="header-section-number">6.2.1</span> Consonant to vowel transition with a gap between words</h4>
 <ul>
@@ -824,10 +1064,10 @@ Figure&nbsp;39: Consonant to vowel transition boundary placement zoomed in.
 <div id="fig-41" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-41-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;40: Small gap between final consonant in “jump” and initial vowel in “over”.
+Figure&nbsp;29: Small gap between final consonant in <em>jump</em> and initial vowel in <em>over</em>.
 </figcaption>
 <div aria-describedby="fig-41-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image57.png" class="lightbox" data-gallery="quarto-lightbox-gallery-41" title="Figure&nbsp;40: Small gap between final consonant in “jump” and initial vowel in “over”."><img src="alignmentGuide/media/image57.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image57.png" class="lightbox" data-gallery="quarto-lightbox-gallery-41" title="Figure&nbsp;29: Small gap between final consonant in jump and initial vowel in over."><img src="alignmentGuide/media/image57.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -843,10 +1083,10 @@ Figure&nbsp;40: Small gap between final consonant in “jump” and initial vowe
 <div id="fig-42" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-42-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;41: What appeared to be a pause between D and A01 actually has audible/visible information as the vowel is starting. In this case, the beginning of the vowel should be the beginning of this information.
+Figure&nbsp;30: What appeared to be a pause between D and A01 actually has audible/visible information as the vowel is starting. In this case, the beginning of the vowel should be the beginning of this information.
 </figcaption>
 <div aria-describedby="fig-42-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image58.png" class="lightbox" data-gallery="quarto-lightbox-gallery-42" title="Figure&nbsp;41: What appeared to be a pause between D and A01 actually has audible/visible information as the vowel is starting. In this case, the beginning of the vowel should be the beginning of this information."><img src="alignmentGuide/media/image58.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image58.png" class="lightbox" data-gallery="quarto-lightbox-gallery-42" title="Figure&nbsp;30: What appeared to be a pause between D and A01 actually has audible/visible information as the vowel is starting. In this case, the beginning of the vowel should be the beginning of this information."><img src="alignmentGuide/media/image58.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -863,10 +1103,10 @@ Figure&nbsp;41: What appeared to be a pause between D and A01 actually has audib
 <div id="fig-43" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-43-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;42: Boundary placement when there is “notch” of voice bar that precedes formant structure in a vowel.
+Figure&nbsp;31: Boundary placement when there is “notch” of voice bar that precedes formant structure in a vowel.
 </figcaption>
 <div aria-describedby="fig-43-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image59.png" class="lightbox" data-gallery="quarto-lightbox-gallery-43" title="Figure&nbsp;42: Boundary placement when there is “notch” of voice bar that precedes formant structure in a vowel."><img src="alignmentGuide/media/image59.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image59.png" class="lightbox" data-gallery="quarto-lightbox-gallery-43" title="Figure&nbsp;31: Boundary placement when there is “notch” of voice bar that precedes formant structure in a vowel."><img src="alignmentGuide/media/image59.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -879,27 +1119,32 @@ Figure&nbsp;42: Boundary placement when there is “notch” of voice bar that p
 <li><p>A: Yes, include a pause. Anything before phonation and formant structure should not be a part of the vowel interval. The figures below show how MFA sometimes aligns these vowels but this pre-phonation area should be a part of the preceding pause.<br>
 </p></li>
 </ul>
-<p>In context:<br>
-</p>
-<div id="fig-44" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-44" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-44-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;43: Vowel starts before phonation, viewed in context.
+Figure&nbsp;32: Vowel starts before phonation.
 </figcaption>
 <div aria-describedby="fig-44-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image60.png" class="lightbox" data-gallery="quarto-lightbox-gallery-44" title="Figure&nbsp;43: Vowel starts before phonation, viewed in context."><img src="alignmentGuide/media/image60.png" class="img-fluid figure-img" style="width:60.0%"></a>
-</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>In context.</figcaption>
+<p><a href="alignmentGuide/media/image60.png" class="lightbox" data-gallery="quarto-lightbox-gallery-44" title="In context."><img src="alignmentGuide/media/image60.png" class="img-fluid figure-img" style="width:60.0%"></a></p>
 </figure>
 </div>
-<p>Zoomed in:<br>
-</p>
-<div id="fig-45" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-45-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;44: Vowel starts before phonation, zoomed in.
-</figcaption>
-<div aria-describedby="fig-45-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image61.png" class="lightbox" data-gallery="quarto-lightbox-gallery-45" title="Figure&nbsp;44: Vowel starts before phonation, zoomed in."><img src="alignmentGuide/media/image61.png" class="img-fluid figure-img" style="width:60.0%"></a>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Zoomed in.</figcaption>
+<p><a href="alignmentGuide/media/image61.png" class="lightbox" data-gallery="quarto-lightbox-gallery-45" title="Zoomed in."><img src="alignmentGuide/media/image61.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </figure>
 </div>
@@ -907,32 +1152,37 @@ Figure&nbsp;44: Vowel starts before phonation, zoomed in.
 <section id="voiceless-vowels" class="level5" data-number="6.2.3.3">
 <h5 data-number="6.2.3.3" class="anchored" data-anchor-id="voiceless-vowels"><span class="header-section-number">6.2.3.3</span> Voiceless vowels</h5>
 <ul>
-<li><p>Q: When the first vowel in a word such as “potato” is voiceless, what do we count as vowel?<br>
+<li><p>Q: When the first vowel in a word such as <em>potato</em> is voiceless, what do we count as vowel?<br>
 </p></li>
 <li><p>A: Look for the part that is most similar to a vowel that doesn’t seem to be aspiration.<br>
 </p></li>
 </ul>
-<p>In context:<br>
-</p>
-<div id="fig-46" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-46" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-46-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;45: Voiceless vowel in “potato,” viewed in context.
+Figure&nbsp;33: Voiceless vowel in <em>potato</em>.
 </figcaption>
 <div aria-describedby="fig-46-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image62.png" class="lightbox" data-gallery="quarto-lightbox-gallery-46" title="Figure&nbsp;45: Voiceless vowel in “potato,” viewed in context."><img src="alignmentGuide/media/image62.png" class="img-fluid figure-img" style="width:60.0%"></a>
-</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>In context.</figcaption>
+<p><a href="alignmentGuide/media/image62.png" class="lightbox" data-gallery="quarto-lightbox-gallery-46" title="In context."><img src="alignmentGuide/media/image62.png" class="img-fluid figure-img" style="width:60.0%"></a></p>
 </figure>
 </div>
-<p>Zoomed in:<br>
-</p>
-<div id="fig-47" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-47-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;46: Voiceless vowel in “potato,” zoomed in.
-</figcaption>
-<div aria-describedby="fig-47-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image63.png" class="lightbox" data-gallery="quarto-lightbox-gallery-47" title="Figure&nbsp;46: Voiceless vowel in “potato,” zoomed in."><img src="alignmentGuide/media/image63.png" class="img-fluid figure-img" style="width:60.0%"></a>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Zoomed in.</figcaption>
+<p><a href="alignmentGuide/media/image63.png" class="lightbox" data-gallery="quarto-lightbox-gallery-47" title="Zoomed in."><img src="alignmentGuide/media/image63.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </figure>
 </div>
@@ -952,10 +1202,10 @@ Figure&nbsp;46: Voiceless vowel in “potato,” zoomed in.
 <div id="fig-48" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-48-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;47: Boundary placement in Fricative &gt; Stop/Affricate transitions. Here between S of “this” and CH of “cheese.”
+Figure&nbsp;34: Boundary placement in Fricative &gt; Stop/Affricate transitions. Here between S of “this” and CH of “cheese.”
 </figcaption>
 <div aria-describedby="fig-48-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image64.png" class="lightbox" data-gallery="quarto-lightbox-gallery-48" title="Figure&nbsp;47: Boundary placement in Fricative > Stop/Affricate transitions. Here between S of “this” and CH of “cheese.”"><img src="alignmentGuide/media/image64.png" class="img-fluid figure-img" style="width:55.0%"></a>
+<a href="alignmentGuide/media/image64.png" class="lightbox" data-gallery="quarto-lightbox-gallery-48" title="Figure&nbsp;34: Boundary placement in Fricative > Stop/Affricate transitions. Here between S of “this” and CH of “cheese.”"><img src="alignmentGuide/media/image64.png" class="img-fluid figure-img" style="width:55.0%"></a>
 </div>
 </figure>
 </div>
@@ -971,10 +1221,10 @@ Figure&nbsp;47: Boundary placement in Fricative &gt; Stop/Affricate transitions.
 <div id="fig-49" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-49-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;48: Fricative to fricative transition. Here there is some noise across the frequency range before, or perhaps as part of the transition to SH, which shows a different noise pattern. This lets us see the shift from Z to SH.
+Figure&nbsp;35: Fricative to fricative transition. Here there is some noise across the frequency range before, or perhaps as part of the transition to SH, which shows a different noise pattern. This lets us see the shift from Z to SH.
 </figcaption>
 <div aria-describedby="fig-49-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image65.png" class="lightbox" data-gallery="quarto-lightbox-gallery-49" title="Figure&nbsp;48: Fricative to fricative transition. Here there is some noise across the frequency range before, or perhaps as part of the transition to SH, which shows a different noise pattern. This lets us see the shift from Z to SH."><img src="alignmentGuide/media/image65.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image65.png" class="lightbox" data-gallery="quarto-lightbox-gallery-49" title="Figure&nbsp;35: Fricative to fricative transition. Here there is some noise across the frequency range before, or perhaps as part of the transition to SH, which shows a different noise pattern. This lets us see the shift from Z to SH."><img src="alignmentGuide/media/image65.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -986,27 +1236,32 @@ Figure&nbsp;48: Fricative to fricative transition. Here there is some noise acro
 <li><p>A: Fricatives will almost always start immediately after the burst release, especially in the case of a fricative preceded by a stop<br>
 </p></li>
 </ul>
-<p>In context:<br>
-</p>
-<div id="fig-50" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-50" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-50-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;49: Stop to fricative boundary in “boots,” viewed in context.
+Figure&nbsp;36: Stop to fricative boundary in <em>boots</em>.
 </figcaption>
 <div aria-describedby="fig-50-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image66.png" class="lightbox" data-gallery="quarto-lightbox-gallery-50" title="Figure&nbsp;49: Stop to fricative boundary in “boots,” viewed in context."><img src="alignmentGuide/media/image66.png" class="img-fluid figure-img" style="width:60.0%"></a>
-</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>In context.</figcaption>
+<p><a href="alignmentGuide/media/image66.png" class="lightbox" data-gallery="quarto-lightbox-gallery-50" title="In context."><img src="alignmentGuide/media/image66.png" class="img-fluid figure-img" style="width:60.0%"></a></p>
 </figure>
 </div>
-<p>Zoomed in:<br>
-</p>
-<div id="fig-51" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-51-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;50: Stop to fricative boundary in “boots,” zoomed in.
-</figcaption>
-<div aria-describedby="fig-51-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image67.png" class="lightbox" data-gallery="quarto-lightbox-gallery-51" title="Figure&nbsp;50: Stop to fricative boundary in “boots,” zoomed in."><img src="alignmentGuide/media/image67.png" class="img-fluid figure-img" style="width:60.0%"></a>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Zoomed in.</figcaption>
+<p><a href="alignmentGuide/media/image67.png" class="lightbox" data-gallery="quarto-lightbox-gallery-51" title="Zoomed in."><img src="alignmentGuide/media/image67.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </figure>
 </div>
@@ -1019,27 +1274,32 @@ Figure&nbsp;50: Stop to fricative boundary in “boots,” zoomed in.
 <li><p>A: Look for the transition from burst to HH. HH usually starts to have more formant structure.<br>
 </p></li>
 </ul>
-<p>In context:<br>
-</p>
-<div id="fig-52" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-52" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-52-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;51: When to start HH in consonant-to-consonant transition, viewed in context.
+Figure&nbsp;37: When to start HH in consonant-to-consonant transition.
 </figcaption>
 <div aria-describedby="fig-52-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image68.png" class="lightbox" data-gallery="quarto-lightbox-gallery-52" title="Figure&nbsp;51: When to start HH in consonant-to-consonant transition, viewed in context."><img src="alignmentGuide/media/image68.png" class="img-fluid figure-img" style="width:60.0%"></a>
-</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>In context.</figcaption>
+<p><a href="alignmentGuide/media/image68.png" class="lightbox" data-gallery="quarto-lightbox-gallery-52" title="In context."><img src="alignmentGuide/media/image68.png" class="img-fluid figure-img" style="width:60.0%"></a></p>
 </figure>
 </div>
-<p>Zoomed in:<br>
-</p>
-<div id="fig-53" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-53-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;52: D|HH boundary, zoomed in.
-</figcaption>
-<div aria-describedby="fig-53-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image69.png" class="lightbox" data-gallery="quarto-lightbox-gallery-53" title="Figure&nbsp;52: D|HH boundary, zoomed in."><img src="alignmentGuide/media/image69.png" class="img-fluid figure-img" style="width:60.0%"></a>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Zoomed in.</figcaption>
+<p><a href="alignmentGuide/media/image69.png" class="lightbox" data-gallery="quarto-lightbox-gallery-53" title="Zoomed in."><img src="alignmentGuide/media/image69.png" class="img-fluid figure-img" style="width:70.0%"></a></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </figure>
 </div>
@@ -1057,10 +1317,10 @@ Figure&nbsp;52: D|HH boundary, zoomed in.
 <div id="fig-54" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-54-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;53: Boundary between G and D is placed after release of G and when amplitude in signal reduces as closure for D begins.
+Figure&nbsp;38: Boundary between G and D is placed after release of G and when amplitude in signal reduces as closure for D begins.
 </figcaption>
 <div aria-describedby="fig-54-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image71.png" class="lightbox" data-gallery="quarto-lightbox-gallery-54" title="Figure&nbsp;53: Boundary between G and D is placed after release of G and when amplitude in signal reduces as closure for D begins."><img src="alignmentGuide/media/image71.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image71.png" class="lightbox" data-gallery="quarto-lightbox-gallery-54" title="Figure&nbsp;38: Boundary between G and D is placed after release of G and when amplitude in signal reduces as closure for D begins."><img src="alignmentGuide/media/image71.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1069,10 +1329,10 @@ Figure&nbsp;53: Boundary between G and D is placed after release of G and when a
 <div id="fig-55" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-55-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;54: Cursor is at boundary between G and D.
+Figure&nbsp;39: Cursor is at boundary between G and D.
 </figcaption>
 <div aria-describedby="fig-55-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image70.png" class="lightbox" data-gallery="quarto-lightbox-gallery-55" title="Figure&nbsp;54: Cursor is at boundary between G and D."><img src="alignmentGuide/media/image70.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image70.png" class="lightbox" data-gallery="quarto-lightbox-gallery-55" title="Figure&nbsp;39: Cursor is at boundary between G and D."><img src="alignmentGuide/media/image70.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1090,10 +1350,10 @@ Figure&nbsp;54: Cursor is at boundary between G and D.
 <div id="fig-56" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-56-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;55: Boundary placement in unreleased consonants, at least 50ms before the release of the second consonant (pre-correction).
+Figure&nbsp;40: Boundary placement in unreleased consonants, at least 50ms before the release of the second consonant (pre-correction).
 </figcaption>
 <div aria-describedby="fig-56-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image72.png" class="lightbox" data-gallery="quarto-lightbox-gallery-56" title="Figure&nbsp;55: Boundary placement in unreleased consonants, at least 50ms before the release of the second consonant (pre-correction)."><img src="alignmentGuide/media/image72.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image72.png" class="lightbox" data-gallery="quarto-lightbox-gallery-56" title="Figure&nbsp;40: Boundary placement in unreleased consonants, at least 50ms before the release of the second consonant (pre-correction)."><img src="alignmentGuide/media/image72.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1102,10 +1362,10 @@ Figure&nbsp;55: Boundary placement in unreleased consonants, at least 50ms befor
 <div id="fig-57" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-57-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;56: Boundary for unreleased consonant was moved to 50ms preceding the second consonant.
+Figure&nbsp;41: Boundary for unreleased consonant was moved to 50ms preceding the second consonant.
 </figcaption>
 <div aria-describedby="fig-57-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image73.png" class="lightbox" data-gallery="quarto-lightbox-gallery-57" title="Figure&nbsp;56: Boundary for unreleased consonant was moved to 50ms preceding the second consonant."><img src="alignmentGuide/media/image73.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image73.png" class="lightbox" data-gallery="quarto-lightbox-gallery-57" title="Figure&nbsp;41: Boundary for unreleased consonant was moved to 50ms preceding the second consonant."><img src="alignmentGuide/media/image73.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1114,10 +1374,10 @@ Figure&nbsp;56: Boundary for unreleased consonant was moved to 50ms preceding th
 <div id="fig-58" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-58-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;57: Consonant-to-consonant, unreleased, no correction required.
+Figure&nbsp;42: Consonant-to-consonant, unreleased, no correction required.
 </figcaption>
 <div aria-describedby="fig-58-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image74.png" class="lightbox" data-gallery="quarto-lightbox-gallery-58" title="Figure&nbsp;57: Consonant-to-consonant, unreleased, no correction required."><img src="alignmentGuide/media/image74.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image74.png" class="lightbox" data-gallery="quarto-lightbox-gallery-58" title="Figure&nbsp;42: Consonant-to-consonant, unreleased, no correction required."><img src="alignmentGuide/media/image74.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1132,10 +1392,10 @@ Figure&nbsp;57: Consonant-to-consonant, unreleased, no correction required.
 <div id="fig-59" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-59-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;58: Boundary placement between D and DH when less than 50ms available before DH.
+Figure&nbsp;43: Boundary placement between D and DH when less than 50ms available before DH.
 </figcaption>
 <div aria-describedby="fig-59-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image75.png" class="lightbox" data-gallery="quarto-lightbox-gallery-59" title="Figure&nbsp;58: Boundary placement between D and DH when less than 50ms available before DH."><img src="alignmentGuide/media/image75.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image75.png" class="lightbox" data-gallery="quarto-lightbox-gallery-59" title="Figure&nbsp;43: Boundary placement between D and DH when less than 50ms available before DH."><img src="alignmentGuide/media/image75.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1151,10 +1411,10 @@ Figure&nbsp;58: Boundary placement between D and DH when less than 50ms availabl
 <div id="fig-60" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-60-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;59: Within utterance pause before a stop consonant. Initial, post-pausal boundary for consonant should be placed 50ms before release of stop consonant.
+Figure&nbsp;44: Within utterance pause before a stop consonant. Initial, post-pausal boundary for consonant should be placed 50ms before release of stop consonant.
 </figcaption>
 <div aria-describedby="fig-60-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image76.png" class="lightbox" data-gallery="quarto-lightbox-gallery-60" title="Figure&nbsp;59: Within utterance pause before a stop consonant. Initial, post-pausal boundary for consonant should be placed 50ms before release of stop consonant."><img src="alignmentGuide/media/image76.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image76.png" class="lightbox" data-gallery="quarto-lightbox-gallery-60" title="Figure&nbsp;44: Within utterance pause before a stop consonant. Initial, post-pausal boundary for consonant should be placed 50ms before release of stop consonant."><img src="alignmentGuide/media/image76.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1173,10 +1433,10 @@ Figure&nbsp;59: Within utterance pause before a stop consonant. Initial, post-pa
 <div id="fig-61" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-61-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;60: Vowel to vowel transition with no pause.
+Figure&nbsp;45: Vowel to vowel transition with no pause.
 </figcaption>
 <div aria-describedby="fig-61-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image77.png" class="lightbox" data-gallery="quarto-lightbox-gallery-61" title="Figure&nbsp;60: Vowel to vowel transition with no pause."><img src="alignmentGuide/media/image77.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image77.png" class="lightbox" data-gallery="quarto-lightbox-gallery-61" title="Figure&nbsp;45: Vowel to vowel transition with no pause."><img src="alignmentGuide/media/image77.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1185,10 +1445,10 @@ Figure&nbsp;60: Vowel to vowel transition with no pause.
 <div id="fig-62" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-62-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;61: The vertical cursor line shows the transition from IY1 in “she” to IH0 in “is.” Note how the second formant lowers going from IY1 to IH0 (you can see where the dotted red lines cross on the spectrogram).
+Figure&nbsp;46: The vertical cursor line shows the transition from IY1 in “she” to IH0 in “is.” Note how the second formant lowers going from IY1 to IH0 (you can see where the dotted red lines cross on the spectrogram).
 </figcaption>
 <div aria-describedby="fig-62-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image78.png" class="lightbox" data-gallery="quarto-lightbox-gallery-62" title="Figure&nbsp;61: The vertical cursor line shows the transition from IY1 in “she” to IH0 in “is.” Note how the second formant lowers going from IY1 to IH0 (you can see where the dotted red lines cross on the spectrogram)."><img src="alignmentGuide/media/image78.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image78.png" class="lightbox" data-gallery="quarto-lightbox-gallery-62" title="Figure&nbsp;46: The vertical cursor line shows the transition from IY1 in “she” to IH0 in “is.” Note how the second formant lowers going from IY1 to IH0 (you can see where the dotted red lines cross on the spectrogram)."><img src="alignmentGuide/media/image78.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1204,10 +1464,10 @@ Figure&nbsp;61: The vertical cursor line shows the transition from IY1 in “she
 <div id="fig-63" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-63-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;62: Pause between vowels.
+Figure&nbsp;47: Pause between vowels.
 </figcaption>
 <div aria-describedby="fig-63-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image79.png" class="lightbox" data-gallery="quarto-lightbox-gallery-63" title="Figure&nbsp;62: Pause between vowels."><img src="alignmentGuide/media/image79.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image79.png" class="lightbox" data-gallery="quarto-lightbox-gallery-63" title="Figure&nbsp;47: Pause between vowels."><img src="alignmentGuide/media/image79.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1222,10 +1482,10 @@ Figure&nbsp;62: Pause between vowels.
 <div id="fig-64" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-64-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;63: Transition from a vowel to a following voiceless consonant.
+Figure&nbsp;48: Transition from a vowel to a following voiceless consonant.
 </figcaption>
 <div aria-describedby="fig-64-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image80.png" class="lightbox" data-gallery="quarto-lightbox-gallery-64" title="Figure&nbsp;63: Transition from a vowel to a following voiceless consonant."><img src="alignmentGuide/media/image80.png" class="img-fluid figure-img" style="width:50.0%"></a>
+<a href="alignmentGuide/media/image80.png" class="lightbox" data-gallery="quarto-lightbox-gallery-64" title="Figure&nbsp;48: Transition from a vowel to a following voiceless consonant."><img src="alignmentGuide/media/image80.png" class="img-fluid figure-img" style="width:50.0%"></a>
 </div>
 </figure>
 </div>
@@ -1234,10 +1494,10 @@ Figure&nbsp;63: Transition from a vowel to a following voiceless consonant.
 <div id="fig-65" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-65-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;64: Zoomed in on end of vowel and transition into K.
+Figure&nbsp;49: Zoomed in on end of vowel and transition into K.
 </figcaption>
 <div aria-describedby="fig-65-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image81.png" class="lightbox" data-gallery="quarto-lightbox-gallery-65" title="Figure&nbsp;64: Zoomed in on end of vowel and transition into K."><img src="alignmentGuide/media/image81.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image81.png" class="lightbox" data-gallery="quarto-lightbox-gallery-65" title="Figure&nbsp;49: Zoomed in on end of vowel and transition into K."><img src="alignmentGuide/media/image81.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1254,10 +1514,10 @@ Figure&nbsp;64: Zoomed in on end of vowel and transition into K.
 <div id="fig-66" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-66-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;65: Here the phonation of the vowel ends suddenly as the glottis positions for S, resulting in H-like pre-aspiration leading into the F.
+Figure&nbsp;50: Here the phonation of the vowel ends suddenly as the glottis positions for S, resulting in H-like pre-aspiration leading into the F.
 </figcaption>
 <div aria-describedby="fig-66-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image82.png" class="lightbox" data-gallery="quarto-lightbox-gallery-66" title="Figure&nbsp;65: Here the phonation of the vowel ends suddenly as the glottis positions for S, resulting in H-like pre-aspiration leading into the F."><img src="alignmentGuide/media/image82.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image82.png" class="lightbox" data-gallery="quarto-lightbox-gallery-66" title="Figure&nbsp;50: Here the phonation of the vowel ends suddenly as the glottis positions for S, resulting in H-like pre-aspiration leading into the F."><img src="alignmentGuide/media/image82.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1271,10 +1531,10 @@ Figure&nbsp;65: Here the phonation of the vowel ends suddenly as the glottis pos
 <div id="fig-67" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-67-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;66: Vowel to voiced consonant transition in context.
+Figure&nbsp;51: Vowel to voiced consonant transition in context.
 </figcaption>
 <div aria-describedby="fig-67-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image83.png" class="lightbox" data-gallery="quarto-lightbox-gallery-67" title="Figure&nbsp;66: Vowel to voiced consonant transition in context."><img src="alignmentGuide/media/image83.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image83.png" class="lightbox" data-gallery="quarto-lightbox-gallery-67" title="Figure&nbsp;51: Vowel to voiced consonant transition in context."><img src="alignmentGuide/media/image83.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1283,10 +1543,10 @@ Figure&nbsp;66: Vowel to voiced consonant transition in context.
 <div id="fig-68" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-68-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;67: vowel to voiced consonant transition, zoomed in.
+Figure&nbsp;52: vowel to voiced consonant transition, zoomed in.
 </figcaption>
 <div aria-describedby="fig-68-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image84.png" class="lightbox" data-gallery="quarto-lightbox-gallery-68" title="Figure&nbsp;67: vowel to voiced consonant transition, zoomed in."><img src="alignmentGuide/media/image84.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image84.png" class="lightbox" data-gallery="quarto-lightbox-gallery-68" title="Figure&nbsp;52: vowel to voiced consonant transition, zoomed in."><img src="alignmentGuide/media/image84.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1299,10 +1559,10 @@ Figure&nbsp;67: vowel to voiced consonant transition, zoomed in.
 <div id="fig-69" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-69-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;68: Contextual view of a coda consonant closure with only partial voicing during the closure.
+Figure&nbsp;53: Contextual view of a coda consonant closure with only partial voicing during the closure.
 </figcaption>
 <div aria-describedby="fig-69-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image85.png" class="lightbox" data-gallery="quarto-lightbox-gallery-69" title="Figure&nbsp;68: Contextual view of a coda consonant closure with only partial voicing during the closure."><img src="alignmentGuide/media/image85.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image85.png" class="lightbox" data-gallery="quarto-lightbox-gallery-69" title="Figure&nbsp;53: Contextual view of a coda consonant closure with only partial voicing during the closure."><img src="alignmentGuide/media/image85.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1311,10 +1571,10 @@ Figure&nbsp;68: Contextual view of a coda consonant closure with only partial vo
 <div id="fig-70" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-70-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;69: Closer view of partial voicing during consonant closure.
+Figure&nbsp;54: Closer view of partial voicing during consonant closure.
 </figcaption>
 <div aria-describedby="fig-70-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image86.png" class="lightbox" data-gallery="quarto-lightbox-gallery-70" title="Figure&nbsp;69: Closer view of partial voicing during consonant closure."><img src="alignmentGuide/media/image86.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image86.png" class="lightbox" data-gallery="quarto-lightbox-gallery-70" title="Figure&nbsp;54: Closer view of partial voicing during consonant closure."><img src="alignmentGuide/media/image86.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1331,10 +1591,10 @@ Figure&nbsp;69: Closer view of partial voicing during consonant closure.
 <div id="fig-71" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-71-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;70: Vowel to fricative transition, voicing stops before articulation of consonant.
+Figure&nbsp;55: Vowel to fricative transition, voicing stops before articulation of consonant.
 </figcaption>
 <div aria-describedby="fig-71-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image87.png" class="lightbox" data-gallery="quarto-lightbox-gallery-71" title="Figure&nbsp;70: Vowel to fricative transition, voicing stops before articulation of consonant."><img src="alignmentGuide/media/image87.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image87.png" class="lightbox" data-gallery="quarto-lightbox-gallery-71" title="Figure&nbsp;55: Vowel to fricative transition, voicing stops before articulation of consonant."><img src="alignmentGuide/media/image87.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1350,10 +1610,10 @@ Figure&nbsp;70: Vowel to fricative transition, voicing stops before articulation
 <div id="fig-72" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-72-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;71: Vowel to consonant transition, inconsistent phonation of the vowel.
+Figure&nbsp;56: Vowel to consonant transition, inconsistent phonation of the vowel.
 </figcaption>
 <div aria-describedby="fig-72-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image88.png" class="lightbox" data-gallery="quarto-lightbox-gallery-72" title="Figure&nbsp;71: Vowel to consonant transition, inconsistent phonation of the vowel."><img src="alignmentGuide/media/image88.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image88.png" class="lightbox" data-gallery="quarto-lightbox-gallery-72" title="Figure&nbsp;56: Vowel to consonant transition, inconsistent phonation of the vowel."><img src="alignmentGuide/media/image88.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1371,10 +1631,10 @@ Figure&nbsp;71: Vowel to consonant transition, inconsistent phonation of the vow
 <div id="fig-73" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-73-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;72: Break between consonant and vowel across word boundaries.
+Figure&nbsp;57: Break between consonant and vowel across word boundaries.
 </figcaption>
 <div aria-describedby="fig-73-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image57.png" class="lightbox" data-gallery="quarto-lightbox-gallery-73" title="Figure&nbsp;72: Break between consonant and vowel across word boundaries."><img src="alignmentGuide/media/image57.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image57.png" class="lightbox" data-gallery="quarto-lightbox-gallery-73" title="Figure&nbsp;57: Break between consonant and vowel across word boundaries."><img src="alignmentGuide/media/image57.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1388,10 +1648,10 @@ Figure&nbsp;72: Break between consonant and vowel across word boundaries.
 <div id="fig-74" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-74-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;73: Pause between vowels.
+Figure&nbsp;58: Pause between vowels.
 </figcaption>
 <div aria-describedby="fig-74-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image79.png" class="lightbox" data-gallery="quarto-lightbox-gallery-74" title="Figure&nbsp;73: Pause between vowels."><img src="alignmentGuide/media/image79.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image79.png" class="lightbox" data-gallery="quarto-lightbox-gallery-74" title="Figure&nbsp;58: Pause between vowels."><img src="alignmentGuide/media/image79.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1407,10 +1667,10 @@ Figure&nbsp;73: Pause between vowels.
 <div id="fig-75" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-75-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;74: Pause with phonation.
+Figure&nbsp;59: Pause with phonation.
 </figcaption>
 <div aria-describedby="fig-75-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image89.png" class="lightbox" data-gallery="quarto-lightbox-gallery-75" title="Figure&nbsp;74: Pause with phonation."><img src="alignmentGuide/media/image89.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image89.png" class="lightbox" data-gallery="quarto-lightbox-gallery-75" title="Figure&nbsp;59: Pause with phonation."><img src="alignmentGuide/media/image89.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1430,10 +1690,10 @@ Figure&nbsp;74: Pause with phonation.
 <div id="fig-76" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-76-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;75: End of utterance consonant, in context.
+Figure&nbsp;60: End of utterance consonant, in context.
 </figcaption>
 <div aria-describedby="fig-76-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image90.png" class="lightbox" data-gallery="quarto-lightbox-gallery-76" title="Figure&nbsp;75: End of utterance consonant, in context."><img src="alignmentGuide/media/image90.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image90.png" class="lightbox" data-gallery="quarto-lightbox-gallery-76" title="Figure&nbsp;60: End of utterance consonant, in context."><img src="alignmentGuide/media/image90.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1442,10 +1702,10 @@ Figure&nbsp;75: End of utterance consonant, in context.
 <div id="fig-77" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-77-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;76: End of utterance consonant, zoomed.
+Figure&nbsp;61: End of utterance consonant, zoomed.
 </figcaption>
 <div aria-describedby="fig-77-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image91.png" class="lightbox" data-gallery="quarto-lightbox-gallery-77" title="Figure&nbsp;76: End of utterance consonant, zoomed."><img src="alignmentGuide/media/image91.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image91.png" class="lightbox" data-gallery="quarto-lightbox-gallery-77" title="Figure&nbsp;61: End of utterance consonant, zoomed."><img src="alignmentGuide/media/image91.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1459,10 +1719,10 @@ Figure&nbsp;76: End of utterance consonant, zoomed.
 <div id="fig-78" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-78-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;77: End boundaries for fricatives at the ends of utterances, in context.
+Figure&nbsp;62: End boundaries for fricatives at the ends of utterances, in context.
 </figcaption>
 <div aria-describedby="fig-78-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image92.png" class="lightbox" data-gallery="quarto-lightbox-gallery-78" title="Figure&nbsp;77: End boundaries for fricatives at the ends of utterances, in context."><img src="alignmentGuide/media/image92.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image92.png" class="lightbox" data-gallery="quarto-lightbox-gallery-78" title="Figure&nbsp;62: End boundaries for fricatives at the ends of utterances, in context."><img src="alignmentGuide/media/image92.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1471,10 +1731,10 @@ Figure&nbsp;77: End boundaries for fricatives at the ends of utterances, in cont
 <div id="fig-79" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-79-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;78: End boundaries for fricatives, zoomed in.
+Figure&nbsp;63: End boundaries for fricatives, zoomed in.
 </figcaption>
 <div aria-describedby="fig-79-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image93.png" class="lightbox" data-gallery="quarto-lightbox-gallery-79" title="Figure&nbsp;78: End boundaries for fricatives, zoomed in."><img src="alignmentGuide/media/image93.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image93.png" class="lightbox" data-gallery="quarto-lightbox-gallery-79" title="Figure&nbsp;63: End boundaries for fricatives, zoomed in."><img src="alignmentGuide/media/image93.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1488,10 +1748,10 @@ Figure&nbsp;78: End boundaries for fricatives, zoomed in.
 <div id="fig-80" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-80-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;79: Nasals at the ends of words/utterances, in context.
+Figure&nbsp;64: Nasals at the ends of words/utterances, in context.
 </figcaption>
 <div aria-describedby="fig-80-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image94.png" class="lightbox" data-gallery="quarto-lightbox-gallery-80" title="Figure&nbsp;79: Nasals at the ends of words/utterances, in context."><img src="alignmentGuide/media/image94.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image94.png" class="lightbox" data-gallery="quarto-lightbox-gallery-80" title="Figure&nbsp;64: Nasals at the ends of words/utterances, in context."><img src="alignmentGuide/media/image94.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1500,10 +1760,10 @@ Figure&nbsp;79: Nasals at the ends of words/utterances, in context.
 <div id="fig-81" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-81-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;80: Nasals at the ends of words/utterances, zoomed in.
+Figure&nbsp;65: Nasals at the ends of words/utterances, zoomed in.
 </figcaption>
 <div aria-describedby="fig-81-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image95.png" class="lightbox" data-gallery="quarto-lightbox-gallery-81" title="Figure&nbsp;80: Nasals at the ends of words/utterances, zoomed in."><img src="alignmentGuide/media/image95.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image95.png" class="lightbox" data-gallery="quarto-lightbox-gallery-81" title="Figure&nbsp;65: Nasals at the ends of words/utterances, zoomed in."><img src="alignmentGuide/media/image95.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1515,10 +1775,10 @@ Figure&nbsp;80: Nasals at the ends of words/utterances, zoomed in.
 <div id="fig-82" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-82-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;81: Boundary placement for liquids at the ends of words.
+Figure&nbsp;66: Boundary placement for liquids at the ends of words.
 </figcaption>
 <div aria-describedby="fig-82-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image96.png" class="lightbox" data-gallery="quarto-lightbox-gallery-82" title="Figure&nbsp;81: Boundary placement for liquids at the ends of words."><img src="alignmentGuide/media/image96.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image96.png" class="lightbox" data-gallery="quarto-lightbox-gallery-82" title="Figure&nbsp;66: Boundary placement for liquids at the ends of words."><img src="alignmentGuide/media/image96.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1527,10 +1787,10 @@ Figure&nbsp;81: Boundary placement for liquids at the ends of words.
 <div id="fig-83" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-83-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;82: Boundary placement for utterance-final liquids, zoomed in.
+Figure&nbsp;67: Boundary placement for utterance-final liquids, zoomed in.
 </figcaption>
 <div aria-describedby="fig-83-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image97.png" class="lightbox" data-gallery="quarto-lightbox-gallery-83" title="Figure&nbsp;82: Boundary placement for utterance-final liquids, zoomed in."><img src="alignmentGuide/media/image97.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image97.png" class="lightbox" data-gallery="quarto-lightbox-gallery-83" title="Figure&nbsp;67: Boundary placement for utterance-final liquids, zoomed in."><img src="alignmentGuide/media/image97.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1548,10 +1808,10 @@ Figure&nbsp;82: Boundary placement for utterance-final liquids, zoomed in.
 <div id="fig-84" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-84-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;83: Boundary placement for utterance-final unreleased stops.
+Figure&nbsp;68: Boundary placement for utterance-final unreleased stops.
 </figcaption>
 <div aria-describedby="fig-84-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image98.png" class="lightbox" data-gallery="quarto-lightbox-gallery-84" title="Figure&nbsp;83: Boundary placement for utterance-final unreleased stops."><img src="alignmentGuide/media/image98.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image98.png" class="lightbox" data-gallery="quarto-lightbox-gallery-84" title="Figure&nbsp;68: Boundary placement for utterance-final unreleased stops."><img src="alignmentGuide/media/image98.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1571,10 +1831,10 @@ Figure&nbsp;83: Boundary placement for utterance-final unreleased stops.
 <div id="fig-85" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-85-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;84: Strong exhalation following final stop consonant - this additional noise should not be included as a part of the stop.
+Figure&nbsp;69: Strong exhalation following final stop consonant - this additional noise should not be included as a part of the stop.
 </figcaption>
 <div aria-describedby="fig-85-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image99.png" class="lightbox" data-gallery="quarto-lightbox-gallery-85" title="Figure&nbsp;84: Strong exhalation following final stop consonant - this additional noise should not be included as a part of the stop."><img src="alignmentGuide/media/image99.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image99.png" class="lightbox" data-gallery="quarto-lightbox-gallery-85" title="Figure&nbsp;69: Strong exhalation following final stop consonant - this additional noise should not be included as a part of the stop."><img src="alignmentGuide/media/image99.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1594,10 +1854,10 @@ Figure&nbsp;84: Strong exhalation following final stop consonant - this addition
 <div id="fig-86" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-86-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;85: Post-nasal exhale, no articulation (exhale not included in boundary).
+Figure&nbsp;70: Post-nasal exhale, no articulation (exhale not included in boundary).
 </figcaption>
 <div aria-describedby="fig-86-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image100.png" class="lightbox" data-gallery="quarto-lightbox-gallery-86" title="Figure&nbsp;85: Post-nasal exhale, no articulation (exhale not included in boundary)."><img src="alignmentGuide/media/image100.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image100.png" class="lightbox" data-gallery="quarto-lightbox-gallery-86" title="Figure&nbsp;70: Post-nasal exhale, no articulation (exhale not included in boundary)."><img src="alignmentGuide/media/image100.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1606,10 +1866,10 @@ Figure&nbsp;85: Post-nasal exhale, no articulation (exhale not included in bound
 <div id="fig-87" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-87-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;86: Post-nasal exhale with articulation (exhale is during articulation of NG and thus included within NG boundaries).
+Figure&nbsp;71: Post-nasal exhale with articulation (exhale is during articulation of NG and thus included within NG boundaries).
 </figcaption>
 <div aria-describedby="fig-87-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image101.png" class="lightbox" data-gallery="quarto-lightbox-gallery-87" title="Figure&nbsp;86: Post-nasal exhale with articulation (exhale is during articulation of NG and thus included within NG boundaries)."><img src="alignmentGuide/media/image101.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image101.png" class="lightbox" data-gallery="quarto-lightbox-gallery-87" title="Figure&nbsp;71: Post-nasal exhale with articulation (exhale is during articulation of NG and thus included within NG boundaries)."><img src="alignmentGuide/media/image101.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1625,10 +1885,10 @@ Figure&nbsp;86: Post-nasal exhale with articulation (exhale is during articulati
 <div id="fig-88" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-88-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;87: Exhale begins during articulation of ER0.
+Figure&nbsp;72: Exhale begins during articulation of ER0.
 </figcaption>
 <div aria-describedby="fig-88-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image102.png" class="lightbox" data-gallery="quarto-lightbox-gallery-88" title="Figure&nbsp;87: Exhale begins during articulation of ER0."><img src="alignmentGuide/media/image102.png" class="img-fluid figure-img" style="width:50.0%"></a>
+<a href="alignmentGuide/media/image102.png" class="lightbox" data-gallery="quarto-lightbox-gallery-88" title="Figure&nbsp;72: Exhale begins during articulation of ER0."><img src="alignmentGuide/media/image102.png" class="img-fluid figure-img" style="width:50.0%"></a>
 </div>
 </figure>
 </div>
@@ -1646,10 +1906,10 @@ Figure&nbsp;87: Exhale begins during articulation of ER0.
 <div id="fig-89" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-89-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;88: End boundary placement for utterance-final vowel.
+Figure&nbsp;73: End boundary placement for utterance-final vowel.
 </figcaption>
 <div aria-describedby="fig-89-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image103.png" class="lightbox" data-gallery="quarto-lightbox-gallery-89" title="Figure&nbsp;88: End boundary placement for utterance-final vowel."><img src="alignmentGuide/media/image103.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image103.png" class="lightbox" data-gallery="quarto-lightbox-gallery-89" title="Figure&nbsp;73: End boundary placement for utterance-final vowel."><img src="alignmentGuide/media/image103.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1658,10 +1918,10 @@ Figure&nbsp;88: End boundary placement for utterance-final vowel.
 <div id="fig-90" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-90-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;89: End boundary placement for utterance-final vowel, zoomed in.
+Figure&nbsp;74: End boundary placement for utterance-final vowel, zoomed in.
 </figcaption>
 <div aria-describedby="fig-90-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image104.png" class="lightbox" data-gallery="quarto-lightbox-gallery-90" title="Figure&nbsp;89: End boundary placement for utterance-final vowel, zoomed in."><img src="alignmentGuide/media/image104.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image104.png" class="lightbox" data-gallery="quarto-lightbox-gallery-90" title="Figure&nbsp;74: End boundary placement for utterance-final vowel, zoomed in."><img src="alignmentGuide/media/image104.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1680,10 +1940,10 @@ Figure&nbsp;89: End boundary placement for utterance-final vowel, zoomed in.
 <div id="fig-91" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-91-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;90: Include voiceless portions of vowel if it is still articulated as vowel and not simply exhale.
+Figure&nbsp;75: Include voiceless portions of vowel if it is still articulated as vowel and not simply exhale.
 </figcaption>
 <div aria-describedby="fig-91-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image105.png" class="lightbox" data-gallery="quarto-lightbox-gallery-91" title="Figure&nbsp;90: Include voiceless portions of vowel if it is still articulated as vowel and not simply exhale."><img src="alignmentGuide/media/image105.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image105.png" class="lightbox" data-gallery="quarto-lightbox-gallery-91" title="Figure&nbsp;75: Include voiceless portions of vowel if it is still articulated as vowel and not simply exhale."><img src="alignmentGuide/media/image105.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1699,10 +1959,10 @@ Figure&nbsp;90: Include voiceless portions of vowel if it is still articulated a
 <div id="fig-92" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-92-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;91: Exhalation immediately following a sound should not count as part of that sound.
+Figure&nbsp;76: Exhalation immediately following a sound should not count as part of that sound.
 </figcaption>
 <div aria-describedby="fig-92-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image106.png" class="lightbox" data-gallery="quarto-lightbox-gallery-92" title="Figure&nbsp;91: Exhalation immediately following a sound should not count as part of that sound."><img src="alignmentGuide/media/image106.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image106.png" class="lightbox" data-gallery="quarto-lightbox-gallery-92" title="Figure&nbsp;76: Exhalation immediately following a sound should not count as part of that sound."><img src="alignmentGuide/media/image106.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1725,10 +1985,10 @@ Figure&nbsp;91: Exhalation immediately following a sound should not count as par
 <div id="fig-93" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-93-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;92: Segment boundaries when segments are coalesced.
+Figure&nbsp;77: Segment boundaries when segments are coalesced.
 </figcaption>
 <div aria-describedby="fig-93-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image107.png" class="lightbox" data-gallery="quarto-lightbox-gallery-93" title="Figure&nbsp;92: Segment boundaries when segments are coalesced."><img src="alignmentGuide/media/image107.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image107.png" class="lightbox" data-gallery="quarto-lightbox-gallery-93" title="Figure&nbsp;77: Segment boundaries when segments are coalesced."><img src="alignmentGuide/media/image107.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1747,10 +2007,10 @@ Figure&nbsp;92: Segment boundaries when segments are coalesced.
 <div id="fig-94" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-94-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;93: Vocalic L (pronounced as /o/) should have very short AH0 segment, L should make up nearly all of the sound.
+Figure&nbsp;78: Vocalic L (pronounced as /o/) should have very short AH0 segment, L should make up nearly all of the sound.
 </figcaption>
 <div aria-describedby="fig-94-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image108.png" class="lightbox" data-gallery="quarto-lightbox-gallery-94" title="Figure&nbsp;93: Vocalic L (pronounced as /o/) should have very short AH0 segment, L should make up nearly all of the sound."><img src="alignmentGuide/media/image108.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image108.png" class="lightbox" data-gallery="quarto-lightbox-gallery-94" title="Figure&nbsp;78: Vocalic L (pronounced as /o/) should have very short AH0 segment, L should make up nearly all of the sound."><img src="alignmentGuide/media/image108.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -1766,10 +2026,10 @@ Figure&nbsp;93: Vocalic L (pronounced as /o/) should have very short AH0 segment
 <div id="fig-95" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-95-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;94: Syllabic L, if there is no vowel to be heard between M and L in <em>animal</em>, AH0 should be minimal and L should take up nearly the entire duration of the sound.
+Figure&nbsp;79: Syllabic L, if there is no vowel to be heard between M and L in <em>animal</em>, AH0 should be minimal and L should take up nearly the entire duration of the sound.
 </figcaption>
 <div aria-describedby="fig-95-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="alignmentGuide/media/image109.png" class="lightbox" data-gallery="quarto-lightbox-gallery-95" title="Figure&nbsp;94: Syllabic L, if there is no vowel to be heard between M and L in animal, AH0 should be minimal and L should take up nearly the entire duration of the sound."><img src="alignmentGuide/media/image109.png" class="img-fluid figure-img" style="width:60.0%"></a>
+<a href="alignmentGuide/media/image109.png" class="lightbox" data-gallery="quarto-lightbox-gallery-95" title="Figure&nbsp;79: Syllabic L, if there is no vowel to be heard between M and L in animal, AH0 should be minimal and L should take up nearly the entire duration of the sound."><img src="alignmentGuide/media/image109.png" class="img-fluid figure-img" style="width:60.0%"></a>
 </div>
 </figure>
 </div>
@@ -2227,7 +2487,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"loop":false,"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","loop":false,"closeEffect":"zoom","descPosition":"bottom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

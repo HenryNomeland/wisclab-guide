@@ -68,22 +68,194 @@ Forced aligners are far from perfect. When a forced aligner creates a textgrid, 
 
 The goal of the researcher performing hand-correction is to ensure proper boundary placement. This guide is intended to help visually identify alignment issues by looking at spectrograms and waveforms, and is designed to be a guide for decision-making when boundary placement is difficult to determine.
 
-@fig-3 shows a textgrid prior to hand correction, the same textgrid but with black and gold squares overlaid on the image to show where the word boundaries actually are, and the textgrid after hand-correction.
+@fig-3 shows a textgrid prior to hand correction, the same textgrid but
+with black and gold squares overlaid on the image to show where the word
+boundaries actually are, and the textgrid after hand-correction.
 
 
-::: {#fig-3 layout-nrow="2"}
-![Before correction. The boundaries for *cowboy* were placed too soon, and boundaries for *boots* include the *boy* part of *cowboy*.](alignmentGuide/media/image6.png){width="60%"}
+::: {#fig-3 layout-nrow="3"}
+![Before correction. The boundaries for *cowboy* were placed too soon,
+and boundaries for *boots* include the *boy* part of
+*cowboy*.](alignmentGuide/media/image6.png){width="60%"}
   
-![With correction of the word boundaries. (Black and gold squares show where the words actually occur.)](alignmentGuide/media/image7.png){width="70%"}
-![With correction of the phone boundaries.](alignmentGuide/media/image8.png){width="70%"}
+![With correction of the word boundaries. (Black and gold squares show
+where the words actually
+occur.)](alignmentGuide/media/image7.png){width="70%"}
 
-Force-aligned textgrid of *cowboy boots* before and after hand correction.
+![With correction of the phone
+boundaries.](alignmentGuide/media/image8.png){width="70%"}
+
+Force-aligned textgrid of *cowboy boots* before and after hand
+correction.
 :::
 
 
 ### Phonetic alphabets
 
-This guide makes use of two different phonetic alphabets. The first is the International Phonetic Alphabet which is described [here](https://www.internationalphoneticassociation.org/content/full-ipa-chart) and will be notated using conventional forward slashes as in /t/ or /u/. The second is the ARPAbet symbol set developed by the Advanced Research Projects Agency. This is the alphabet seen in example alignments, as MFA alignments performed in the WISC Lab make use of the [CMU pronunciation dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict). Symbols which use this alphabet will be denoted in all-caps as in T or UW. A detailed description of each of the 39 phonemes included in the ARPAbet symbol set can be found on [Wikipedia](https://en.wikipedia.org/wiki/ARPABET). It is important to note that this symbol set makes use of numbers to denote tone. Furthermore, the alignments performed in the WISC Lab and any alignments using the CMU dictionary are based on North American pronunciations. Additional considerations for the use of dictionaries outside of these pronunciations are not considered at this time.
+This guide makes use of two different phonetic alphabets. The first is
+the [International Phonetic Alphabet
+(IPA)](https://www.internationalphoneticassociation.org/content/full-ipa-chart)
+and will be notated using conventional forward slashes as in /t/ or /u/.
+The IPA includes many non-English characters or diacritics, which can
+cause headaches for computing systems. A more computing-friendly
+alphabet is [ARPABET](https://en.wikipedia.org/wiki/ARPABET) which uses
+ASCII characters, specifically all-caps English letters. We use a
+particular flavor of ARPABET called CMUBET. It is the alphabet used by
+the [CMU pronunciation
+dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict) and used in
+the MFA alignments. CMUBET is the ARPABET but with numbers added onto
+vowels indicate stress. We note here that the alignments performed in
+the WISC Lab and any alignments using the CMU dictionary are based on
+North American pronunciations. @tbl-vowels and @tbl-consonants show
+vowels and consonants in North American English in the two alphabets.
+
+```{=html}
+<table id ="tbl-vowels">
+<caption>Vowels in CMUBET (<code>monospaced</code>) and IPA (plain text)</caption>
+<thead>
+<tr class="header">
+<th rowspan="2" align="left" scope="col">Location</th>
+<th colspan="2" align="center" scope="colgroup">Front</th>
+<th colspan="2" align="center" scope="colgroup">Central</th>
+<th colspan="2" align="center" scope="colgroup">Back</th>
+</tr>
+<tr class="odd">
+<th align="center" scope="col">lax</th>
+<th align="center" scope="col">tense</th>
+<th align="center" scope="col">lax</th>
+<th align="center" scope="col">tense</th>
+<th align="center" scope="col">lax</th>
+<th align="center" scope="col">tense</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Close</td>
+<td align="center"><code>IH</code> ɪ</td>
+<td align="center"><code>IY</code> i</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><code>UH</code> ʊ</td>
+<td align="center"><code>UW</code> u</td>
+</tr>
+<tr class="even">
+<td align="left">Mid</td>
+<td align="center"><code>EH</code> ɛ</td>
+<td align="center"><code>EY</code> eɪ</td>
+<td align="center"><code>AH</code> ə, ʌ</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><code>OW</code> oʊ</td>
+</tr>
+<tr class="odd">
+<td align="left">Open</td>
+<td align="center"><code>AE</code> æ</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"><code>AA</code> ɑ</td>
+<td align="center"></td>
+<td align="center"><code>AO</code> ɔ</td>
+</tr>
+<tr class="even">
+<td align="left">Diphthongs</td>
+<td colspan="6" align="center"><code>AW</code> aʊ <code>AY</code> aɪ <code>OY</code> ɔɪ</td>
+</tr>
+<tr class="odd">
+<td align="left">R-colored</td>
+<td colspan="6" align="center"><code>ER</code> ɝ, ɚ</td>
+</tr>
+</tbody>
+</table>
+```
+
+```{=html}
+<table id ="tbl-consonants">
+<caption>Consonants in CMUBET (<code>monospaced</code>) and IPA (plain text)</caption>
+<thead>
+<tr class="header">
+<th align="left" scope="col">Manner</th>
+<th align="left" scope="col">Bilabial</th>
+<th align="left" scope="col">Labiodental</th>
+<th align="left" scope="col">Dental</th>
+<th align="left" scope="col">Alveolar</th>
+<th align="left" scope="col">Postalveolar</th>
+<th align="left" scope="col">Palatal</th>
+<th align="left" scope="col">Velar</th>
+<th align="left" scope="col">Glottal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Plosive</td>
+<td align="left"><code>P</code> p <br/><code>B</code> b</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><code>T</code> t <br/><code>D</code> d</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><code>K</code> k <br/><code>G</code> g</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Affricate</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><code>CH</code> tʃ <br/><code>JH</code> dʒ</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Nasal</td>
+<td align="left"><code>M</code> m</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><code>N</code> n</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><code>NG</code> ŋ</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Fricative</td>
+<td align="left"></td>
+<td align="left"><code>F</code> f <br/><code>V</code> v</td>
+<td align="left"><code>TH</code> θ <br/><code>DH</code> ð</td>
+<td align="left"><code>S</code> s <br/><code>Z</code> z</td>
+<td align="left"><code>SH</code> ʃ <br/><code>ZH</code> ʒ</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><code>H</code> h</td>
+</tr>
+<tr class="odd">
+<td align="left">Approximant</td>
+<td align="left"><code>W</code> w</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><code>R</code> r</td>
+<td align="left"><code>Y</code> j</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Lateral</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"><code>L</code> l</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+```
+
+
 
 ### Montreal Forced Aligner {#d.-montreal-forced-aligner}
 
